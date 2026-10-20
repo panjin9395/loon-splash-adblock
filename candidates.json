@@ -1,0 +1,3447 @@
+[
+  {
+    "name": "闲鱼",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "静态验证待实机",
+    "ios_status": "App Store已核实 id510909506；iOS13+",
+    "source_status": "fmz200固定版本开屏专用规则",
+    "license_status": "GPL-3.0（不使用kelee插件）",
+    "device_status": "未实机",
+    "included": true,
+    "app_store": "https://apps.apple.com/cn/app/id510909506"
+  },
+  {
+    "name": "淘宝",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "京东",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "blackmatrix7 startup；语义/匹配问题或范围需进一步收窄",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "拼多多",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "支付宝",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "美团",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "blackmatrix7 startup；语义/匹配问题或范围需进一步收窄",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "大众点评",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "饿了么",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百度",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "高德地图",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百度地图",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "微博",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "小红书",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "知乎",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "B站",
+    "categories": [
+      "基础购物生活"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "blackmatrix7 startup；语义/匹配问题或范围需进一步收窄",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "网易云音乐",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "QQ音乐",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "酷狗",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "酷我",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "喜马拉雅",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "爱奇艺",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "blackmatrix7 startup；语义/匹配问题或范围需进一步收窄",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "腾讯视频",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "优酷",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "芒果TV",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "今日头条",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "腾讯新闻",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "网易新闻",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "起点",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "番茄小说",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "七猫",
+    "categories": [
+      "基础影音阅读"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "菜鸟",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "顺丰",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "携程",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "同程",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "去哪儿",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "滴滴",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "哈啰",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "移动联通电信",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "原候选合称，保留原始名称；运营商App身份未确认，不拆成假定精确App"
+  },
+  {
+    "name": "墨迹天气",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "彩云天气",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "什么值得买",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "酷安",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "懂车帝",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "汽车之家",
+    "categories": [
+      "基础出行工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "天猫",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "唯品会",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "苏宁",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "得物",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "转转",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "拍拍严选",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "孔夫子旧书网",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "多点",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "App Store已核实；具体版本待手机",
+    "source_status": "blackmatrix7 startup，较旧实现需单独测试",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false,
+    "app_store": "https://apps.apple.com/cn/app/id1002314698"
+  },
+  {
+    "name": "盒马",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "叮咚",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "朴朴",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "山姆",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "永辉",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "慢慢买",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "返利网",
+    "categories": [
+      "购物商超"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "肯德基",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "麦当劳",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "必胜客",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "瑞幸",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "星巴克",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "库迪",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "喜茶",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "奈雪",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "蜜雪冰城",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "海底捞",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "口碑",
+    "categories": [
+      "餐饮"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "京东快递",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "中通",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "圆通",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "韵达",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "申通",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "极兔",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "德邦",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "中国邮政",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "丰巢",
+    "categories": [
+      "快递"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "T3",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "曹操",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "花小猪",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "嘀嗒",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "已找到规则未纳入",
+    "ios_status": "App Store已核实；具体版本待手机",
+    "source_status": "blackmatrix7 startup，较旧实现需单独测试",
+    "license_status": "GPL-2.0；本版不复用",
+    "device_status": "未实机",
+    "included": false,
+    "app_store": "https://apps.apple.com/cn/app/id921478733"
+  },
+  {
+    "name": "车来了",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "掌上公交",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "Metro大都会",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "亿通行",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "12306",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "铁路畅行",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "航旅纵横",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "飞常准",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "航班管家",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "国航",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "东航",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "南航",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "春秋",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "吉祥",
+    "categories": [
+      "交通航空"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "飞猪",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "途牛",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "马蜂窝",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "穷游",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "华住",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "锦江",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "如家",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "亚朵",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "途家",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "小猪",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "58",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "赶集直招",
+    "categories": [
+      "旅游住宿"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "腾讯地图",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "易车",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "汽车报价大全",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "瓜子",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "汽车之家极速版",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "特来电",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "星星充电",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "网上国网",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "南网在线",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "团油",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "车轮",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "驾考宝典",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "驾校一点通",
+    "categories": [
+      "汽车能源"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "抖音",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "快手",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "西瓜",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "好看",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "搜狐视频",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "咪咕视频",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "央视频",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "央视影音",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "埋堆堆",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "AcFun",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "虎牙",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "斗鱼",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "B站直播姬",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "豆瓣",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "猫眼",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "大麦",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "淘票票",
+    "categories": [
+      "视频娱乐"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "汽水",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "咪咕音乐",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "千千",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "荔枝",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "蜻蜓FM",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "懒人听书",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "小宇宙",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "云听",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "得到",
+    "categories": [
+      "音频"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "凤凰",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "搜狐新闻",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "新浪新闻",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "澎湃",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "界面",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "财联社",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "人民日报",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "新华社",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "央视新闻",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "贴吧",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "虎扑",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "懂球帝",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "直播吧",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "雷速",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "球探",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "新浪体育",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "腾讯体育",
+    "categories": [
+      "资讯体育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "微信读书",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "QQ阅读",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "掌阅",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "书旗",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "晋江",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "刺猬猫",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "菠萝包",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "番茄畅听",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "快看漫画",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "B站漫画",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "腾讯动漫",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百度文库",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百科",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "知乎日报",
+    "categories": [
+      "阅读漫画"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "有道词典",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "金山词霸",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "欧路",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百度翻译",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百词斩",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "墨墨",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "不背单词",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "扇贝",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "沪江开心词场",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "每日英语听力",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "学习通",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "智慧树",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "中国大学MOOC",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "作业帮",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "小猿搜题",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "猿题库",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "学小易",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "粉笔",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "华图",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "中公",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "考虫",
+    "categories": [
+      "教育"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "WPS",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "扫描全能王",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "夸克",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "QQ浏览器",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "UC",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "搜狗浏览器",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "百度网盘",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "迅雷",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "阿里云盘",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "天翼云盘",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "移动云盘",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "115",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "123云盘",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "QQ邮箱",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "网易邮箱大师",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "印象笔记",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "有道云笔记",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "幕布",
+    "categories": [
+      "办公工具"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "Keep",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "咕咚",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "悦跑圈",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "薄荷",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "美柚",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "大姨妈",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "平安健康",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "京东健康",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "阿里健康",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "好大夫",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "微医",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "丁香",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "春雨",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "叮当",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "健客",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "用药助手",
+    "categories": [
+      "运动健康"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "贝壳",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "链家",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "安居客",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "房天下",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "自如",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "巴乐兔",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "土巴兔",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "齐家",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "好好住",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "住小帮",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "米家",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "海尔",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "美的",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "海信",
+    "categories": [
+      "住房家居"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "宝宝树",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "妈妈网",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "亲宝宝",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "育学园",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "宝宝巴士",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "波奇",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "E宠",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "小佩",
+    "categories": [
+      "母婴宠物"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "BOSS",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "智联",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "51Job",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "猎聘",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "脉脉",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "实习僧",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "天眼查",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "企查查",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "爱企查",
+    "categories": [
+      "招聘企业"
+    ],
+    "status": "未审",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false
+  },
+  {
+    "name": "云闪付",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "京东金融",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "同花顺",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "东方财富",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "大智慧",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "雪球",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "涨乐",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "国泰海通君弘",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "平安证券",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "国寿",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "人保",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "平安",
+    "categories": [
+      "金融谨慎"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "12123",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "个税",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "医保",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "12333",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "电子社保卡",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "随申办",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "浙里办",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  },
+  {
+    "name": "粤省事",
+    "categories": [
+      "政务低优先"
+    ],
+    "status": "保守排除",
+    "ios_status": "待确认具体iOS App及当前上架状态",
+    "source_status": "未审",
+    "license_status": "未审",
+    "device_status": "未实机",
+    "included": false,
+    "reason": "不处理登录支付交易及公共告示"
+  }
+]

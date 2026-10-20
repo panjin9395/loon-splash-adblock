@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "rules": [
+    {
+      "id": "goofish-splash",
+      "app": "闲鱼",
+      "pattern": "^https://acs\\.m\\.goofish\\.com/gw/mtop\\.taobao\\.idlecommerce\\.splash\\.ads/[0-9]+\\.[0-9]+/(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "acs.m.goofish.com",
+      "source": "fmz-xianyu",
+      "status": "静态已验证；待Loon实机",
+      "note": "从已公开GPL-3.0开屏空JSON响应规则转换，收窄到数字版本和路径边界；不含async接口、推荐流、订单或登录规则。URL测试中的版本为匹配测试值，不宣称抓包验证。"
+    }
+  ]
+}
