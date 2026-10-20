@@ -9,8 +9,8 @@ def render():
     hosts=sorted({r['hostname'] for r in rules})
     assert all('*' not in h for h in hosts)
     text='\n'.join([
-      '#!name=开屏广告精简合集（闲鱼首版）',
-      '#!desc=v'+spec['version']+'；仅闲鱼开屏专用接口；非全覆盖；待手机验证。GPL-3.0；来源奶思/fmz200。',
+      '#!name=开屏广告精简合集',
+      '#!desc=v'+spec['version']+'；'+str(len({r['app'] for r in rules}))+'款App候选开屏规则；非全覆盖；新增待手机验证。GPL-3.0；来源奶思/fmz200。',
       '#!author=panjin9395；上游奶思/fmz200',
       '#!homepage=https://github.com/panjin9395/loon-splash-adblock',
       '#!date=2026-10-20',

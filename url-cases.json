@@ -1,0 +1,450 @@
+[
+  {
+    "rule": "fmz-v02-1-0",
+    "positive": [
+      "https://api.pinduoduo.com/api/cappuccino/splash",
+      "https://api.pinduoduo.com/api/cappuccino/splash?",
+      "https://api.pinduoduo.com/api/cappuccino/splash?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.pinduoduo.com/api/cappuccino/splashextra",
+      "https://api.pinduoduo.com/api/cappuccino/splash/extra",
+      "https://api.pinduoduo.com/api/cappuccino/splash/",
+      "https://api.pinduoduo.com/api/cappuccino/splash#fragment",
+      "https://api.pinduoduo.com/api/cappuccino/splash?a=1\nnext",
+      "https://api.pinduoduo.com/api/cappuccino/splash?a=1#frag",
+      "https://api.pinduoduo.com.attacker.invalid/api/cappuccino/splash",
+      "https://api.pinduoduo.com@attacker.invalid/api/cappuccino/splash",
+      "http://api.pinduoduo.com/api/cappuccino/splash",
+      "https://example.invalid/?next=https://api.pinduoduo.com/api/cappuccino/splash",
+      "https://apiXpinduoduoXcom/api/cappuccino/splash",
+      "https://api.pinduoduo.com/login",
+      "https://api.pinduoduo.com/pay",
+      "https://api.pinduoduo.com/order",
+      "https://api.pinduoduo.com/signin",
+      "https://api.pinduoduo.com/feed",
+      "https://api.pinduoduo.com/api/user/login",
+      "https://api.pinduoduo.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-1-1",
+    "positive": [
+      "https://api.yangkeduo.com/api/cappuccino/splash",
+      "https://api.yangkeduo.com/api/cappuccino/splash?",
+      "https://api.yangkeduo.com/api/cappuccino/splash?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.yangkeduo.com/api/cappuccino/splashextra",
+      "https://api.yangkeduo.com/api/cappuccino/splash/extra",
+      "https://api.yangkeduo.com/api/cappuccino/splash/",
+      "https://api.yangkeduo.com/api/cappuccino/splash#fragment",
+      "https://api.yangkeduo.com/api/cappuccino/splash?a=1\nnext",
+      "https://api.yangkeduo.com/api/cappuccino/splash?a=1#frag",
+      "https://api.yangkeduo.com.attacker.invalid/api/cappuccino/splash",
+      "https://api.yangkeduo.com@attacker.invalid/api/cappuccino/splash",
+      "http://api.yangkeduo.com/api/cappuccino/splash",
+      "https://example.invalid/?next=https://api.yangkeduo.com/api/cappuccino/splash",
+      "https://apiXyangkeduoXcom/api/cappuccino/splash",
+      "https://api.yangkeduo.com/login",
+      "https://api.yangkeduo.com/pay",
+      "https://api.yangkeduo.com/order",
+      "https://api.yangkeduo.com/signin",
+      "https://api.yangkeduo.com/feed",
+      "https://api.yangkeduo.com/api/user/login",
+      "https://api.yangkeduo.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-2-0",
+    "positive": [
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt?",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt?test=1&x=2"
+    ],
+    "negative": [
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rtextra",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt/extra",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt/",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt#fragment",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt?a=1\nnext",
+      "https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt?a=1#frag",
+      "https://amap-aos-info-nogw.amap.com.attacker.invalid/ws/aos/alimama/splash_screen_rt",
+      "https://amap-aos-info-nogw.amap.com@attacker.invalid/ws/aos/alimama/splash_screen_rt",
+      "http://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt",
+      "https://example.invalid/?next=https://amap-aos-info-nogw.amap.com/ws/aos/alimama/splash_screen_rt",
+      "https://amap-aos-info-nogwXamapXcom/ws/aos/alimama/splash_screen_rt",
+      "https://amap-aos-info-nogw.amap.com/login",
+      "https://amap-aos-info-nogw.amap.com/pay",
+      "https://amap-aos-info-nogw.amap.com/order",
+      "https://amap-aos-info-nogw.amap.com/signin",
+      "https://amap-aos-info-nogw.amap.com/feed",
+      "https://amap-aos-info-nogw.amap.com/api/user/login",
+      "https://amap-aos-info-nogw.amap.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-3-0",
+    "positive": [
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime?",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime?test=1&x=2"
+    ],
+    "negative": [
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtimeextra",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime/extra",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime/",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime#fragment",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime?a=1\nnext",
+      "https://bootrealtime.uve.weibo.com/v1/ad/realtime?a=1#frag",
+      "https://bootrealtime.uve.weibo.com.attacker.invalid/v1/ad/realtime",
+      "https://bootrealtime.uve.weibo.com@attacker.invalid/v1/ad/realtime",
+      "http://bootrealtime.uve.weibo.com/v1/ad/realtime",
+      "https://example.invalid/?next=https://bootrealtime.uve.weibo.com/v1/ad/realtime",
+      "https://bootrealtimeXuveXweiboXcom/v1/ad/realtime",
+      "https://bootrealtime.uve.weibo.com/login",
+      "https://bootrealtime.uve.weibo.com/pay",
+      "https://bootrealtime.uve.weibo.com/order",
+      "https://bootrealtime.uve.weibo.com/signin",
+      "https://bootrealtime.uve.weibo.com/feed",
+      "https://bootrealtime.uve.weibo.com/api/user/login",
+      "https://bootrealtime.uve.weibo.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-4-0",
+    "positive": [
+      "https://bootpreload.uve.weibo.com/v1/ad/preload",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload?",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload?test=1&x=2"
+    ],
+    "negative": [
+      "https://bootpreload.uve.weibo.com/v1/ad/preloadextra",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload/extra",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload/",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload#fragment",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload?a=1\nnext",
+      "https://bootpreload.uve.weibo.com/v1/ad/preload?a=1#frag",
+      "https://bootpreload.uve.weibo.com.attacker.invalid/v1/ad/preload",
+      "https://bootpreload.uve.weibo.com@attacker.invalid/v1/ad/preload",
+      "http://bootpreload.uve.weibo.com/v1/ad/preload",
+      "https://example.invalid/?next=https://bootpreload.uve.weibo.com/v1/ad/preload",
+      "https://bootpreloadXuveXweiboXcom/v1/ad/preload",
+      "https://bootpreload.uve.weibo.com/login",
+      "https://bootpreload.uve.weibo.com/pay",
+      "https://bootpreload.uve.weibo.com/order",
+      "https://bootpreload.uve.weibo.com/signin",
+      "https://bootpreload.uve.weibo.com/feed",
+      "https://bootpreload.uve.weibo.com/api/user/login",
+      "https://bootpreload.uve.weibo.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-5-0",
+    "positive": [
+      "https://api.zhihu.com/commercial_api/launch_v2",
+      "https://api.zhihu.com/commercial_api/launch_v2?",
+      "https://api.zhihu.com/commercial_api/launch_v2?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.zhihu.com/commercial_api/launch_v2extra",
+      "https://api.zhihu.com/commercial_api/launch_v2/extra",
+      "https://api.zhihu.com/commercial_api/launch_v2/",
+      "https://api.zhihu.com/commercial_api/launch_v2#fragment",
+      "https://api.zhihu.com/commercial_api/launch_v2?a=1\nnext",
+      "https://api.zhihu.com/commercial_api/launch_v2?a=1#frag",
+      "https://api.zhihu.com.attacker.invalid/commercial_api/launch_v2",
+      "https://api.zhihu.com@attacker.invalid/commercial_api/launch_v2",
+      "http://api.zhihu.com/commercial_api/launch_v2",
+      "https://example.invalid/?next=https://api.zhihu.com/commercial_api/launch_v2",
+      "https://apiXzhihuXcom/commercial_api/launch_v2",
+      "https://api.zhihu.com/login",
+      "https://api.zhihu.com/pay",
+      "https://api.zhihu.com/order",
+      "https://api.zhihu.com/signin",
+      "https://api.zhihu.com/feed",
+      "https://api.zhihu.com/api/user/login",
+      "https://api.zhihu.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-6-0",
+    "positive": [
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2?",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2extra",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2/extra",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2/",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2#fragment",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2?a=1\nnext",
+      "https://api.zhihu.com/commercial_api/real_time_launch_v2?a=1#frag",
+      "https://api.zhihu.com.attacker.invalid/commercial_api/real_time_launch_v2",
+      "https://api.zhihu.com@attacker.invalid/commercial_api/real_time_launch_v2",
+      "http://api.zhihu.com/commercial_api/real_time_launch_v2",
+      "https://example.invalid/?next=https://api.zhihu.com/commercial_api/real_time_launch_v2",
+      "https://apiXzhihuXcom/commercial_api/real_time_launch_v2",
+      "https://api.zhihu.com/login",
+      "https://api.zhihu.com/pay",
+      "https://api.zhihu.com/order",
+      "https://api.zhihu.com/signin",
+      "https://api.zhihu.com/feed",
+      "https://api.zhihu.com/api/user/login",
+      "https://api.zhihu.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-7-0",
+    "positive": [
+      "https://r.inews.qq.com/getSplash",
+      "https://r.inews.qq.com/getSplash?",
+      "https://r.inews.qq.com/getSplash?test=1&x=2"
+    ],
+    "negative": [
+      "https://r.inews.qq.com/getSplashextra",
+      "https://r.inews.qq.com/getSplash/extra",
+      "https://r.inews.qq.com/getSplash/",
+      "https://r.inews.qq.com/getSplash#fragment",
+      "https://r.inews.qq.com/getSplash?a=1\nnext",
+      "https://r.inews.qq.com/getSplash?a=1#frag",
+      "https://r.inews.qq.com.attacker.invalid/getSplash",
+      "https://r.inews.qq.com@attacker.invalid/getSplash",
+      "http://r.inews.qq.com/getSplash",
+      "https://example.invalid/?next=https://r.inews.qq.com/getSplash",
+      "https://rXinewsXqqXcom/getSplash",
+      "https://r.inews.qq.com/login",
+      "https://r.inews.qq.com/pay",
+      "https://r.inews.qq.com/order",
+      "https://r.inews.qq.com/signin",
+      "https://r.inews.qq.com/feed",
+      "https://r.inews.qq.com/api/user/login",
+      "https://r.inews.qq.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-8-0",
+    "positive": [
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen?",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen?test=1&x=2"
+    ],
+    "negative": [
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreenextra",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen/extra",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen/",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen#fragment",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen?a=1\nnext",
+      "https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen?a=1#frag",
+      "https://mage.if.qidian.com.attacker.invalid/argus/api/v1/client/getsplashscreen",
+      "https://mage.if.qidian.com@attacker.invalid/argus/api/v1/client/getsplashscreen",
+      "http://mage.if.qidian.com/argus/api/v1/client/getsplashscreen",
+      "https://example.invalid/?next=https://mage.if.qidian.com/argus/api/v1/client/getsplashscreen",
+      "https://mageXifXqidianXcom/argus/api/v1/client/getsplashscreen",
+      "https://mage.if.qidian.com/login",
+      "https://mage.if.qidian.com/pay",
+      "https://mage.if.qidian.com/order",
+      "https://mage.if.qidian.com/signin",
+      "https://mage.if.qidian.com/feed",
+      "https://mage.if.qidian.com/api/user/login",
+      "https://mage.if.qidian.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-9-0",
+    "positive": [
+      "https://homefront.qunar.com/front/splash/ad",
+      "https://homefront.qunar.com/front/splash/ad?",
+      "https://homefront.qunar.com/front/splash/ad?test=1&x=2"
+    ],
+    "negative": [
+      "https://homefront.qunar.com/front/splash/adextra",
+      "https://homefront.qunar.com/front/splash/ad/extra",
+      "https://homefront.qunar.com/front/splash/ad/",
+      "https://homefront.qunar.com/front/splash/ad#fragment",
+      "https://homefront.qunar.com/front/splash/ad?a=1\nnext",
+      "https://homefront.qunar.com/front/splash/ad?a=1#frag",
+      "https://homefront.qunar.com.attacker.invalid/front/splash/ad",
+      "https://homefront.qunar.com@attacker.invalid/front/splash/ad",
+      "http://homefront.qunar.com/front/splash/ad",
+      "https://example.invalid/?next=https://homefront.qunar.com/front/splash/ad",
+      "https://homefrontXqunarXcom/front/splash/ad",
+      "https://homefront.qunar.com/login",
+      "https://homefront.qunar.com/pay",
+      "https://homefront.qunar.com/order",
+      "https://homefront.qunar.com/signin",
+      "https://homefront.qunar.com/feed",
+      "https://homefront.qunar.com/api/user/login",
+      "https://homefront.qunar.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-10-0",
+    "positive": [
+      "https://app.dewu.com/api/v1/app/advertisement",
+      "https://app.dewu.com/api/v1/app/advertisement?",
+      "https://app.dewu.com/api/v1/app/advertisement?test=1&x=2"
+    ],
+    "negative": [
+      "https://app.dewu.com/api/v1/app/advertisementextra",
+      "https://app.dewu.com/api/v1/app/advertisement/extra",
+      "https://app.dewu.com/api/v1/app/advertisement/",
+      "https://app.dewu.com/api/v1/app/advertisement#fragment",
+      "https://app.dewu.com/api/v1/app/advertisement?a=1\nnext",
+      "https://app.dewu.com/api/v1/app/advertisement?a=1#frag",
+      "https://app.dewu.com.attacker.invalid/api/v1/app/advertisement",
+      "https://app.dewu.com@attacker.invalid/api/v1/app/advertisement",
+      "http://app.dewu.com/api/v1/app/advertisement",
+      "https://example.invalid/?next=https://app.dewu.com/api/v1/app/advertisement",
+      "https://appXdewuXcom/api/v1/app/advertisement",
+      "https://app.dewu.com/login",
+      "https://app.dewu.com/pay",
+      "https://app.dewu.com/order",
+      "https://app.dewu.com/signin",
+      "https://app.dewu.com/feed",
+      "https://app.dewu.com/api/user/login",
+      "https://app.dewu.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-11-0",
+    "positive": [
+      "https://api2.yaduo.com/atourlife/activity/appLaunch",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch?",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch?test=1&x=2"
+    ],
+    "negative": [
+      "https://api2.yaduo.com/atourlife/activity/appLaunchextra",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch/extra",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch/",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch#fragment",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch?a=1\nnext",
+      "https://api2.yaduo.com/atourlife/activity/appLaunch?a=1#frag",
+      "https://api2.yaduo.com.attacker.invalid/atourlife/activity/appLaunch",
+      "https://api2.yaduo.com@attacker.invalid/atourlife/activity/appLaunch",
+      "http://api2.yaduo.com/atourlife/activity/appLaunch",
+      "https://example.invalid/?next=https://api2.yaduo.com/atourlife/activity/appLaunch",
+      "https://api2XyaduoXcom/atourlife/activity/appLaunch",
+      "https://api2.yaduo.com/login",
+      "https://api2.yaduo.com/pay",
+      "https://api2.yaduo.com/order",
+      "https://api2.yaduo.com/signin",
+      "https://api2.yaduo.com/feed",
+      "https://api2.yaduo.com/api/user/login",
+      "https://api2.yaduo.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-12-0",
+    "positive": [
+      "https://api.xiaoyuzhoufm.com/v1/flash",
+      "https://api.xiaoyuzhoufm.com/v1/flash?",
+      "https://api.xiaoyuzhoufm.com/v1/flash?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.xiaoyuzhoufm.com/v1/flashextra",
+      "https://api.xiaoyuzhoufm.com/v1/flash/extra",
+      "https://api.xiaoyuzhoufm.com/v1/flash/",
+      "https://api.xiaoyuzhoufm.com/v1/flash#fragment",
+      "https://api.xiaoyuzhoufm.com/v1/flash?a=1\nnext",
+      "https://api.xiaoyuzhoufm.com/v1/flash?a=1#frag",
+      "https://api.xiaoyuzhoufm.com.attacker.invalid/v1/flash",
+      "https://api.xiaoyuzhoufm.com@attacker.invalid/v1/flash",
+      "http://api.xiaoyuzhoufm.com/v1/flash",
+      "https://example.invalid/?next=https://api.xiaoyuzhoufm.com/v1/flash",
+      "https://apiXxiaoyuzhoufmXcom/v1/flash",
+      "https://api.xiaoyuzhoufm.com/login",
+      "https://api.xiaoyuzhoufm.com/pay",
+      "https://api.xiaoyuzhoufm.com/order",
+      "https://api.xiaoyuzhoufm.com/signin",
+      "https://api.xiaoyuzhoufm.com/feed",
+      "https://api.xiaoyuzhoufm.com/api/user/login",
+      "https://api.xiaoyuzhoufm.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-13-0",
+    "positive": [
+      "https://appapi.51job.com/api/market/get_launch",
+      "https://appapi.51job.com/api/market/get_launch?",
+      "https://appapi.51job.com/api/market/get_launch?test=1&x=2"
+    ],
+    "negative": [
+      "https://appapi.51job.com/api/market/get_launchextra",
+      "https://appapi.51job.com/api/market/get_launch/extra",
+      "https://appapi.51job.com/api/market/get_launch/",
+      "https://appapi.51job.com/api/market/get_launch#fragment",
+      "https://appapi.51job.com/api/market/get_launch?a=1\nnext",
+      "https://appapi.51job.com/api/market/get_launch?a=1#frag",
+      "https://appapi.51job.com.attacker.invalid/api/market/get_launch",
+      "https://appapi.51job.com@attacker.invalid/api/market/get_launch",
+      "http://appapi.51job.com/api/market/get_launch",
+      "https://example.invalid/?next=https://appapi.51job.com/api/market/get_launch",
+      "https://appapiX51jobXcom/api/market/get_launch",
+      "https://appapi.51job.com/login",
+      "https://appapi.51job.com/pay",
+      "https://appapi.51job.com/order",
+      "https://appapi.51job.com/signin",
+      "https://appapi.51job.com/feed",
+      "https://appapi.51job.com/api/user/login",
+      "https://appapi.51job.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-13-1",
+    "positive": [
+      "https://appapi.51jobapp.com/api/market/get_launch",
+      "https://appapi.51jobapp.com/api/market/get_launch?",
+      "https://appapi.51jobapp.com/api/market/get_launch?test=1&x=2"
+    ],
+    "negative": [
+      "https://appapi.51jobapp.com/api/market/get_launchextra",
+      "https://appapi.51jobapp.com/api/market/get_launch/extra",
+      "https://appapi.51jobapp.com/api/market/get_launch/",
+      "https://appapi.51jobapp.com/api/market/get_launch#fragment",
+      "https://appapi.51jobapp.com/api/market/get_launch?a=1\nnext",
+      "https://appapi.51jobapp.com/api/market/get_launch?a=1#frag",
+      "https://appapi.51jobapp.com.attacker.invalid/api/market/get_launch",
+      "https://appapi.51jobapp.com@attacker.invalid/api/market/get_launch",
+      "http://appapi.51jobapp.com/api/market/get_launch",
+      "https://example.invalid/?next=https://appapi.51jobapp.com/api/market/get_launch",
+      "https://appapiX51jobappXcom/api/market/get_launch",
+      "https://appapi.51jobapp.com/login",
+      "https://appapi.51jobapp.com/pay",
+      "https://appapi.51jobapp.com/order",
+      "https://appapi.51jobapp.com/signin",
+      "https://appapi.51jobapp.com/feed",
+      "https://appapi.51jobapp.com/api/user/login",
+      "https://appapi.51jobapp.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v02-14-0",
+    "positive": [
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig?",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig?test=1&x=2"
+    ],
+    "negative": [
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfigextra",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig/extra",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig/",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig#fragment",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig?a=1\nnext",
+      "https://mapi.dianping.com/mapi/operating/loadsplashconfig?a=1#frag",
+      "https://mapi.dianping.com.attacker.invalid/mapi/operating/loadsplashconfig",
+      "https://mapi.dianping.com@attacker.invalid/mapi/operating/loadsplashconfig",
+      "http://mapi.dianping.com/mapi/operating/loadsplashconfig",
+      "https://example.invalid/?next=https://mapi.dianping.com/mapi/operating/loadsplashconfig",
+      "https://mapiXdianpingXcom/mapi/operating/loadsplashconfig",
+      "https://mapi.dianping.com/login",
+      "https://mapi.dianping.com/pay",
+      "https://mapi.dianping.com/order",
+      "https://mapi.dianping.com/signin",
+      "https://mapi.dianping.com/feed",
+      "https://mapi.dianping.com/api/user/login",
+      "https://mapi.dianping.com/api/payment/create"
+    ]
+  }
+]

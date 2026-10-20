@@ -1,21 +1,22 @@
 {
   "success": true,
-  "tests_run": 6,
+  "tests_run": 8,
   "failures": 0,
   "errors": 0,
-  "positive_url_cases": 5,
-  "negative_url_cases": 23,
+  "positive_url_cases": 53,
+  "negative_url_cases": 311,
   "candidate_count": 285,
-  "included_count": 1,
+  "included_count": 13,
   "status_counts": {
-    "静态验证待实机": 1,
-    "未审": 257,
-    "已找到规则未纳入": 6,
-    "保守排除": 21
+    "用户反馈开屏有效": 1,
+    "来源筛查完成待深审": 140,
+    "静态验证待实机": 12,
+    "保守排除": 21,
+    "限定来源未命中待扩查": 111
   },
-  "plugin_sha256": "5f4478b3367014267fc011855ded7bd38d0f8ae7a3c90370ee0c503cd2809ac4",
+  "plugin_sha256": "78b5f7b3f662b5bd6e9e1f1cfae3033d5a18f559cefb471389d942f55a157658",
   "script_fixture": "不适用：无脚本；URL为人工边界测试样例，非抓包",
   "native_loon_parser": "未验证",
-  "real_device": "未验证",
+  "real_device": "仅闲鱼v0.1.0用户反馈开屏有效；新增全部未验证",
   "privacy": "发布白名单和敏感模式扫描；私密原配置未包含在仓库"
 }

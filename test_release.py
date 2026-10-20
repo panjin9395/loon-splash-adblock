@@ -8,7 +8,7 @@ NEG=[BASE,BASE+'2.0',BASE+'2.0/extra',BASE+'2.0/#fragment',BASE+'2.0/?a=1\nnext'
 for api in ['mtop.taobao.idle.trade.full.info','mtop.taobao.idlehome.home.nextfresh','mtop.taobao.idle.item.recommend.list','mtop.taobao.idle.login','mtop.taobao.idle.pay','mtop.taobao.idle.signin']:
     NEG.append('https://acs.m.goofish.com/gw/'+api+'/1.0/')
 NEG+=['https://example.invalid/?redirect='+BASE+'2.0/','https://acsXmXgoofishXcom/gw/mtop.taobao.idlecommerce.splash.ads/2.0/']
-ALLOWED={'LICENSE','NOTICE.md','README.md','CHANGELOG.md','rules.json','candidates.json','candidate-groups.json','sources.json','build.py','test_release.py','splash-adblock.lpx','coverage.md','tests-report.json','.gitignore'}
+ALLOWED={'LICENSE','NOTICE.md','README.md','CHANGELOG.md','rules.json','candidates.json','candidate-groups.json','sources.json','build.py','test_release.py','splash-adblock.lpx','coverage.md','tests-report.json','.gitignore','screening.json','ios-evidence.json','url-cases.json','AUDIT.md'}
 class ReleaseTests(unittest.TestCase):
     def test_build_deterministic(self):
         self.assertEqual(render(),render())
@@ -21,7 +21,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(set(x['name'] for x in items),expected)
         self.assertEqual(len(items),len(expected))
         self.assertEqual(len(items),285)
-        self.assertEqual([x['name'] for x in items if x['included']],['闲鱼'])
+        self.assertEqual({x['name'] for x in items if x['included']},{r['app'] for r in json.loads((ROOT/'rules.json').read_text())['rules']})
         for x in items:
             self.assertTrue(all(x[k] for k in ['status','ios_status','source_status','license_status','device_status']))
     def test_regex_cases(self):
@@ -35,12 +35,14 @@ class ReleaseTests(unittest.TestCase):
         t=render()
         self.assertEqual(re.findall(r'^\[([^]]+)\]$',t,re.M),['Rewrite','Mitm'])
         lines=[l for l in t.splitlines() if l.startswith('^')]
-        self.assertEqual(len(lines),1)
-        pat,action=lines[0].split(' ')
-        self.assertEqual(action,'reject-dict')
-        self.assertEqual(pat,json.loads((ROOT/'rules.json').read_text())['rules'][0]['pattern'])
-        self.assertEqual(re.findall(r'^hostname = (.+)$',t,re.M),['acs.m.goofish.com'])
-        self.assertNotIn('*',re.findall(r'^hostname = (.+)$',t,re.M)[0])
+        rules=json.loads((ROOT/'rules.json').read_text())['rules']
+        self.assertEqual(len(lines),len(rules))
+        for line,r in zip(lines,rules):
+            self.assertEqual(line,r['pattern']+' '+r['action'])
+            self.assertIn(r['action'],['reject','reject-dict'])
+        hosts=', '.join(sorted({r['hostname'] for r in rules}))
+        self.assertEqual(re.findall(r'^hostname = (.+)$',t,re.M),[hosts])
+        self.assertNotIn('*',hosts)
         for term in ['script-path','jq-path','data-path','[General]','[Host]','[Script]','[Rule]']:
             self.assertNotIn(term,t)
         self.assertEqual(json.loads((ROOT/'sources.json').read_text())['runtime_dependencies'],[])
@@ -49,6 +51,34 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256((ROOT/'LICENSE').read_bytes()).hexdigest(),source['license_sha256'])
         self.assertIn('GNU GENERAL PUBLIC LICENSE',(ROOT/'LICENSE').read_text())
         self.assertIn(source['revision'],(ROOT/'NOTICE.md').read_text())
+    def test_all_new_url_cases(self):
+        rules={r['id']:r for r in json.loads((ROOT/'rules.json').read_text())['rules']}
+        cases=json.loads((ROOT/'url-cases.json').read_text())
+        self.assertEqual({c['rule'] for c in cases},set(rules)-{'goofish-splash'})
+        for c in cases:
+            p=re.compile(rules[c['rule']]['pattern'])
+            for u in c['positive']:
+                with self.subTest(rule=c['rule'],positive=u):self.assertIsNotNone(p.search(u))
+            for u in c['negative']:
+                with self.subTest(rule=c['rule'],negative=u):self.assertIsNone(p.search(u))
+            for other in cases:
+                if other['rule']!=c['rule']:
+                    for u in other['positive']:self.assertIsNone(p.search(u))
+    def test_screening_and_sources(self):
+        items=json.loads((ROOT/'candidates.json').read_text())
+        scan=json.loads((ROOT/'screening.json').read_text())
+        self.assertEqual({x['name'] for x in scan['candidates']},{x['name'] for x in items})
+        self.assertEqual(scan['counts'],dict(collections.Counter(x['status'] for x in items)))
+        src={s['id']:s for s in json.loads((ROOT/'sources.json').read_text())['sources']}
+        for r in json.loads((ROOT/'rules.json').read_text())['rules']:
+            source=src[r['source']]
+            self.assertEqual(source['license'],'GPL-3.0-only')
+            self.assertRegex(source['revision'],r'^[a-f0-9]{40}$')
+            if 'original_rule' in source:
+                original=source['original_rule'].split(' ')[0].replace('(?>','(?:')
+                case=next(c for c in json.loads((ROOT/'url-cases.json').read_text()) if c['rule']==r['id'])
+                for u in case['positive']:self.assertIsNotNone(re.search(original,u))
+                self.assertEqual(r['action'],'reject-dict' if 'data="{}"' in source['original_rule'] else 'reject')
     def test_public_allowlist_and_secret_patterns(self):
         for p in ROOT.iterdir():
             if p.name in ('.git','__pycache__'): continue
@@ -62,7 +92,7 @@ if __name__=='__main__':
     suite=unittest.defaultTestLoader.loadTestsFromTestCase(ReleaseTests)
     result=unittest.TextTestRunner(verbosity=2).run(suite)
     candidates=json.loads((ROOT/'candidates.json').read_text())
-    report={'success':result.wasSuccessful(),'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'positive_url_cases':len(POS),'negative_url_cases':len(NEG),'candidate_count':len(candidates),'included_count':sum(x['included'] for x in candidates),'status_counts':dict(collections.Counter(x['status'] for x in candidates)),'plugin_sha256':hashlib.sha256((ROOT/'splash-adblock.lpx').read_bytes()).hexdigest(),'script_fixture':'不适用：无脚本；URL为人工边界测试样例，非抓包','native_loon_parser':'未验证','real_device':'未验证','privacy':'发布白名单和敏感模式扫描；私密原配置未包含在仓库'}
+    report={'success':result.wasSuccessful(),'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'positive_url_cases':len(POS)+sum(len(c['positive']) for c in json.loads((ROOT/'url-cases.json').read_text())),'negative_url_cases':len(NEG)+sum(len(c['negative']) for c in json.loads((ROOT/'url-cases.json').read_text())),'candidate_count':len(candidates),'included_count':sum(x['included'] for x in candidates),'status_counts':dict(collections.Counter(x['status'] for x in candidates)),'plugin_sha256':hashlib.sha256((ROOT/'splash-adblock.lpx').read_bytes()).hexdigest(),'script_fixture':'不适用：无脚本；URL为人工边界测试样例，非抓包','native_loon_parser':'未验证','real_device':'仅闲鱼v0.1.0用户反馈开屏有效；新增全部未验证','privacy':'发布白名单和敏感模式扫描；私密原配置未包含在仓库'}
     (ROOT/'tests-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report,ensure_ascii=False))
     raise SystemExit(not result.wasSuccessful())

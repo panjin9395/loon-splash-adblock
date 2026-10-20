@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "rules": [
     {
       "id": "goofish-splash",
@@ -10,6 +10,166 @@
       "source": "fmz-xianyu",
       "status": "静态已验证；待Loon实机",
       "note": "从已公开GPL-3.0开屏空JSON响应规则转换，收窄到数字版本和路径边界；不含async接口、推荐流、订单或登录规则。URL测试中的版本为匹配测试值，不宣称抓包验证。"
+    },
+    {
+      "id": "fmz-v02-1-0",
+      "app": "拼多多",
+      "pattern": "^https://api\\.pinduoduo\\.com/api/cappuccino/splash(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "api.pinduoduo.com",
+      "source": "fmz-v02-1",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-1-1",
+      "app": "拼多多",
+      "pattern": "^https://api\\.yangkeduo\\.com/api/cappuccino/splash(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "api.yangkeduo.com",
+      "source": "fmz-v02-1",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-2-0",
+      "app": "高德地图",
+      "pattern": "^https://amap\\-aos\\-info\\-nogw\\.amap\\.com/ws/aos/alimama/splash_screen_rt(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "amap-aos-info-nogw.amap.com",
+      "source": "fmz-v02-2",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-3-0",
+      "app": "微博",
+      "pattern": "^https://bootrealtime\\.uve\\.weibo\\.com/v[0-9]/ad/realtime(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "bootrealtime.uve.weibo.com",
+      "source": "fmz-v02-3",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-4-0",
+      "app": "微博",
+      "pattern": "^https://bootpreload\\.uve\\.weibo\\.com/v[0-9]/ad/preload(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "bootpreload.uve.weibo.com",
+      "source": "fmz-v02-4",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-5-0",
+      "app": "知乎",
+      "pattern": "^https://api\\.zhihu\\.com/commercial_api/launch_v2(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "api.zhihu.com",
+      "source": "fmz-v02-5",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-6-0",
+      "app": "知乎",
+      "pattern": "^https://api\\.zhihu\\.com/commercial_api/real_time_launch_v2(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "api.zhihu.com",
+      "source": "fmz-v02-6",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-7-0",
+      "app": "腾讯新闻",
+      "pattern": "^https://r\\.inews\\.qq\\.com/getSplash(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "r.inews.qq.com",
+      "source": "fmz-v02-7",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-8-0",
+      "app": "起点",
+      "pattern": "^https://mage\\.if\\.qidian\\.com/argus/api/v[0-9]/client/getsplashscreen(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "mage.if.qidian.com",
+      "source": "fmz-v02-8",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-9-0",
+      "app": "去哪儿",
+      "pattern": "^https://homefront\\.qunar\\.com/front/splash/ad(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "homefront.qunar.com",
+      "source": "fmz-v02-9",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-10-0",
+      "app": "得物",
+      "pattern": "^https://app\\.dewu\\.com/api/v1/app/advertisement(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "app.dewu.com",
+      "source": "fmz-v02-10",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-11-0",
+      "app": "亚朵",
+      "pattern": "^https://api2\\.yaduo\\.com/atourlife/activity/appLaunch(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "api2.yaduo.com",
+      "source": "fmz-v02-11",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-12-0",
+      "app": "小宇宙",
+      "pattern": "^https://api\\.xiaoyuzhoufm\\.com/v[0-9]/flash(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "api.xiaoyuzhoufm.com",
+      "source": "fmz-v02-12",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-13-0",
+      "app": "51Job",
+      "pattern": "^https://appapi\\.51job\\.com/api/market/get_launch(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "appapi.51job.com",
+      "source": "fmz-v02-13",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-13-1",
+      "app": "51Job",
+      "pattern": "^https://appapi\\.51jobapp\\.com/api/market/get_launch(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "appapi.51jobapp.com",
+      "source": "fmz-v02-13",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v02-14-0",
+      "app": "大众点评",
+      "pattern": "^https://mapi\\.dianping\\.com/mapi/operating/loadsplashconfig(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "mapi.dianping.com",
+      "source": "fmz-v02-14",
+      "status": "离线URL测试；手机待验收",
+      "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
     }
   ]
 }

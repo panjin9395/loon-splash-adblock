@@ -1,0 +1,605 @@
+[
+  {
+    "query": "拼多多",
+    "url": "https://itunes.apple.com/search?term=%E6%8B%BC%E5%A4%9A%E5%A4%9A&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 1044283059,
+        "trackName": "拼多多 - 多多买菜，百亿补贴",
+        "bundleId": "com.xunmeng.pinduoduo",
+        "version": "8.28.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%8B%BC%E5%A4%9A%E5%A4%9A-%E5%A4%9A%E5%A4%9A%E4%B9%B0%E8%8F%9C-%E7%99%BE%E4%BA%BF%E8%A1%A5%E8%B4%B4/id1044283059?uo=4",
+        "sellerName": "Shanghai Xunmeng Information Technology Co., Ltd."
+      },
+      {
+        "trackId": 741292507,
+        "trackName": "小红书 - 你的生活兴趣社区",
+        "bundleId": "com.xingin.discover",
+        "version": "9.51",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B4%E8%B6%A3%E7%A4%BE%E5%8C%BA/id741292507?uo=4",
+        "sellerName": "Xingin Information Technology (Shanghai) Co., Ltd"
+      },
+      {
+        "trackId": 387682726,
+        "trackName": "淘宝-万能的淘宝！",
+        "bundleId": "com.taobao.taobao4iphone",
+        "version": "10.68.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%B7%98%E5%AE%9D-%E4%B8%87%E8%83%BD%E7%9A%84%E6%B7%98%E5%AE%9D/id387682726?uo=4",
+        "sellerName": "Zhejiang Taobao Network Co.,Ltd"
+      },
+      {
+        "trackId": 1229469444,
+        "trackName": "拼多多商家版",
+        "bundleId": "com.xunmeng.merchant",
+        "version": "7.5.4",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%95%86%E5%AE%B6%E7%89%88/id1229469444?uo=4",
+        "sellerName": "Shanghai Xunmeng Information Technology Co., Ltd."
+      },
+      {
+        "trackId": 333206289,
+        "trackName": "支付宝-你的AI生活伙伴",
+        "bundleId": "com.alipay.iphoneclient",
+        "version": "12.12.36",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%94%AF%E4%BB%98%E5%AE%9D-%E4%BD%A0%E7%9A%84ai%E7%94%9F%E6%B4%BB%E4%BC%99%E4%BC%B4/id333206289?uo=4",
+        "sellerName": "Alipay (Hangzhou) Technology Co., Ltd."
+      }
+    ]
+  },
+  {
+    "query": "高德地图",
+    "url": "https://itunes.apple.com/search?term=%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 461703208,
+        "trackName": "高德地图-高德打车,导航公交地铁出行",
+        "bundleId": "com.autonavi.amap",
+        "version": "17.2.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE-%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6-%E5%AF%BC%E8%88%AA%E5%85%AC%E4%BA%A4%E5%9C%B0%E9%93%81%E5%87%BA%E8%A1%8C/id461703208?uo=4",
+        "sellerName": "AutoNavi Information Technology Co. Ltd."
+      },
+      {
+        "trackId": 1142110895,
+        "trackName": "抖音",
+        "bundleId": "com.ss.iphone.ugc.Aweme",
+        "version": "40.8.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%8A%96%E9%9F%B3/id1142110895?uo=4",
+        "sellerName": "Beijing Douyin Technology Co., Ltd."
+      },
+      {
+        "trackId": 1039727169,
+        "trackName": "交管12123",
+        "bundleId": "com.tmri.12123",
+        "version": "3.5.9",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E4%BA%A4%E7%AE%A112123/id1039727169?uo=4",
+        "sellerName": "Traffic Management Research Institute of the Ministry of Public Security"
+      },
+      {
+        "trackId": 414478124,
+        "trackName": "微信",
+        "bundleId": "com.tencent.xin",
+        "version": "8.0.79",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BE%AE%E4%BF%A1/id414478124?uo=4",
+        "sellerName": "Tencent Technology (Shenzhen) Company Limited"
+      }
+    ]
+  },
+  {
+    "query": "微博",
+    "url": "https://itunes.apple.com/search?term=%E5%BE%AE%E5%8D%9A&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 350962117,
+        "trackName": "微博",
+        "bundleId": "com.sina.weibo",
+        "version": "16.10.1",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BE%AE%E5%8D%9A/id350962117?uo=4",
+        "sellerName": "SINA Corporation"
+      },
+      {
+        "trackId": 1215210046,
+        "trackName": "微博轻享版",
+        "bundleId": "com.weibo.international",
+        "version": "7.2.1",
+        "minimumOsVersion": "13",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BE%AE%E5%8D%9A%E8%BD%BB%E4%BA%AB%E7%89%88/id1215210046?uo=4",
+        "sellerName": "Beijing Weimeng Internet Technology Co., Ltd."
+      },
+      {
+        "trackId": 741292507,
+        "trackName": "小红书 - 你的生活兴趣社区",
+        "bundleId": "com.xingin.discover",
+        "version": "9.51.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B4%E8%B6%A3%E7%A4%BE%E5%8C%BA/id741292507?uo=4",
+        "sellerName": "Xingin Information Technology (Shanghai) Co., Ltd"
+      },
+      {
+        "trackId": 1142110895,
+        "trackName": "抖音",
+        "bundleId": "com.ss.iphone.ugc.Aweme",
+        "version": "40.8.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%8A%96%E9%9F%B3/id1142110895?uo=4",
+        "sellerName": "Beijing Douyin Technology Co., Ltd."
+      },
+      {
+        "trackId": 736536022,
+        "trackName": "哔哩哔哩-弹幕番剧直播高清视频",
+        "bundleId": "tv.danmaku.bilianime",
+        "version": "9.16.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9-%E5%BC%B9%E5%B9%95%E7%95%AA%E5%89%A7%E7%9B%B4%E6%92%AD%E9%AB%98%E6%B8%85%E8%A7%86%E9%A2%91/id736536022?uo=4",
+        "sellerName": "Shanghai Bilibili Animation Co.,Ltd"
+      }
+    ]
+  },
+  {
+    "query": "知乎",
+    "url": "https://itunes.apple.com/search?term=%E7%9F%A5%E4%B9%8E&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 432274380,
+        "trackName": "知乎",
+        "bundleId": "com.zhihu.ios",
+        "version": "11.11.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%9F%A5%E4%B9%8E/id432274380?uo=4",
+        "sellerName": "Beijing Zhizhetianxia Technology Co., Ltd."
+      },
+      {
+        "trackId": 6502974904,
+        "trackName": "知乎盐选版",
+        "bundleId": "com.zhihu.ios.lite",
+        "version": "10.91.0",
+        "minimumOsVersion": "12.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89%E7%89%88/id6502974904?uo=4",
+        "sellerName": "Beijing Zhizhetianxia Technology Co., Ltd."
+      },
+      {
+        "trackId": 6444362523,
+        "trackName": "盐言故事",
+        "bundleId": "com.zhihu.vip.ios",
+        "version": "2.17.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%9B%90%E8%A8%80%E6%95%85%E4%BA%8B/id6444362523?uo=4",
+        "sellerName": "Beijing Zhizhetianxia Technology Co., Ltd."
+      },
+      {
+        "trackId": 741292507,
+        "trackName": "小红书 - 你的生活兴趣社区",
+        "bundleId": "com.xingin.discover",
+        "version": "9.51.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B4%E8%B6%A3%E7%A4%BE%E5%8C%BA/id741292507?uo=4",
+        "sellerName": "Xingin Information Technology (Shanghai) Co., Ltd"
+      },
+      {
+        "trackId": 1160172628,
+        "trackName": "夸克-AI旗舰应用",
+        "bundleId": "com.quark.browser",
+        "version": "10.19.0.3227",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%A4%B8%E5%85%8B-ai%E6%97%97%E8%88%B0%E5%BA%94%E7%94%A8/id1160172628?uo=4",
+        "sellerName": "Guangzhou Dongyue Information Technology Co., Ltd."
+      }
+    ]
+  },
+  {
+    "query": "腾讯新闻",
+    "url": "https://itunes.apple.com/search?term=%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 399363156,
+        "trackName": "腾讯新闻",
+        "bundleId": "com.tencent.info",
+        "version": "8.0.61",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/id399363156?uo=4",
+        "sellerName": "Tencent Technology (Beijing) Company Limited"
+      },
+      {
+        "trackId": 529092160,
+        "trackName": "今日头条",
+        "bundleId": "com.ss.iphone.article.News",
+        "version": "18.7.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?uo=4",
+        "sellerName": "Beijing Douyin Information Service Co., Ltd."
+      },
+      {
+        "trackId": 467289231,
+        "trackName": "央视新闻",
+        "bundleId": "com.cntv.cctvcom",
+        "version": "10.14.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E6%96%B0%E9%97%BB/id467289231?uo=4",
+        "sellerName": "China Media Group"
+      },
+      {
+        "trackId": 425349261,
+        "trackName": "网易新闻-头条新闻视频资讯平台",
+        "bundleId": "com.netease.news",
+        "version": "118.0",
+        "minimumOsVersion": "12.4",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%91%E8%B5%84%E8%AE%AF%E5%B9%B3%E5%8F%B0/id425349261?uo=4",
+        "sellerName": "NetEase Media Technology (Beijing) Co., Ltd."
+      },
+      {
+        "trackId": 395133418,
+        "trackName": "凤凰新闻-热点头条新闻抢先看",
+        "bundleId": "ifengNews",
+        "version": "8.07.5",
+        "minimumOsVersion": "14.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%87%A4%E5%87%B0%E6%96%B0%E9%97%BB-%E7%83%AD%E7%82%B9%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB%E6%8A%A2%E5%85%88%E7%9C%8B/id395133418?uo=4",
+        "sellerName": "Beijing TianyingJiuzhou Network Technology Co. Ltd"
+      }
+    ]
+  },
+  {
+    "query": "起点读书",
+    "url": "https://itunes.apple.com/search?term=%E8%B5%B7%E7%82%B9%E8%AF%BB%E4%B9%A6&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 534174796,
+        "trackName": "起点读书-看小说听书的阅读神器",
+        "bundleId": "m.qidian.QDReaderAppStore",
+        "version": "5.9.480",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E8%B5%B7%E7%82%B9%E8%AF%BB%E4%B9%A6-%E7%9C%8B%E5%B0%8F%E8%AF%B4%E5%90%AC%E4%B9%A6%E7%9A%84%E9%98%85%E8%AF%BB%E7%A5%9E%E5%99%A8/id534174796?uo=4",
+        "sellerName": "Shanghai Xuan Ting Entertainment Information & technology CO.,LTD"
+      },
+      {
+        "trackId": 1468454200,
+        "trackName": "番茄小说 - 热门漫剧全本小说电子书阅读器",
+        "bundleId": "com.dragon.read",
+        "version": "7.4.1",
+        "minimumOsVersion": "14.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4-%E7%83%AD%E9%97%A8%E6%BC%AB%E5%89%A7%E5%85%A8%E6%9C%AC%E5%B0%8F%E8%AF%B4%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E5%99%A8/id1468454200?uo=4",
+        "sellerName": "Beijing Zhending Technology Co., Ltd."
+      },
+      {
+        "trackId": 1387717110,
+        "trackName": "七猫小说-看小说电子书的阅读神器",
+        "bundleId": "com.yueyou.cyreader",
+        "version": "8.9",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4-%E7%9C%8B%E5%B0%8F%E8%AF%B4%E7%94%B5%E5%AD%90%E4%B9%A6%E7%9A%84%E9%98%85%E8%AF%BB%E7%A5%9E%E5%99%A8/id1387717110?uo=4",
+        "sellerName": "Shanghai Seven-Cat Culture Media Co.,Ltd."
+      },
+      {
+        "trackId": 575826903,
+        "trackName": "追书神器-看小说大全的电子书阅读神器",
+        "bundleId": "com.ifmoc.ZhuiShuShenQi",
+        "version": "5.33.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E8%BF%BD%E4%B9%A6%E7%A5%9E%E5%99%A8-%E7%9C%8B%E5%B0%8F%E8%AF%B4%E5%A4%A7%E5%85%A8%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E7%A5%9E%E5%99%A8/id575826903?uo=4",
+        "sellerName": "Shanghai Yuan Ju Network Technology Co., Ltd."
+      },
+      {
+        "trackId": 487608658,
+        "trackName": "QQ阅读",
+        "bundleId": "com.tencent.qqreaderiphone",
+        "version": "8.5.70",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/qq%E9%98%85%E8%AF%BB/id487608658?uo=4",
+        "sellerName": "Shenzhen Tencent Computer Systems Company Limited"
+      }
+    ]
+  },
+  {
+    "query": "去哪儿旅行",
+    "url": "https://itunes.apple.com/search?term=%E5%8E%BB%E5%93%AA%E5%84%BF%E6%97%85%E8%A1%8C&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 395096736,
+        "trackName": "去哪儿旅行-订酒店机票火车票",
+        "bundleId": "com.qunar.iphoneclient8",
+        "version": "5.3.28",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%8E%BB%E5%93%AA%E5%84%BF%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8/id395096736?uo=4",
+        "sellerName": "Beijing Qunar Information Technology Company Limit"
+      },
+      {
+        "trackId": 379395415,
+        "trackName": "携程旅行-订酒店机票火车票",
+        "bundleId": "ctrip.com",
+        "version": "8.96.6",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%90%BA%E7%A8%8B%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8/id379395415?uo=4",
+        "sellerName": "Shanghai Ctrip Commerce Co.,Ltd"
+      },
+      {
+        "trackId": 475966832,
+        "trackName": "同程旅行-订酒店机票火车票,低价打车",
+        "bundleId": "com.tongcheng.iphone",
+        "version": "11.5.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%90%8C%E7%A8%8B%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8-%E4%BD%8E%E4%BB%B7%E6%89%93%E8%BD%A6/id475966832?uo=4",
+        "sellerName": "Tongcheng Network Technology Co., Ltd."
+      },
+      {
+        "trackId": 453691481,
+        "trackName": "飞猪旅行-机票酒店火车票门票轻松预订",
+        "bundleId": "com.taobao.travel",
+        "version": "10.0.7.105",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C-%E6%9C%BA%E7%A5%A8%E9%85%92%E5%BA%97%E7%81%AB%E8%BD%A6%E7%A5%A8%E9%97%A8%E7%A5%A8%E8%BD%BB%E6%9D%BE%E9%A2%84%E8%AE%A2/id453691481?uo=4",
+        "sellerName": "Hangzhou Taomei Aviation Service Co., Ltd."
+      },
+      {
+        "trackId": 480161784,
+        "trackName": "航旅纵横-民航官方直销平台",
+        "bundleId": "com.travelsky.umetrip",
+        "version": "8.6.5",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E8%88%AA%E6%97%85%E7%BA%B5%E6%A8%AA-%E6%B0%91%E8%88%AA%E5%AE%98%E6%96%B9%E7%9B%B4%E9%94%80%E5%B9%B3%E5%8F%B0/id480161784?uo=4",
+        "sellerName": "China Travelsky Technology Limited"
+      }
+    ]
+  },
+  {
+    "query": "得物",
+    "url": "https://itunes.apple.com/search?term=%E5%BE%97%E7%89%A9&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 1012871328,
+        "trackName": "得物 - 得到美好事物",
+        "bundleId": "com.siwuai.duapp",
+        "version": "6.2.8",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BE%97%E7%89%A9-%E5%BE%97%E5%88%B0%E7%BE%8E%E5%A5%BD%E4%BA%8B%E7%89%A9/id1012871328?uo=4",
+        "sellerName": "Shanghai Dewu Information Group Co., Ltd."
+      },
+      {
+        "trackId": 1142110895,
+        "trackName": "抖音",
+        "bundleId": "com.ss.iphone.ugc.Aweme",
+        "version": "40.8.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%8A%96%E9%9F%B3/id1142110895?uo=4",
+        "sellerName": "Beijing Douyin Technology Co., Ltd."
+      },
+      {
+        "trackId": 875177200,
+        "trackName": "识货-购物之前要识货",
+        "bundleId": "com.hupu.shihuo",
+        "version": "8.91.1",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E8%AF%86%E8%B4%A7-%E8%B4%AD%E7%89%A9%E4%B9%8B%E5%89%8D%E8%A6%81%E8%AF%86%E8%B4%A7/id875177200?uo=4",
+        "sellerName": "Shanghai Shizhi Information Technology Co., Ltd."
+      },
+      {
+        "trackId": 741292507,
+        "trackName": "小红书 - 你的生活兴趣社区",
+        "bundleId": "com.xingin.discover",
+        "version": "9.51.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B4%E8%B6%A3%E7%A4%BE%E5%8C%BA/id741292507?uo=4",
+        "sellerName": "Xingin Information Technology (Shanghai) Co., Ltd"
+      },
+      {
+        "trackId": 510909506,
+        "trackName": "闲鱼 - 上闲鱼，赚一笔 !",
+        "bundleId": "com.taobao.fleamarket",
+        "version": "7.28.70",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E4%B8%8A%E9%97%B2%E9%B1%BC-%E8%B5%9A%E4%B8%80%E7%AC%94/id510909506?uo=4",
+        "sellerName": "Zhejiang Alibaba Xianyu Network Technology Co., Ltd."
+      }
+    ]
+  },
+  {
+    "query": "亚朵",
+    "url": "https://itunes.apple.com/search?term=%E4%BA%9A%E6%9C%B5&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 1113883381,
+        "trackName": "亚朵-高品质人文主题酒店预订平台",
+        "bundleId": "com.atour.atourlife",
+        "version": "4.15.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E4%BA%9A%E6%9C%B5-%E9%AB%98%E5%93%81%E8%B4%A8%E4%BA%BA%E6%96%87%E4%B8%BB%E9%A2%98%E9%85%92%E5%BA%97%E9%A2%84%E8%AE%A2%E5%B9%B3%E5%8F%B0/id1113883381?uo=4",
+        "sellerName": "Shanghai Yaduo Business Management(Group) Co.,Ltd."
+      },
+      {
+        "trackId": 556808349,
+        "trackName": "华住会",
+        "bundleId": "com.htinns.iphone",
+        "version": "9.48.0",
+        "minimumOsVersion": "15.1",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%8D%8E%E4%BD%8F%E4%BC%9A/id556808349?uo=4",
+        "sellerName": "China Lodging Group Co., Ltd."
+      },
+      {
+        "trackId": 475966832,
+        "trackName": "同程旅行-订酒店机票火车票,低价打车",
+        "bundleId": "com.tongcheng.iphone",
+        "version": "11.5.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%90%8C%E7%A8%8B%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8-%E4%BD%8E%E4%BB%B7%E6%89%93%E8%BD%A6/id475966832?uo=4",
+        "sellerName": "Tongcheng Network Technology Co., Ltd."
+      },
+      {
+        "trackId": 368217298,
+        "trackName": "洲际优悦会",
+        "bundleId": "com.ihg.priorityclubrewards",
+        "version": "5.109.0",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%B4%B2%E9%99%85%E4%BC%98%E6%82%A6%E4%BC%9A/id368217298?uo=4",
+        "sellerName": "Six Continents Hotels, Inc"
+      },
+      {
+        "trackId": 379395415,
+        "trackName": "携程旅行-订酒店机票火车票",
+        "bundleId": "ctrip.com",
+        "version": "8.96.6",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%90%BA%E7%A8%8B%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8/id379395415?uo=4",
+        "sellerName": "Shanghai Ctrip Commerce Co.,Ltd"
+      }
+    ]
+  },
+  {
+    "query": "小宇宙",
+    "url": "https://itunes.apple.com/search?term=%E5%B0%8F%E5%AE%87%E5%AE%99&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 1488894313,
+        "trackName": "小宇宙·一起听播客",
+        "bundleId": "app.podcast.cosmos",
+        "version": "3.3.1",
+        "minimumOsVersion": "16.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E5%AE%87%E5%AE%99-%E4%B8%80%E8%B5%B7%E5%90%AC%E6%92%AD%E5%AE%A2/id1488894313?uo=4",
+        "sellerName": "Ningbo Zhuiguang Network Technology Co., Ltd"
+      },
+      {
+        "trackId": 525463029,
+        "trackName": "Apple播客",
+        "bundleId": "com.apple.podcasts",
+        "version": "4.6",
+        "minimumOsVersion": "10.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/apple%E6%92%AD%E5%AE%A2/id525463029?uo=4",
+        "sellerName": "Apple Distribution International"
+      },
+      {
+        "trackId": 876336838,
+        "trackName": "喜马拉雅「听书社区」电台有声小说相声评书",
+        "bundleId": "com.gemd.iting",
+        "version": "9.5.13",
+        "minimumOsVersion": "14.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85-%E5%90%AC%E4%B9%A6%E7%A4%BE%E5%8C%BA-%E7%94%B5%E5%8F%B0%E6%9C%89%E5%A3%B0%E5%B0%8F%E8%AF%B4%E7%9B%B8%E5%A3%B0%E8%AF%84%E4%B9%A6/id876336838?uo=4",
+        "sellerName": "Xi Da (Shanghai) Network Technology Co., Ltd."
+      },
+      {
+        "trackId": 952059546,
+        "trackName": "微信读书",
+        "bundleId": "com.tencent.weread",
+        "version": "10.2.2",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6/id952059546?uo=4",
+        "sellerName": "Tencent Technology (Shenzhen) Company Limited"
+      },
+      {
+        "trackId": 547982045,
+        "trackName": "DailyArt 《每日艺术》",
+        "bundleId": "com.moiseum.dailyart",
+        "version": "5.0.47",
+        "minimumOsVersion": "16.6",
+        "trackViewUrl": "https://apps.apple.com/cn/app/dailyart-%E6%AF%8F%E6%97%A5%E8%89%BA%E6%9C%AF/id547982045?uo=4",
+        "sellerName": "Zuzanna Stanska"
+      }
+    ]
+  },
+  {
+    "query": "前程无忧",
+    "url": "https://itunes.apple.com/search?term=%E5%89%8D%E7%A8%8B%E6%97%A0%E5%BF%A7&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 415443644,
+        "trackName": "前程无忧51Job-求职招聘找工作",
+        "bundleId": "com.51job.ios51job",
+        "version": "16.18.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%89%8D%E7%A8%8B%E6%97%A0%E5%BF%A751job-%E6%B1%82%E8%81%8C%E6%8B%9B%E8%81%98%E6%89%BE%E5%B7%A5%E4%BD%9C/id415443644?uo=4",
+        "sellerName": "QIANJIN NETWORK INFORMATION TECHNOLOGY (SHANGHAI) CO,LTD."
+      },
+      {
+        "trackId": 488033535,
+        "trackName": "智联招聘-招聘找工作求职招人软件",
+        "bundleId": "cn.com.zhaopin.zhilianzhaopin",
+        "version": "8.15.13",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98-%E6%8B%9B%E8%81%98%E6%89%BE%E5%B7%A5%E4%BD%9C%E6%B1%82%E8%81%8C%E6%8B%9B%E4%BA%BA%E8%BD%AF%E4%BB%B6/id488033535?uo=4",
+        "sellerName": "Beijing Zhiliansanke Talent Service Co., Ltd."
+      },
+      {
+        "trackId": 540996859,
+        "trackName": "猎聘-专业招聘App",
+        "bundleId": "com.lietou.insw-c-ios-iphone",
+        "version": "6.31.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%8C%8E%E8%81%98-%E4%B8%93%E4%B8%9A%E6%8B%9B%E8%81%98app/id540996859?uo=4",
+        "sellerName": "TD Elite (Tianjin) Information Technology Co., Limited"
+      },
+      {
+        "trackId": 887314963,
+        "trackName": "BOSS直聘-招聘求职找工作招人",
+        "bundleId": "com.hpbr.bosszhipin",
+        "version": "14.180",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/boss%E7%9B%B4%E8%81%98-%E6%8B%9B%E8%81%98%E6%B1%82%E8%81%8C%E6%89%BE%E5%B7%A5%E4%BD%9C%E6%8B%9B%E4%BA%BA/id887314963?uo=4",
+        "sellerName": "Beijing China Product Bo Farce Network Technology Co., Ltd."
+      },
+      {
+        "trackId": 1232983203,
+        "trackName": "应届生求职-大学生求职神器",
+        "bundleId": "com.51job.iosyjs",
+        "version": "11.18.0",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%BA%94%E5%B1%8A%E7%94%9F%E6%B1%82%E8%81%8C-%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B1%82%E8%81%8C%E7%A5%9E%E5%99%A8/id1232983203?uo=4",
+        "sellerName": "QIANJIN NETWORK INFORMATION TECHNOLOGY (SHANGHAI) CO,LTD."
+      }
+    ]
+  },
+  {
+    "query": "大众点评",
+    "url": "https://itunes.apple.com/search?term=%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84&country=cn&entity=software&limit=5",
+    "results": [
+      {
+        "trackId": 351091731,
+        "trackName": "大众点评 - 吃喝玩乐指南",
+        "bundleId": "com.dianping.dpscope",
+        "version": "11.73.12",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84-%E5%90%83%E5%96%9D%E7%8E%A9%E4%B9%90%E6%8C%87%E5%8D%97/id351091731?uo=4",
+        "sellerName": "Hanhai Information Technology (Shanghai) Co.Ltd"
+      },
+      {
+        "trackId": 507097717,
+        "trackName": "阿里巴巴(1688)-货源批发采购进货市场",
+        "bundleId": "com.alibaba.wireless",
+        "version": "12.22.1",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4-1688-%E8%B4%A7%E6%BA%90%E6%89%B9%E5%8F%91%E9%87%87%E8%B4%AD%E8%BF%9B%E8%B4%A7%E5%B8%82%E5%9C%BA/id507097717?uo=4",
+        "sellerName": "Hangzhou AliBaba Advertising Co., Ltd."
+      },
+      {
+        "trackId": 741292507,
+        "trackName": "小红书 - 你的生活兴趣社区",
+        "bundleId": "com.xingin.discover",
+        "version": "9.51.1",
+        "minimumOsVersion": "15.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B4%E8%B6%A3%E7%A4%BE%E5%8C%BA/id741292507?uo=4",
+        "sellerName": "Xingin Information Technology (Shanghai) Co., Ltd"
+      },
+      {
+        "trackId": 423084029,
+        "trackName": "美团-问美团，都安排",
+        "bundleId": "com.meituan.imeituan",
+        "version": "12.67.201",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E7%BE%8E%E5%9B%A2-%E9%97%AE%E7%BE%8E%E5%9B%A2-%E9%83%BD%E5%AE%89%E6%8E%92/id423084029?uo=4",
+        "sellerName": "Sankuai Technology Co., Ltd."
+      },
+      {
+        "trackId": 510909506,
+        "trackName": "闲鱼 - 上闲鱼，赚一笔 !",
+        "bundleId": "com.taobao.fleamarket",
+        "version": "7.28.70",
+        "minimumOsVersion": "13.0",
+        "trackViewUrl": "https://apps.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E4%B8%8A%E9%97%B2%E9%B1%BC-%E8%B5%9A%E4%B8%80%E7%AC%94/id510909506?uo=4",
+        "sellerName": "Zhejiang Alibaba Xianyu Network Technology Co., Ltd."
+      }
+    ]
+  }
+]

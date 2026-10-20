@@ -78,6 +78,258 @@
         "https://nsloon.app/docs/Rewrite/"
       ],
       "finding": "官方旧语法文档确认reject-dict返回200和{}；保留旧语法兼容现有配置，未宣称通过Loon专有解析器。"
+    },
+    {
+      "id": "fmz-v02-1",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partP/Pinduoduo.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partP/Pinduoduo.sgmodule#L10",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "3042090a0b36ab0d248a765e0e6f1737a8d993ecaa6eab16d24145c6447795dc",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/api\\.(pinduoduo|yangkeduo)\\.com\\/api\\/cappuccino\\/splash - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-2",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partG/AutoNavi.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partG/AutoNavi.sgmodule#L27",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "79c65ca0ff9a010e43635d3f15007e098c9f655d44e32989ae2be3c48a694383",
+      "selected_lines": [
+        27
+      ],
+      "original_rule": "^https?:\\/\\/amap-aos-info-nogw\\.amap\\.com\\/ws\\/aos\\/alimama\\/splash_screen_rt - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-3",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/weibo.module",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/weibo.module#L77",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "cbb427d9bbf7fbe1c3b7a383693f2291eeb97cdf3107e13f9e902f7ca5a266fd",
+      "selected_lines": [
+        77
+      ],
+      "original_rule": "^https?:\\/\\/bootrealtime\\.uve\\.weibo\\.com\\/v\\d\\/ad\\/realtime data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-4",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/weibo.module",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/weibo.module#L78",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "cbb427d9bbf7fbe1c3b7a383693f2291eeb97cdf3107e13f9e902f7ca5a266fd",
+      "selected_lines": [
+        78
+      ],
+      "original_rule": "^https?:\\/\\/bootpreload\\.uve\\.weibo\\.com\\/v\\d\\/ad\\/preload data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-5",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partZ/Zhihu.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partZ/Zhihu.sgmodule#L47",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "4f064915d1efc056df784f24a2f50baaa94f59be4d698597f561fef818b77964",
+      "selected_lines": [
+        47
+      ],
+      "original_rule": "^https:\\/\\/api\\.zhihu\\.com\\/commercial_api\\/(?:answer\\/\\d+\\/bottom-v2|article\\/\\d+\\/bottom-v2|banners_v3\\/app_topstory_banner|launch_v2|real_time_launch_v2) data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-6",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partZ/Zhihu.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partZ/Zhihu.sgmodule#L47",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "4f064915d1efc056df784f24a2f50baaa94f59be4d698597f561fef818b77964",
+      "selected_lines": [
+        47
+      ],
+      "original_rule": "^https:\\/\\/api\\.zhihu\\.com\\/commercial_api\\/(?:answer\\/\\d+\\/bottom-v2|article\\/\\d+\\/bottom-v2|banners_v3\\/app_topstory_banner|launch_v2|real_time_launch_v2) data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-7",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partT/TencentNews.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partT/TencentNews.sgmodule#L13",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "ab9d4a31f50536b30c297d9bd0b41e615cb65ebd4402ad818baf3b5a270122a0",
+      "selected_lines": [
+        13
+      ],
+      "original_rule": "^https?:\\/\\/r\\.inews\\.qq\\.com\\/(getBannerAds|getNewsRemoteConfig|getSplash|searchHotCatList|upLoadLoc) - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-8",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partQ/QiDianReading.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partQ/QiDianReading.sgmodule#L10",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "8d1619a939354dbfdf21cee8e702dd59bbcbe6dd0617ba849f5c86d1ca0f8b1d",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/mage\\.if\\.qidian\\.com\\/argus\\/api\\/v\\d\\/client\\/getsplashscreen - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-9",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partQ/Qunar.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partQ/Qunar.sgmodule#L16",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "34e66b8f84d15edf39ce71a7c93c1958b64ccbbbc90389789c2b89ca1ebe6b76",
+      "selected_lines": [
+        16
+      ],
+      "original_rule": "^https?:\\/\\/homefront\\.qunar\\.com\\/front\\/splash\\/ad data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-10",
+      "author": "奶思 / fmz200 / Runestoner",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partD/DeWu.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partD/DeWu.sgmodule#L11",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "96d0e32a4e6e2ecef5193a532acd504d37300bc03b77cd67e77fdd50ae8fb0b0",
+      "selected_lines": [
+        11
+      ],
+      "original_rule": "^https?:\\/\\/app\\.dewu\\.com\\/api\\/v1\\/app\\/advertisement - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-11",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partY/AtourSplash.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partY/AtourSplash.sgmodule#L10",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "3be6679d5fdb2d7a50d9641038049cc362fcbf710e43a050372fe4193711dfef",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/api2\\.yaduo\\.com\\/atourlife\\/activity\\/appLaunch data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-12",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partX/XiaoYuZhou.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partX/XiaoYuZhou.sgmodule#L15",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "be78df5d8f4b2fdef7483ed5c89e64b0e5a35f365a962911b6928cd524b82498",
+      "selected_lines": [
+        15
+      ],
+      "original_rule": "^https?:\\/\\/api\\.xiaoyuzhoufm\\.com\\/v\\d\\/flash data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-13",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partQ/51Job.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partQ/51Job.sgmodule#L11",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "cf4a4afc1135be76bcc61b61e5efef7866e16e565ffed7749d962d4fb1532780",
+      "selected_lines": [
+        11
+      ],
+      "original_rule": "^https?:\\/\\/appapi\\.51job(app)?\\.com\\/api\\/market\\/(adtrace|get_launch|get_prompt) - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v02-14",
+      "author": "奶思 / fmz200",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "path": "Surge/module/split/partD/DianPing.sgmodule",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partD/DianPing.sgmodule#L14",
+      "license": "GPL-3.0-only",
+      "license_path": "LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "c2e74e7c7c973ffa551628b337c288dfe9f0412ea9dc9ae1504ac525ec3cc9cd",
+      "selected_lines": [
+        14
+      ],
+      "original_rule": "^https?:\\/\\/mapi\\.dianping\\.com\\/mapi\\/operating\\/(?>indexopsmodules|loadsplashconfig) - reject",
+      "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
+      "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
     }
   ]
 }
