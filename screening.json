@@ -1,7 +1,7 @@
 {
   "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
   "module_count": 731,
-  "limitations": "只完成有界来源筛查。剩余未完成深审/扩查，不宣称所有候选已补齐。",
+  "limitations": "285项完成有界来源筛查；140模块内容审查与111全文扩查。未纳入不是确定不支持；适用版本与手机效果仍未知。",
   "candidates": [
     {
       "name": "闲鱼",
@@ -82,10 +82,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "多个阿里产品接口混在模块；无线开屏使用综合myBlockAds.js，未做字段fixture不引入。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "无线splash分支为综合myBlockAds.js字段处理；需仅开屏字段fixture，不直接拒绝配置；其他阿里产品端点不归淘宝。"
     },
     {
       "name": "京东",
@@ -134,7 +135,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "综合脚本匹配start及订单/个人信息等共享api.m.jd.com；未有仅开屏字段fixture，不能整包引入。",
       "secondary_title_leads": [
         {
@@ -146,7 +147,8 @@
           "id": "jdcloud-router"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "start由jingdong.js混合订单/个人信息处理，不能整接口拒绝或整脚本导入。"
     },
     {
       "name": "拼多多",
@@ -237,7 +239,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "当前模块以整域拦截为主；另有初始化混合接口，未证开屏独立边界，不纳入。",
       "secondary_title_leads": [
         {
@@ -257,7 +259,8 @@
           "id": "meituan-mall"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "重新完整读取发现Meituan-MeituanWaimai:10的openscreen/startpicture独立分支；只取两支不取loadInfo。"
     },
     {
       "name": "大众点评",
@@ -323,10 +326,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "主要凭CDN图片尺寸、扩展名、sitemap或视频匹配，难区分广告和正常素材，不能照搬。"
     },
     {
       "name": "百度",
@@ -401,7 +405,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -413,7 +417,8 @@
           "id": "baidu-launch"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adpmobile/launch为广告启动线索，但模块跨百度产品混杂，未核定百度App当前请求；输入法等同品牌模块不算证据。"
     },
     {
       "name": "高德地图",
@@ -470,10 +475,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "尺寸CDN匹配易误伤；phpui2 qt=ads仍依赖baidumap.js字段处理，暂不整包纳入。"
     },
     {
       "name": "微博",
@@ -573,7 +579,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "开屏配置依赖综合响应脚本；system_service/config包含非广告配置，未做字段fixture不拒绝全响应。",
       "secondary_title_leads": [
         {
@@ -581,7 +587,8 @@
           "id": "xhs-splash-config"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "system_service/config混合启动配置，splash_config仍需仅广告字段fixture，不能整包脚本引用。"
     },
     {
       "name": "知乎",
@@ -676,7 +683,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "上游对splash列表仅改show/event_list字段，不等价拒绝整个响应；需隔离字段fixture和兼容性审查。",
       "secondary_title_leads": [
         {
@@ -712,7 +719,8 @@
           "id": "bilibili-alt-event-list2"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "仅splash show/event_list字段可候选，其他模块含会员字段及支付提示修改，明确禁止；需要独立响应fixture。"
     },
     {
       "name": "网易云音乐",
@@ -738,10 +746,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "eapi/ad匹配不是专用开屏完整路径，另含二进制/外部脚本及推荐流，不纳入。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "eapi/ad不限定完整开屏接口，二进制及Keywos外部依赖未核，不整域或整包导入。"
     },
     {
       "name": "QQ音乐",
@@ -774,7 +783,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "t_splash_info资源目录可能含非广告启动素材，尚无广告专用文件证据。",
       "secondary_title_leads": [
         {
@@ -782,7 +791,8 @@
           "id": "qqmusic"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "t_splash_info目录可能包含启动素材，getPbCompressAd通用广告，尚缺开屏专属资源证据。"
     },
     {
       "name": "酷狗",
@@ -807,10 +817,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "酷我",
@@ -830,10 +841,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "audiobookpay/musicpay/vip脚本触及付费接口，禁止纳入；未找到独立开屏URL。"
     },
     {
       "name": "喜马拉雅",
@@ -853,10 +865,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "上游选项覆盖推荐/订阅/签到/播放等，广告规则为域级；未取得独立开屏URL。"
     },
     {
       "name": "爱奇艺",
@@ -885,10 +898,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "mixer同时处理开屏及播放广告，URL无法隔离；禁止整接口拦截。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "mixer同时开屏和播放广告，缺少场景字段隔离，不能仅依URL拦截。"
     },
     {
       "name": "腾讯视频",
@@ -908,10 +922,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "完整模块仅MITM主机声明，无实际重写规则，不能当成可用插件。"
     },
     {
       "name": "优酷",
@@ -940,10 +955,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "play.ups.appinfo.get即使标开屏仍为播放信息接口，不能整响应拒绝；综合cnftp脚本未做隔离fixture。"
     },
     {
       "name": "芒果TV",
@@ -963,10 +979,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "channel/config、video/info及搜索/升级混合，不见安全开屏独立分支。"
     },
     {
       "name": "今日头条",
@@ -986,10 +1003,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "模块实际title为今日头条，不能因文件名JinRongToutiao判错App；但origin资源前缀无开屏隔离，不采用。"
     },
     {
       "name": "腾讯新闻",
@@ -1046,10 +1064,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "nc/gl整目录返回空格，尚无具体开屏路径/场景证据。"
     },
     {
       "name": "起点",
@@ -1110,10 +1129,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "通用广告联盟/视频/资源及日志匹配跨场景，不是仅开屏。"
     },
     {
       "name": "七猫",
@@ -1133,10 +1153,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "广告联盟及adv/reward/operation混合，不能拦奖励或正常操作接口。"
     },
     {
       "name": "菜鸟",
@@ -1156,10 +1177,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "nbnetflow及homepage/消息等混合，脚本字段未隔离；不更改消息或物流页。"
     },
     {
       "name": "顺丰",
@@ -1191,10 +1213,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "实际快递模块是积分商城、视频、信息流和推荐；小程序及顺丰优选不当作顺丰App开屏证据。"
     },
     {
       "name": "携程",
@@ -1223,10 +1246,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "上游明确旧版8.40.0及8.47.0以上图片问题，当前版本兼容未确认，暂不纳入。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "上游注明8.40.0旧版及8.47.0以上图片异常，当前兼容未知；先不纳入。"
     },
     {
       "name": "同程",
@@ -1251,10 +1275,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "命中xcxhomeapi小程序且包含首页聚合/banner，不当作iOS App开屏证据。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "重新完整读取发现第16行原生App openscreen，并非只有小程序；该独立空JSON分支可采用，首页推荐等排除。"
     },
     {
       "name": "去哪儿",
@@ -1331,10 +1356,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "activity mget/xpget共享活动配置，综合脚本还处理货运/个人中心/代驾；缺少广告字段fixture。"
     },
     {
       "name": "哈啰",
@@ -1354,10 +1380,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "完整模块只有元数据，没有实际规则，不能当成已支持。"
     },
     {
       "name": "移动联通电信",
@@ -1407,10 +1434,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "合称尚未拆分身份；startInit/getclientconfig共享配置，tiny-gif响应不能直接代空JSON；不因三者同组就宣称全覆盖。"
     },
     {
       "name": "墨迹天气",
@@ -1435,10 +1463,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "彩云天气",
@@ -1458,10 +1487,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "activity为活动接口、外部caiyun.json未审，不把付费/活动混入开屏。"
     },
     {
       "name": "什么值得买",
@@ -1481,10 +1511,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "util/loading由综合Smzdm.js处理，需仅开屏字段及未知结构回归fixture后再纳入。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "util/loading使用综合Smzdm.js，需单独隔离开屏字段fixture；vip/钱包/推荐不得引入。"
     },
     {
       "name": "酷安",
@@ -1504,10 +1535,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "main/init及feed脚本混合、外部redirect脚本许可未核；无可直接纳入的纯开屏响应。"
     },
     {
       "name": "懂车帝",
@@ -1527,10 +1559,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "汽车之家",
@@ -1550,10 +1583,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "AdvertiseService和apppdfs为整目录，未证明仅开屏，保留不纳入。"
     },
     {
       "name": "天猫",
@@ -1569,7 +1603,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "天猫",
+        "terms": [
+          "天猫商城"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "唯品会",
@@ -1589,10 +1634,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "activity/advertisement/get没有开屏位区分，另有商品事件/优惠券等非开屏，不能只凭advertisement名字纳入。"
     },
     {
       "name": "苏宁",
@@ -1612,10 +1658,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getDmInfo/ad目录及首页policy未提供独立开屏语义，暂不纳入。"
     },
     {
       "name": "得物",
@@ -1663,10 +1710,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getOpenScreen为空JSON独立分支，其他feedflow/userred/profile全部排除。"
     },
     {
       "name": "拍拍严选",
@@ -1682,7 +1730,28 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "拍拍严选",
+        "terms": [
+          "拍拍严选"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Scripts/paipai/paipai.js",
+            "sha256": "0ab8830e4f59c547aa089b29599657968018eefdb1f654bb51eaa245528533c1",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              3,
+              7
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中夺宝岛历史价格脚本，非开屏。"
+      }
     },
     {
       "name": "孔夫子旧书网",
@@ -1698,7 +1767,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "孔夫子旧书网",
+        "terms": [
+          "孔夫子旧书网"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "多点",
@@ -1714,7 +1794,36 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "多点",
+        "terms": [
+          "多点"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Scripts/myBlockAds.js",
+            "sha256": "4cf62100424886068a5470daecec319e93ccd034c647d79a9daaa72bbbc341bb",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              37,
+              47
+            ]
+          },
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              63
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "myBlockAds.js:37-48仅改welcomePage时间，不能等价拒绝整个配置；缺少结构fixture与当前iOS请求，暂不纳入。"
+      }
     },
     {
       "name": "盒马",
@@ -1734,10 +1843,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "场景/整页响应与推荐/购买后活动混杂，远程zirawell脚本未建立许可及仅开屏fixture，不能整包引用。"
     },
     {
       "name": "叮咚",
@@ -1766,10 +1876,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "advert/虽注释开屏仍为未知子路径目录；脚本含homeFlow、getConfig、userportal及外部依赖，不可整体拒绝。"
     },
     {
       "name": "朴朴",
@@ -1814,10 +1925,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "第41行pattern明显截断为中文，其他脚本匹配广告/搜索/结算/订单；不能直接导入或自动修复猜路径。"
     },
     {
       "name": "山姆",
@@ -1837,10 +1949,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "screen_promotion/get可能促销弹窗而非冷启动开屏；其余包含订单常买/搜索推荐/升级，需场景证据，暂不纳入。"
     },
     {
       "name": "永辉",
@@ -1860,10 +1973,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getAd通用接口，未见开屏位过滤；不能只凭广告名字宣称仅开屏。"
     },
     {
       "name": "慢慢买",
@@ -1879,7 +1993,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "慢慢买",
+        "terms": [
+          "慢慢买"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "返利网",
@@ -1912,10 +2037,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "历史2022及202x图片目录，主机为数字变量；无明确当前主机/广告素材样例，暂不扩大MITM。"
     },
     {
       "name": "肯德基",
@@ -1935,10 +2061,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "第10行含异常转义com.\\cn，apphome5/6可能启动也可能首页，未证明独立开屏，不猜测纠正。"
     },
     {
       "name": "麦当劳",
@@ -1963,7 +2090,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -1971,7 +2098,8 @@
           "id": "mcd"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "home/splash为独立候选，但上游动作为200空格而不是空JSON或断开。"
     },
     {
       "name": "必胜客",
@@ -1991,10 +2119,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "apphome/member非专用开屏证据，会员分支禁止处理。"
     },
     {
       "name": "瑞幸",
@@ -2014,10 +2143,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adposNew可能多广告位，会员兑换/成长及商品订单推荐均超范围；CDN尺寸/路径不保证广告专用。"
     },
     {
       "name": "星巴克",
@@ -2033,7 +2163,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "星巴克",
+        "terms": [
+          "星巴克"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              84
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "库迪",
@@ -2049,7 +2199,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "库迪",
+        "terms": [
+          "库迪"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "喜茶",
@@ -2065,7 +2226,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "喜茶",
+        "terms": [
+          "喜茶"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "奈雪",
@@ -2081,7 +2253,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "奈雪",
+        "terms": [
+          "奈雪"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              185
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "蜜雪冰城",
@@ -2097,7 +2289,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "蜜雪冰城",
+        "terms": [
+          "蜜雪冰城"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              201
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "海底捞",
@@ -2113,7 +2325,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "海底捞",
+        "terms": [
+          "海底捞"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "口碑",
@@ -2129,7 +2352,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "口碑",
+        "terms": [
+          "口碑"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "京东快递",
@@ -2145,7 +2379,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "京东快递",
+        "terms": [
+          "京东快递"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "中通",
@@ -2165,10 +2410,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "Apollo配置/track/getAdInfo/listJumperShow未区分开屏，拒绝全配置有风险。"
     },
     {
       "name": "圆通",
@@ -2184,7 +2430,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "圆通",
+        "terms": [
+          "圆通"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "韵达",
@@ -2200,7 +2457,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "韵达",
+        "terms": [
+          "韵达"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "申通",
@@ -2216,7 +2484,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "申通",
+        "terms": [
+          "申通"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              139
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "极兔",
@@ -2232,7 +2520,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "极兔",
+        "terms": [
+          "极兔"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              111
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "德邦",
@@ -2248,7 +2556,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "德邦",
+        "terms": [
+          "德邦"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              231
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "中国邮政",
@@ -2264,7 +2592,28 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "中国邮政",
+        "terms": [
+          "中国邮政"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              295,
+              296
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "丰巢",
@@ -2284,10 +2633,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adSearch/queryAd/vN/ad为通用广告或目录，另有建议查询，无专用开屏筛选。"
     },
     {
       "name": "T3",
@@ -2303,7 +2653,29 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "T3",
+        "terms": [
+          "T3出行"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 3,
+            "matching_line_numbers": [
+              237,
+              322,
+              323
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "曹操",
@@ -2323,10 +2695,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "advert-bss整服务路径，未区分开屏/车程内广告，暂不纳入。"
     },
     {
       "name": "花小猪",
@@ -2351,10 +2724,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "注释开屏，但activity/mget是批量活动读取且要求_t开头查询，未证明全响应只广告，需字段fixture。"
     },
     {
       "name": "嘀嗒",
@@ -2374,10 +2748,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "通用adbase/ad目录、第三方竞价、升级及统计混合，没有开屏位证据。"
     },
     {
       "name": "车来了",
@@ -2397,10 +2772,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "通用adpub/advert目录及展示查询；主机变量/全目录不可直接变成开屏合集。"
     },
     {
       "name": "掌上公交",
@@ -2420,10 +2796,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "HttpHandlerServlet为共享处理入口，不应整响应拒绝；另一个来源是小程序脚本，不能当iOS原生证据。"
     },
     {
       "name": "Metro大都会",
@@ -2439,7 +2816,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "Metro大都会",
+        "terms": [
+          "Metro大都会"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              136
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
+      }
     },
     {
       "name": "亿通行",
@@ -2455,7 +2852,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "亿通行",
+        "terms": [
+          "亿通行"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "12306",
@@ -2475,10 +2883,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "外部kokoryh请求脚本且requires-body，需核实独立许可和字段语义；不触碰出行凭据请求，不直接引入。"
     },
     {
       "name": "铁路畅行",
@@ -2494,7 +2903,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "铁路畅行",
+        "terms": [
+          "铁路畅行"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "航旅纵横",
@@ -2523,10 +2943,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "http?写法不覆盖HTTPS，共享native网关与正则分组问题；不能猜修协议后整网关拦截。"
     },
     {
       "name": "飞常准",
@@ -2546,10 +2967,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ad/advert整目录无开屏位限定，不纳入。"
     },
     {
       "name": "航班管家",
@@ -2565,7 +2987,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "航班管家",
+        "terms": [
+          "航班管家"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "国航",
@@ -2581,7 +3014,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "国航",
+        "terms": [
+          "国航"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "东航",
@@ -2597,7 +3041,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "东航",
+        "terms": [
+          "东航"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "南航",
@@ -2613,7 +3068,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "南航",
+        "terms": [
+          "南航"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "春秋",
@@ -2629,7 +3095,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "春秋",
+        "terms": [
+          "春秋"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "吉祥",
@@ -2645,7 +3122,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "吉祥",
+        "terms": [
+          "吉祥"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "飞猪",
@@ -2665,10 +3153,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "screen.allresource/predict可能多个场景，图片尺寸规则可能误伤，需实际字段语义及版本证据。"
     },
     {
       "name": "途牛",
@@ -2699,7 +3188,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -2707,7 +3196,8 @@
           "id": "tuniu"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "splash/目录是候选，但未知子路径和200空格动作；富途牛牛同名字串误匹配排除。"
     },
     {
       "name": "马蜂窝",
@@ -2727,10 +3217,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ad前缀/笔记/推送/升级/用户页混杂；不能认定独立开屏。"
     },
     {
       "name": "穷游",
@@ -2750,10 +3241,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "整配置/广告目录和startpage目录，启动页未证明只广告，且空格响应不可随意改为断开。"
     },
     {
       "name": "华住",
@@ -2778,10 +3270,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "上游getAppStartPage注释开屏，但端口变量和子路径未知；其余公共通知/酒店推荐全部排除。"
     },
     {
       "name": "锦江",
@@ -2797,7 +3290,35 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "锦江",
+        "terms": [
+          "锦江"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "README-RULE.md",
+            "sha256": "c25b3f1be763e2402b0890cfb7cdbc0661523a416ce47cd5954699e13f21ebac",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              273
+            ]
+          },
+          {
+            "path": "Loon/plugin/WeChatMiniAds.plugin",
+            "sha256": "f8ef8e7cfa747bbb4ed57f9752fc0544a1f08187b8f1a4dca58aa3a0543c50c7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              192
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "仅README索引及微信小程序，未取得可验证App规则内容与适配证据。"
+      }
     },
     {
       "name": "如家",
@@ -2817,10 +3338,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "landing没有广告字段或注释证据，可能正常着陆配置，暂不纳入。"
     },
     {
       "name": "亚朵",
@@ -2876,7 +3398,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -2884,7 +3406,8 @@
           "id": "tujia"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getStartPictureAdvertising可从popup分支分离；第17行拒绝整个bnbapp-node极宽，禁止继承。"
     },
     {
       "name": "小猪",
@@ -2900,7 +3423,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "小猪",
+        "terms": [
+          "小猪民宿"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "58",
@@ -2926,10 +3460,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "home广告目录、log和邀请弹窗，不限定开屏；58汽车不同App需排除误匹配。"
     },
     {
       "name": "赶集直招",
@@ -2945,7 +3480,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "赶集直招",
+        "terms": [
+          "赶集直招"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "腾讯地图",
@@ -2970,7 +3516,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -2978,7 +3524,8 @@
           "id": "qqmap"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "mwaSplash资源目录候选但200空格动作、未知具体文件与广告身份，未直接纳入。"
     },
     {
       "name": "易车",
@@ -2998,10 +3545,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getadlist及用户消息数返回图片，可能影响非广告功能；无开屏位证据。"
     },
     {
       "name": "汽车报价大全",
@@ -3017,7 +3565,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "汽车报价大全",
+        "terms": [
+          "汽车报价大全"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "瓜子",
@@ -3033,7 +3592,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "瓜子",
+        "terms": [
+          "瓜子"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "汽车之家极速版",
@@ -3049,7 +3619,36 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "汽车之家极速版",
+        "terms": [
+          "汽车之家极速版"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Surge/module/cookies.module",
+            "sha256": "33c2e033748e8a56abd52cae9c39594b42096e72b691dfa08cdf8e9299010dcb",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              150
+            ]
+          },
+          {
+            "path": "Loon/plugin/cookies.plugin",
+            "sha256": "7bc58cb51e704ef14c3cb8cc6a224a927b2464cf539513ea85e9254296a23b10",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              304,
+              306
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中Cookie采集/签到插件，不是开屏，禁止纳入。"
+      }
     },
     {
       "name": "特来电",
@@ -3065,7 +3664,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "特来电",
+        "terms": [
+          "特来电"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "星星充电",
@@ -3081,7 +3691,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "星星充电",
+        "terms": [
+          "星星充电"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "网上国网",
@@ -3101,10 +3722,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "强制升级/缓存/信息查询和bootpage混杂，涉及公共服务公告，不纳入。"
     },
     {
       "name": "南网在线",
@@ -3120,7 +3742,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "南网在线",
+        "terms": [
+          "南网在线"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "团油",
@@ -3140,10 +3773,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "车轮",
@@ -3159,7 +3793,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "车轮",
+        "terms": [
+          "车轮"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "驾考宝典",
@@ -3179,10 +3824,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "任意子域advert-sdk/广告目录，未区分开屏及练习场景，不纳入。"
     },
     {
       "name": "驾校一点通",
@@ -3207,10 +3853,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "开屏注释下intellectWaterfall竞价可能多广告位；其余ad目录、跳转和fallback泛化，尚需字段/场景确认。"
     },
     {
       "name": "抖音",
@@ -3230,10 +3877,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "快手",
@@ -3276,10 +3924,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "startup改皮肤/侧栏非开屏广告；联盟竞价跨广告位，不整包采用。"
     },
     {
       "name": "西瓜",
@@ -3295,7 +3944,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "西瓜",
+        "terms": [
+          "西瓜"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "好看",
@@ -3311,7 +3971,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "好看",
+        "terms": [
+          "好看"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "搜狐视频",
@@ -3327,7 +3998,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "搜狐视频",
+        "terms": [
+          "搜狐视频"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "咪咕视频",
@@ -3347,10 +4029,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "合并广告位、推荐/活动/个人中心脚本混杂，未证开屏专用URL。"
     },
     {
       "name": "央视频",
@@ -3370,10 +4053,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "sdk/pool任意json为共享广告池，固定素材ID未证明当前开屏；不据名称拦公告。"
     },
     {
       "name": "央视影音",
@@ -3393,10 +4077,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "埋堆堆",
@@ -3416,10 +4101,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "第一方/第三方广告列表、弹窗和公共广告SDK跨场景，不是独立开屏。"
     },
     {
       "name": "AcFun",
@@ -3439,10 +4125,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "flash/screen目录是候选但实际子路径未知，暂不以整目录代替精确请求。"
     },
     {
       "name": "虎牙",
@@ -3471,10 +4158,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "queryHttpDns为DNS并非广告；advertiser/material及appad目录跨素材，不拦正常功能。"
     },
     {
       "name": "斗鱼",
@@ -3499,10 +4187,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "daoyu.sdo.com实际叨鱼非斗鱼，不能沿袭上游归类错误；getStartSend还含不规范查询正则/不同响应，需原始路径证据。"
     },
     {
       "name": "B站直播姬",
@@ -3518,7 +4207,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "B站直播姬",
+        "terms": [
+          "B站直播姬"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "豆瓣",
@@ -3538,7 +4238,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -3546,7 +4246,8 @@
           "id": "douban"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "app_ads/common_ads目录及电影banner跨广告位，不限定冷启动。"
     },
     {
       "name": "猫眼",
@@ -3571,10 +4272,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "图片目录与尺寸过滤，尚未区分开屏和正常图片。"
     },
     {
       "name": "大麦",
@@ -3594,10 +4296,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "home.welcome可能启动配置且版本尾界未知；不能仅凭welcome拒绝；DNS调度不动。"
     },
     {
       "name": "淘票票",
@@ -3622,10 +4325,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "queryadvertise含通用广告，queryloadingbanner版本路径待确认，避免泛化整个网关。"
     },
     {
       "name": "汽水",
@@ -3645,10 +4349,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "公共广告SDK、卡片和commerce字段均跨场景，没有开屏独立规则。"
     },
     {
       "name": "咪咕音乐",
@@ -3664,7 +4369,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "咪咕音乐",
+        "terms": [
+          "咪咕音乐"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "千千",
@@ -3680,7 +4396,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "千千",
+        "terms": [
+          "千千"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "荔枝",
@@ -3696,7 +4423,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "荔枝",
+        "terms": [
+          "荔枝"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "蜻蜓FM",
@@ -3721,10 +4459,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "懒人听书",
@@ -3744,10 +4483,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ClientAdvertList共享列表，任意host与图片模式误伤大；不引入。"
     },
     {
       "name": "小宇宙",
@@ -3791,7 +4531,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "云听",
+        "terms": [
+          "云听"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "得到",
@@ -3807,7 +4558,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "得到",
+        "terms": [
+          "得到"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Scripts/macat/macat_signin.js",
+            "sha256": "d8c6ab9996f22a92a8f16a98825f7e882e8f5208c5ef38c40c0fe6cb6236e6e8",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              115
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
+      }
     },
     {
       "name": "凤凰",
@@ -3838,10 +4609,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "凤凰秀launchAD不是凤凰新闻；原候选名称歧义，未确认具体iOS App，保留身份不确定。"
     },
     {
       "name": "搜狐新闻",
@@ -3857,7 +4629,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "搜狐新闻",
+        "terms": [
+          "搜狐新闻"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "新浪新闻",
@@ -3877,10 +4660,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ua?t=adv通用广告入口，不确定开屏专用。"
     },
     {
       "name": "澎湃",
@@ -3900,10 +4684,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adpai通用含ad查询，无固定开屏位；不拦新闻公共内容。"
     },
     {
       "name": "界面",
@@ -3923,10 +4708,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ads整素材目录，非专用开屏路径。"
     },
     {
       "name": "财联社",
@@ -3946,10 +4732,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读专用开屏广告分支，进入下一版精确URL候选"
     },
     {
       "name": "人民日报",
@@ -3969,10 +4756,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "HomeApi adv/AppLoad图片目录可能启动，但无广告专用场景保证，公共公告保守不动。"
     },
     {
       "name": "新华社",
@@ -3988,7 +4776,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "新华社",
+        "terms": [
+          "新华社"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "央视新闻",
@@ -4004,7 +4803,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "央视新闻",
+        "terms": [
+          "央视新闻"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "贴吧",
@@ -4029,10 +4839,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getSplashAd是线索，但依赖app2smile JSON/protobuf脚本，需明确许可及单独fixture；不引入整个信息流处理。"
     },
     {
       "name": "虎扑",
@@ -4052,10 +4863,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "status/init共享初始化，图片尺寸/宽路径，不纳入。"
     },
     {
       "name": "懂球帝",
@@ -4075,10 +4887,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "plat/v4缺广告位信息，不能整平台接口拒绝。"
     },
     {
       "name": "直播吧",
@@ -4094,7 +4907,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "直播吧",
+        "terms": [
+          "直播吧"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "雷速",
@@ -4110,7 +4934,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "雷速",
+        "terms": [
+          "雷速"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "球探",
@@ -4126,7 +4961,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "球探",
+        "terms": [
+          "球探"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "新浪体育",
@@ -4142,7 +4988,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "新浪体育",
+        "terms": [
+          "新浪体育"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "腾讯体育",
@@ -4162,10 +5019,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "news.ssp.qq.com/app泛广告服务及固定历史图片，不保证开屏。"
     },
     {
       "name": "微信读书",
@@ -4181,7 +5039,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "微信读书",
+        "terms": [
+          "微信读书"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "QQ阅读",
@@ -4197,7 +5066,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "QQ阅读",
+        "terms": [
+          "QQ阅读"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "掌阅",
@@ -4217,10 +5097,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "self/screen/ad是线索但空格动作及当前广告位未确认；其他书城目录不纳入。"
     },
     {
       "name": "书旗",
@@ -4240,10 +5121,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "广告SDK、阅读页、消息及反馈混合，跨场景严重，不导入。"
     },
     {
       "name": "晋江",
@@ -4259,7 +5141,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "晋江",
+        "terms": [
+          "晋江"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "刺猬猫",
@@ -4279,10 +5172,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "get_startpage_url_list可能启动页面而非纯广告，缺少广告语义证据。"
     },
     {
       "name": "菠萝包",
@@ -4302,10 +5196,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ioscfg整应用配置，不直接拒绝。"
     },
     {
       "name": "番茄畅听",
@@ -4321,7 +5216,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "番茄畅听",
+        "terms": [
+          "番茄畅听"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "快看漫画",
@@ -4337,7 +5243,36 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "快看漫画",
+        "terms": [
+          "快看漫画"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Surge/module/cookies.module",
+            "sha256": "33c2e033748e8a56abd52cae9c39594b42096e72b691dfa08cdf8e9299010dcb",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              111
+            ]
+          },
+          {
+            "path": "Loon/plugin/cookies.plugin",
+            "sha256": "7bc58cb51e704ef14c3cb8cc6a224a927b2464cf539513ea85e9254296a23b10",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              232,
+              234
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "命中Cookie采集/签到插件，不是开屏，禁止纳入。"
+      }
     },
     {
       "name": "B站漫画",
@@ -4357,10 +5292,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "Flash/ListFlash线索但原空格响应及场景未证，其余AppInit/商品/会员/推荐不动。"
     },
     {
       "name": "腾讯动漫",
@@ -4376,7 +5312,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "腾讯动漫",
+        "terms": [
+          "腾讯动漫"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "百度文库",
@@ -4396,10 +5343,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "wknaad通用广告接口，未见开屏位说明。"
     },
     {
       "name": "百科",
@@ -4415,7 +5363,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "百科",
+        "terms": [
+          "百度百科"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "知乎日报",
@@ -4431,7 +5390,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "知乎日报",
+        "terms": [
+          "知乎日报"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "有道词典",
@@ -4456,10 +5426,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "startup注释实际首页弹窗，不等于开屏；CommonConfig及任务会员相关均不引入。"
     },
     {
       "name": "金山词霸",
@@ -4479,10 +5450,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "open/screens?adjson有线索，但版本/空格动作及其他广告位未核；外部整域禁止。"
     },
     {
       "name": "欧路",
@@ -4498,7 +5470,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "欧路",
+        "terms": [
+          "欧路"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "百度翻译",
@@ -4518,10 +5501,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "IosStart/getStartInfo可能包含启动配置，广告专用字段未知；不整响应拒绝。"
     },
     {
       "name": "百词斩",
@@ -4541,10 +5525,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "墨墨",
@@ -4560,7 +5545,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "墨墨",
+        "terms": [
+          "墨墨"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "不背单词",
@@ -4576,7 +5572,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "不背单词",
+        "terms": [
+          "不背单词"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "扇贝",
@@ -4592,7 +5599,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "扇贝",
+        "terms": [
+          "扇贝"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "沪江开心词场",
@@ -4608,7 +5626,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "沪江开心词场",
+        "terms": [
+          "沪江开心词场"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "每日英语听力",
@@ -4624,7 +5653,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "每日英语听力",
+        "terms": [
+          "每日英语听力"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "学习通",
@@ -4644,10 +5684,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "appConfig整配置，可能影响登录课程，拒绝纳入。"
     },
     {
       "name": "智慧树",
@@ -4663,7 +5704,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "智慧树",
+        "terms": [
+          "智慧树"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "中国大学MOOC",
@@ -4679,7 +5731,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "中国大学MOOC",
+        "terms": [
+          "中国大学MOOC"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "作业帮",
@@ -4699,10 +5762,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adx整广告服务路径，缺开屏位区分。"
     },
     {
       "name": "小猿搜题",
@@ -4718,7 +5782,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "小猿搜题",
+        "terms": [
+          "小猿搜题"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "猿题库",
@@ -4734,7 +5809,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "猿题库",
+        "terms": [
+          "猿题库"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "学小易",
@@ -4750,7 +5836,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "学小易",
+        "terms": [
+          "学小易"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "粉笔",
@@ -4775,10 +5872,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "launcher依赖fenbi.js字段处理，需要隔离fixture，不整响应拒绝。"
     },
     {
       "name": "华图",
@@ -4794,7 +5892,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "华图",
+        "terms": [
+          "华图"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "中公",
@@ -4810,7 +5919,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "中公",
+        "terms": [
+          "中公"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "考虫",
@@ -4826,7 +5946,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "考虫",
+        "terms": [
+          "考虫"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "WPS",
@@ -4846,10 +5977,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "仅ad-statistics-service统计，不是开屏广告返回，不纳入。"
     },
     {
       "name": "扫描全能王",
@@ -4865,7 +5997,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "扫描全能王",
+        "terms": [
+          "扫描全能王"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "夸克",
@@ -4885,10 +6028,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "open-cms共享内容接口，综合脚本需独立广告字段证据。"
     },
     {
       "name": "QQ浏览器",
@@ -4908,10 +6052,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "exapp?spsa数字未给开屏位映射，不猜值。"
     },
     {
       "name": "UC",
@@ -4931,10 +6076,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "搜狗浏览器",
@@ -4950,7 +6096,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "搜狗浏览器",
+        "terms": [
+          "搜狗浏览器"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "百度网盘",
@@ -4970,10 +6127,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "广告目录、福利、会员订单等混合，禁止订单/权限处理；无独立开屏位。"
     },
     {
       "name": "迅雷",
@@ -4993,10 +6151,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "slots:batchGet批量广告位，无法只按URL判断开屏。"
     },
     {
       "name": "阿里云盘",
@@ -5016,10 +6175,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "顶层目录、签到、用户首页等不属于专用开屏，禁止改文件/签到。"
     },
     {
       "name": "天翼云盘",
@@ -5039,7 +6199,7 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [
         {
@@ -5047,7 +6207,8 @@
           "id": "tianyi-cloud"
         }
       ],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读专用开屏广告分支，进入下一版精确URL候选"
     },
     {
       "name": "移动云盘",
@@ -5067,10 +6228,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "通用广告列表/卡片/站内信，未区分开屏，会员/消息不动。"
     },
     {
       "name": "115",
@@ -5086,7 +6248,288 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "115",
+        "terms": [
+          "115"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "README-RULE.md",
+            "sha256": "c25b3f1be763e2402b0890cfb7cdbc0661523a416ce47cd5954699e13f21ebac",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              119
+            ]
+          },
+          {
+            "path": "boxjs/fmz200_boxjs.json",
+            "sha256": "102b94122509760ab521a4bf2e5645b6db86bc4ca8d4fdb26190cc0648881dde",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              893,
+              897
+            ]
+          },
+          {
+            "path": "icons/icons-all.json",
+            "sha256": "f0d3ed93ba799fd47950417b212d1012f6a8bf9af0bce3964093404d349ec798",
+            "matching_line_count": 24,
+            "matching_line_numbers": [
+              4974,
+              4975,
+              5554,
+              5555,
+              5694,
+              5695,
+              5698,
+              5699,
+              5702,
+              5703,
+              5706,
+              5707
+            ]
+          },
+          {
+            "path": "Surge/module/cookies.module",
+            "sha256": "33c2e033748e8a56abd52cae9c39594b42096e72b691dfa08cdf8e9299010dcb",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              280
+            ]
+          },
+          {
+            "path": "Surge/module/blockAds.module",
+            "sha256": "d75a30e3410fccc4269c2749cdc430f2c6ef5b092bca1bc342279642f9918423",
+            "matching_line_count": 4,
+            "matching_line_numbers": [
+              3193,
+              3194,
+              6035,
+              8773
+            ]
+          },
+          {
+            "path": "Surge/module/blockHTTPDNS.module",
+            "sha256": "f33c37480904c800598dc734f1849275a36d20027fbbcef531bee420423931f3",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              160,
+              161
+            ]
+          },
+          {
+            "path": "Surge/module/split/partH/HangLvZongHeng.sgmodule",
+            "sha256": "0f745491133a109664187afbbf58170979305d5752dad0c0178f12c0191a1b97",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              16
+            ]
+          },
+          {
+            "path": "Surge/module/split/partW/NetEaseDashen.sgmodule",
+            "sha256": "9ede0d4729000a7fb915b0d6240f4b2adcca89b31a96639f294c13c50f518eab",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              19,
+              20
+            ]
+          },
+          {
+            "path": "Surge/module/split/partB/BoDianMusic.sgmodule",
+            "sha256": "359f0f9f07084f8d34f81f9af93416ce59103a6f53a9ac5e0c80dcae2a63b4d4",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              17
+            ]
+          },
+          {
+            "path": "Loon/plugin/blockAdsV2.plugin",
+            "sha256": "7bde59b2276a6b7b1bc2c6ba442f93bef2e35cef822034b87d70b1930bce998a",
+            "matching_line_count": 4,
+            "matching_line_numbers": [
+              2871,
+              2872,
+              4613,
+              8039
+            ]
+          },
+          {
+            "path": "Loon/plugin/Block_HTTPDNS.plugin",
+            "sha256": "a9f1102762c01c737b1b9e70bea4d2446361d7023ade1a1007e9425e978e6bf7",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              190,
+              191
+            ]
+          },
+          {
+            "path": "Loon/plugin/cookies.plugin",
+            "sha256": "7bc58cb51e704ef14c3cb8cc6a224a927b2464cf539513ea85e9254296a23b10",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              484
+            ]
+          },
+          {
+            "path": "Loon/plugin/blockAds.plugin",
+            "sha256": "1a0b83a76719531544153f3fdc31b7a05213b9ed0a827f6b49ba5adedb625ef1",
+            "matching_line_count": 4,
+            "matching_line_numbers": [
+              2867,
+              2868,
+              4609,
+              8035
+            ]
+          },
+          {
+            "path": "Loon/rule/Soul.list",
+            "sha256": "6549b6c09f12b796aea35e9812186ab67a713f20f38d6463a979be58d88ac5b2",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              44
+            ]
+          },
+          {
+            "path": "Loon/rule/ASN/ASN-US.list",
+            "sha256": "4491f500a1bcf8e60075ddab96baccbb2cb10ea867adf9d84f806220502e9e2b",
+            "matching_line_count": 67,
+            "matching_line_numbers": [
+              672,
+              2810,
+              3073,
+              4486,
+              5298,
+              5390,
+              5392,
+              5393,
+              5395,
+              5398,
+              5421,
+              5424
+            ]
+          },
+          {
+            "path": "Loon/rule/ASN/ASN-CN.list",
+            "sha256": "8c1cfde69c7ffb4ea5f71f50f018128d8e42b48b7ca56f72061140a66f4082a8",
+            "matching_line_count": 6,
+            "matching_line_numbers": [
+              495,
+              829,
+              2376,
+              2452,
+              3970,
+              4481
+            ]
+          },
+          {
+            "path": "Loon/plugin/split/partH/HangLvZongHeng.lpx",
+            "sha256": "9f9dd10325c32b230f240cae3facfaaa36d04fdf74bc8149d05dba8672bce97c",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              21
+            ]
+          },
+          {
+            "path": "Loon/plugin/split/partW/NetEaseDashen.lpx",
+            "sha256": "9f257abbd59d40ed09da853e54ab245a4afe6d1d285767a4b375550502bab579",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              21,
+              22
+            ]
+          },
+          {
+            "path": "Loon/plugin/split/partB/BoDianMusic.lpx",
+            "sha256": "64a18021defd9b125a832d41dd467ee8b4e0ca3d0e9f7ca85849691580bad4d7",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              16
+            ]
+          },
+          {
+            "path": "QuantumultX/filter/soul.list",
+            "sha256": "e1c9d340fe00c08afd3cac17e963f54067bd51dffe5ebff4857a7559952f1ac1",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              33
+            ]
+          },
+          {
+            "path": "QuantumultX/rewrite/unlock/TikTok/国家代码.md",
+            "sha256": "14ae7afbff67987a5d1f4dd15f6bfdf3cab17cbdfd6ae232f7cfae04044e2822",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              144
+            ]
+          },
+          {
+            "path": "Scripts/X/XWebEnhance.js",
+            "sha256": "374681967f8a63cc802af86cd1b0df3b911a30f5cd7c1f088fdba6a0403c7856",
+            "matching_line_count": 2,
+            "matching_line_numbers": [
+              58,
+              62
+            ]
+          },
+          {
+            "path": "Scripts/X/PinnedTimelinesAll.json",
+            "sha256": "c36457554f86c4b9abe0b6cefda07cc65da1f80476e772be3f4226e5990affbc",
+            "matching_line_count": 4,
+            "matching_line_numbers": [
+              290,
+              292,
+              322,
+              324
+            ]
+          },
+          {
+            "path": "Scripts/kuaishou/ks_fruit.js",
+            "sha256": "37b127d8b0ca3b7b87644fbf6e89dd2cdf217d97650d49afa1b4e3858bd45bf9",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              21
+            ]
+          },
+          {
+            "path": "Scripts/tools/NodeUnlockDetection.js",
+            "sha256": "ca2b8506e9a1effb8da01d52f26b6fae23dbd82807f68bf6c890baaa8b82ec63",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              305
+            ]
+          },
+          {
+            "path": "Scripts/ccbLife/ccbLife_signin.js",
+            "sha256": "81f87700ed62f7017640371a83c8e36f2df23b48391d603c41394db428ae2ee2",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              259
+            ]
+          },
+          {
+            "path": "Scripts/pinduoduo/pdd_guoyuan.js",
+            "sha256": "90bd3194eeec798e964e6a7896dfee83457fd65753854f75a4c9eeca261a9241",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              14
+            ]
+          },
+          {
+            "path": "Scripts/meituan/meituanV3.js",
+            "sha256": "7d4eb7296d34741bb322b6fff85d61d77ecf2a2d736e9acac20c9f3f3eac8734",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              14
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
+      }
     },
     {
       "name": "123云盘",
@@ -5102,7 +6545,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "123云盘",
+        "terms": [
+          "123云盘"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "QQ邮箱",
@@ -5118,7 +6572,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "QQ邮箱",
+        "terms": [
+          "QQ邮箱"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "网易邮箱大师",
@@ -5134,7 +6599,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "网易邮箱大师",
+        "terms": [
+          "网易邮箱大师"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "印象笔记",
@@ -5154,10 +6630,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ads整目录，需具体开屏路径，不能泛化。"
     },
     {
       "name": "有道云笔记",
@@ -5173,7 +6650,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "有道云笔记",
+        "terms": [
+          "有道云笔记"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "幕布",
@@ -5189,7 +6677,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "幕布",
+        "terms": [
+          "幕布"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "Keep",
@@ -5220,10 +6719,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "kad/op-engine广告入口虽标开屏仍通用ad，主域还含课程/成长/训练配置，不整包纳入。"
     },
     {
       "name": "咕咚",
@@ -5239,7 +6739,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "咕咚",
+        "terms": [
+          "咕咚"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "悦跑圈",
@@ -5255,7 +6766,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "悦跑圈",
+        "terms": [
+          "悦跑圈"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "薄荷",
@@ -5275,10 +6797,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "搜索/代谢/首页/提醒均混合健康数据，缺少专用开屏；不扩大敏感解密。"
     },
     {
       "name": "美柚",
@@ -5298,10 +6821,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "批量配置和通用getad，涉及敏感健康数据，不默认解密配置。"
     },
     {
       "name": "大姨妈",
@@ -5317,7 +6841,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "大姨妈",
+        "terms": [
+          "大姨妈"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "平安健康",
@@ -5333,7 +6868,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "平安健康",
+        "terms": [
+          "平安健康"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "京东健康",
@@ -5353,10 +6899,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "共享CDN尺寸图片过滤，非开屏专用且医疗边界保守。"
     },
     {
       "name": "阿里健康",
@@ -5372,7 +6919,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "阿里健康",
+        "terms": [
+          "阿里健康"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "好大夫",
@@ -5388,7 +6946,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "好大夫",
+        "terms": [
+          "好大夫"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "微医",
@@ -5408,10 +6977,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getpopad为弹窗不等开屏，图片尺寸误伤，医疗域不动。"
     },
     {
       "name": "丁香",
@@ -5442,10 +7012,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "医疗敏感域，开屏路径亦不默认引入主机级解密。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "feed/launch可能医疗内容或开屏，敏感域和公共医学信息不默认解密。"
     },
     {
       "name": "春雨",
@@ -5461,7 +7032,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "春雨",
+        "terms": [
+          "春雨"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "叮当",
@@ -5477,7 +7059,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "叮当",
+        "terms": [
+          "叮当"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "健客",
@@ -5493,7 +7086,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "健客",
+        "terms": [
+          "健客"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "用药助手",
@@ -5509,7 +7113,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "用药助手",
+        "terms": [
+          "用药助手"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "贝壳",
@@ -5529,10 +7144,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "bootpage与activityconfig并列，启动页面不必然广告，需内容证据。"
     },
     {
       "name": "链家",
@@ -5548,7 +7164,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "链家",
+        "terms": [
+          "链家"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "安居客",
@@ -5564,7 +7191,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "安居客",
+        "terms": [
+          "安居客"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "房天下",
@@ -5584,10 +7222,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
     },
     {
       "name": "自如",
@@ -5607,10 +7246,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "popup及index/open并非明确广告，不能整首页拒绝。"
     },
     {
       "name": "巴乐兔",
@@ -5626,7 +7266,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "巴乐兔",
+        "terms": [
+          "巴乐兔"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "土巴兔",
@@ -5642,7 +7293,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "土巴兔",
+        "terms": [
+          "土巴兔"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "齐家",
@@ -5658,7 +7320,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "齐家",
+        "terms": [
+          "齐家"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "好好住",
@@ -5678,10 +7351,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getStartPhoto启动图片未明确广告类型，需真实广告语义证据。"
     },
     {
       "name": "住小帮",
@@ -5697,7 +7371,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "住小帮",
+        "terms": [
+          "住小帮"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "米家",
@@ -5717,10 +7402,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "已读专用开屏广告分支，进入下一版精确URL候选"
     },
     {
       "name": "海尔",
@@ -5740,10 +7426,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "来源明确海尔服务小程序，不是iOS海尔App；不继承。"
     },
     {
       "name": "美的",
@@ -5759,7 +7446,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "美的",
+        "terms": [
+          "美的"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "海信",
@@ -5775,7 +7473,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "海信",
+        "terms": [
+          "海信"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "宝宝树",
@@ -5806,10 +7515,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "plough.do通用广告/统计、喂养及首页活动混合；孕育敏感数据不动。"
     },
     {
       "name": "妈妈网",
@@ -5840,10 +7550,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "rd素材端点上下文不足，名称又含孕育与妈妈网，身份和敏感边界保守。"
     },
     {
       "name": "亲宝宝",
@@ -5863,10 +7574,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "ad整目录，敏感家庭数据主域，暂不泛化。"
     },
     {
       "name": "育学园",
@@ -5886,10 +7598,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getsAdStartScreen有线索但host为任意子域、动作200空格，未得到具体安全host；敏感域不扩大。"
     },
     {
       "name": "宝宝巴士",
@@ -5905,7 +7618,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "宝宝巴士",
+        "terms": [
+          "宝宝巴士"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "波奇",
@@ -5921,7 +7645,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "波奇",
+        "terms": [
+          "波奇"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "E宠",
@@ -5937,7 +7672,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "E宠",
+        "terms": [
+          "E宠"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "小佩",
@@ -5957,10 +7703,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "device/relatedProductsInfo是设备关联商品不是开屏，不纳入。"
     },
     {
       "name": "BOSS",
@@ -5976,7 +7723,27 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "BOSS",
+        "terms": [
+          "BOSS"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [
+          {
+            "path": "Loon/rule/AppleAll.list",
+            "sha256": "511286412a164672bc6d228f705865da5568084cebed1bbc4164b99a58fa2cf1",
+            "matching_line_count": 1,
+            "matching_line_numbers": [
+              547
+            ]
+          }
+        ],
+        "secondary_title_leads": [],
+        "decision": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
+      }
     },
     {
       "name": "智联",
@@ -5992,7 +7759,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "智联",
+        "terms": [
+          "智联招聘"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "51Job",
@@ -6053,10 +7831,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "live.get-ad-cards和通用广告位接口不确定开屏，不能误伤求职信息。"
     },
     {
       "name": "脉脉",
@@ -6081,10 +7860,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "adshow同时覆盖开屏和职位横幅，不纳入。",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "adshow同时开屏和职位横幅；pay/check_gift禁止处理，推荐流不动。"
     },
     {
       "name": "实习僧",
@@ -6100,7 +7880,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "实习僧",
+        "terms": [
+          "实习僧"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "天眼查",
@@ -6116,7 +7907,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "天眼查",
+        "terms": [
+          "天眼查"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "企查查",
@@ -6132,7 +7934,18 @@
       "phase": "有界来源筛查，不等于全部逐行安全审计",
       "decision": "该固定来源标题/别名检索未命中；不能据此认定不支持；需扩大来源或核实简称",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "expanded_search": {
+        "name": "企查查",
+        "terms": [
+          "企查查"
+        ],
+        "scanned_files": 1685,
+        "scope": "固定fmz全文文本扩查+已记录origo标签索引；非全网",
+        "hits": [],
+        "secondary_title_leads": [],
+        "decision": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
+      }
     },
     {
       "name": "爱企查",
@@ -6152,10 +7965,11 @@
       ],
       "scope": "fmz200/wool_scripts 5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97：731个split模块标题及开屏标记 + weibo.module；名称/别名子串检索，命中可能是同品牌不同App，未命中不代表没有规则",
       "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
-      "phase": "有界来源筛查，不等于全部逐行安全审计",
+      "phase": "模块级审查完成；未入选不等于全网无支持",
       "decision": "保留为线索，身份/专用路径/依赖语义未全部确定；不自动纳入",
       "secondary_title_leads": [],
-      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。"
+      "secondary_note": "仅app标签发现索引；不采用规则；外部快照来源授权未建立，不能凭本仓库GPL给外部快照授权。原阶段状态保留。",
+      "module_review": "getConfigByDeviceNum共享配置，非开屏证据。"
     },
     {
       "name": "云闪付",
@@ -6641,10 +8455,10 @@
   ],
   "counts": {
     "用户反馈开屏有效": 1,
-    "来源筛查完成待深审": 140,
-    "静态验证待实机": 12,
+    "已审当前来源不纳入": 133,
+    "静态验证待实机": 19,
     "保守排除": 21,
-    "限定来源未命中待扩查": 111
+    "已扩查证据不足未纳入": 111
   },
   "secondary_search": {
     "repository": "https://github.com/miloquinn/origo-ad",

@@ -1,5 +1,5 @@
 #!name=开屏广告精简合集
-#!desc=v0.2.0；13款App候选开屏规则；非全覆盖；新增待手机验证。GPL-3.0；来源奶思/fmz200。
+#!desc=v0.2.1；20款App候选开屏规则；非全覆盖；新增待手机验证。GPL-3.0；来源奶思/fmz200。
 #!author=panjin9395；上游奶思/fmz200
 #!homepage=https://github.com/panjin9395/loon-splash-adblock
 #!date=2026-10-20
@@ -23,6 +23,14 @@
 ^https://appapi\.51job\.com/api/market/get_launch(?:\?[^#\r\n]*)?$ reject
 ^https://appapi\.51jobapp\.com/api/market/get_launch(?:\?[^#\r\n]*)?$ reject
 ^https://mapi\.dianping\.com/mapi/operating/loadsplashconfig(?:\?[^#\r\n]*)?$ reject
+^https://wmapi\.meituan\.com/api/v7/openscreen\?[^#\r\n]*$ reject-dict
+^https://wmapi\.meituan\.com/api/v7/startpicture\?[^#\r\n]*$ reject-dict
+^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/getOpenScreen(?:\?[^#\r\n]*)?$ reject-dict
+^https://tcmobileapi\.17usoft\.com/appindexnew/index/openscreen(?:\?[^#\r\n]*)?$ reject-dict
+^https://client\.tujia\.com/bnbapp\-node/app/portal/getStartPictureAdvertising(?:\?[^#\r\n]*)?$ reject
+^https://api3\.cls\.cn/v1/boot/ad(?:\?[^#\r\n]*)?$ reject
+^https://api\.cloud\.189\.cn/guns/getOpenscreenBanners(?:\?[^#\r\n]*)?$ reject-dict
+^https://home\.mi\.com/cgi\-op/api/v1/resource/realtime/openingBanner(?:\?[^#\r\n]*)?$ reject-dict
 
 [Mitm]
-hostname = acs.m.goofish.com, amap-aos-info-nogw.amap.com, api.pinduoduo.com, api.xiaoyuzhoufm.com, api.yangkeduo.com, api.zhihu.com, api2.yaduo.com, app.dewu.com, appapi.51job.com, appapi.51jobapp.com, bootpreload.uve.weibo.com, bootrealtime.uve.weibo.com, homefront.qunar.com, mage.if.qidian.com, mapi.dianping.com, r.inews.qq.com
+hostname = acs.m.goofish.com, amap-aos-info-nogw.amap.com, api.cloud.189.cn, api.pinduoduo.com, api.xiaoyuzhoufm.com, api.yangkeduo.com, api.zhihu.com, api2.yaduo.com, api3.cls.cn, app.dewu.com, app.zhuanzhuan.com, appapi.51job.com, appapi.51jobapp.com, bootpreload.uve.weibo.com, bootrealtime.uve.weibo.com, client.tujia.com, home.mi.com, homefront.qunar.com, mage.if.qidian.com, mapi.dianping.com, r.inews.qq.com, tcmobileapi.17usoft.com, wmapi.meituan.com

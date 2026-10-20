@@ -18,3 +18,7 @@ kelee / 可莉插件没有复制或改写进发布物。其索引仓库的 CC BY
 固定上游提交：5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97。
 许可：https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/LICENSE
 每条来源的精确路径、行号、原规则、内容哈希见 sources.json，作为对应源代码随本仓库公开。只选择开屏分支，拆分精确主机，限定HTTPS和完整路径；保持reject或空JSON动作，不复制整模块及其远程脚本。screening.json引用来源片段用于审查，不作为运行规则。未证明当前App版本兼容，不声称上游背书。
+
+## v0.2.1 增补
+
+同一固定fmz200提交下新增7款的8条独立开屏分支，署名奶思 / fmz200；原规则、行号、文件哈希继续记录在sources.json。deep-review.json只保留审查所需片段及引用；无关数字匹配去除内容仅留行号/哈希。未复制外部脚本、Cookie采集或签到功能。

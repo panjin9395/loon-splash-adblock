@@ -18,26 +18,28 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "多个阿里产品接口混在模块；无线开屏使用综合myBlockAds.js，未做字段fixture不引入。",
+    "source_status": "无线splash分支为综合myBlockAds.js字段处理；需仅开屏字段fixture，不直接拒绝配置；其他阿里产品端点不归淘宝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#淘宝"
+    "screening_ref": "screening.json#淘宝",
+    "reason": "无线splash分支为综合myBlockAds.js字段处理；需仅开屏字段fixture，不直接拒绝配置；其他阿里产品端点不归淘宝。"
   },
   {
     "name": "京东",
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "综合脚本匹配start及订单/个人信息等共享api.m.jd.com；未有仅开屏字段fixture，不能整包引入。",
+    "source_status": "start由jingdong.js混合订单/个人信息处理，不能整接口拒绝或整脚本导入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#京东"
+    "screening_ref": "screening.json#京东",
+    "reason": "start由jingdong.js混合订单/个人信息处理，不能整接口拒绝或整脚本导入。"
   },
   {
     "name": "拼多多",
@@ -72,13 +74,14 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "当前模块以整域拦截为主；另有初始化混合接口，未证开屏独立边界，不纳入。",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id423084029，观察版本12.67.201，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#美团"
+    "included": true,
+    "screening_ref": "screening.json#美团",
+    "app_store": "https://apps.apple.com/cn/app/%E7%BE%8E%E5%9B%A2-%E9%97%AE%E7%BE%8E%E5%9B%A2-%E9%83%BD%E5%AE%89%E6%8E%92/id423084029?uo=4"
   },
   {
     "name": "大众点评",
@@ -99,26 +102,28 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "主要凭CDN图片尺寸、扩展名、sitemap或视频匹配，难区分广告和正常素材，不能照搬。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#饿了么"
+    "screening_ref": "screening.json#饿了么",
+    "reason": "主要凭CDN图片尺寸、扩展名、sitemap或视频匹配，难区分广告和正常素材，不能照搬。"
   },
   {
     "name": "百度",
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到7个标题线索；身份/具体规则仍需核实",
+    "source_status": "adpmobile/launch为广告启动线索，但模块跨百度产品混杂，未核定百度App当前请求；输入法等同品牌模块不算证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百度"
+    "screening_ref": "screening.json#百度",
+    "reason": "adpmobile/launch为广告启动线索，但模块跨百度产品混杂，未核定百度App当前请求；输入法等同品牌模块不算证据。"
   },
   {
     "name": "高德地图",
@@ -139,13 +144,14 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "尺寸CDN匹配易误伤；phpui2 qt=ads仍依赖baidumap.js字段处理，暂不整包纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百度地图"
+    "screening_ref": "screening.json#百度地图",
+    "reason": "尺寸CDN匹配易误伤；phpui2 qt=ads仍依赖baidumap.js字段处理，暂不整包纳入。"
   },
   {
     "name": "微博",
@@ -166,13 +172,14 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "开屏配置依赖综合响应脚本；system_service/config包含非广告配置，未做字段fixture不拒绝全响应。",
+    "source_status": "system_service/config混合启动配置，splash_config仍需仅广告字段fixture，不能整包脚本引用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#小红书"
+    "screening_ref": "screening.json#小红书",
+    "reason": "system_service/config混合启动配置，splash_config仍需仅广告字段fixture，不能整包脚本引用。"
   },
   {
     "name": "知乎",
@@ -193,143 +200,154 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "上游对splash列表仅改show/event_list字段，不等价拒绝整个响应；需隔离字段fixture和兼容性审查。",
+    "source_status": "仅splash show/event_list字段可候选，其他模块含会员字段及支付提示修改，明确禁止；需要独立响应fixture。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#B站"
+    "screening_ref": "screening.json#B站",
+    "reason": "仅splash show/event_list字段可候选，其他模块含会员字段及支付提示修改，明确禁止；需要独立响应fixture。"
   },
   {
     "name": "网易云音乐",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "eapi/ad匹配不是专用开屏完整路径，另含二进制/外部脚本及推荐流，不纳入。",
+    "source_status": "eapi/ad不限定完整开屏接口，二进制及Keywos外部依赖未核，不整域或整包导入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#网易云音乐"
+    "screening_ref": "screening.json#网易云音乐",
+    "reason": "eapi/ad不限定完整开屏接口，二进制及Keywos外部依赖未核，不整域或整包导入。"
   },
   {
     "name": "QQ音乐",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "t_splash_info资源目录可能含非广告启动素材，尚无广告专用文件证据。",
+    "source_status": "t_splash_info目录可能包含启动素材，getPbCompressAd通用广告，尚缺开屏专属资源证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#QQ音乐"
+    "screening_ref": "screening.json#QQ音乐",
+    "reason": "t_splash_info目录可能包含启动素材，getPbCompressAd通用广告，尚缺开屏专属资源证据。"
   },
   {
     "name": "酷狗",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#酷狗"
+    "screening_ref": "screening.json#酷狗",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "酷我",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "audiobookpay/musicpay/vip脚本触及付费接口，禁止纳入；未找到独立开屏URL。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#酷我"
+    "screening_ref": "screening.json#酷我",
+    "reason": "audiobookpay/musicpay/vip脚本触及付费接口，禁止纳入；未找到独立开屏URL。"
   },
   {
     "name": "喜马拉雅",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "上游选项覆盖推荐/订阅/签到/播放等，广告规则为域级；未取得独立开屏URL。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#喜马拉雅"
+    "screening_ref": "screening.json#喜马拉雅",
+    "reason": "上游选项覆盖推荐/订阅/签到/播放等，广告规则为域级；未取得独立开屏URL。"
   },
   {
     "name": "爱奇艺",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "mixer同时处理开屏及播放广告，URL无法隔离；禁止整接口拦截。",
+    "source_status": "mixer同时开屏和播放广告，缺少场景字段隔离，不能仅依URL拦截。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#爱奇艺"
+    "screening_ref": "screening.json#爱奇艺",
+    "reason": "mixer同时开屏和播放广告，缺少场景字段隔离，不能仅依URL拦截。"
   },
   {
     "name": "腾讯视频",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "完整模块仅MITM主机声明，无实际重写规则，不能当成可用插件。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#腾讯视频"
+    "screening_ref": "screening.json#腾讯视频",
+    "reason": "完整模块仅MITM主机声明，无实际重写规则，不能当成可用插件。"
   },
   {
     "name": "优酷",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "play.ups.appinfo.get即使标开屏仍为播放信息接口，不能整响应拒绝；综合cnftp脚本未做隔离fixture。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#优酷"
+    "screening_ref": "screening.json#优酷",
+    "reason": "play.ups.appinfo.get即使标开屏仍为播放信息接口，不能整响应拒绝；综合cnftp脚本未做隔离fixture。"
   },
   {
     "name": "芒果TV",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "channel/config、video/info及搜索/升级混合，不见安全开屏独立分支。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#芒果TV"
+    "screening_ref": "screening.json#芒果TV",
+    "reason": "channel/config、video/info及搜索/升级混合，不见安全开屏独立分支。"
   },
   {
     "name": "今日头条",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "模块实际title为今日头条，不能因文件名JinRongToutiao判错App；但origin资源前缀无开屏隔离，不采用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#今日头条"
+    "screening_ref": "screening.json#今日头条",
+    "reason": "模块实际title为今日头条，不能因文件名JinRongToutiao判错App；但origin资源前缀无开屏隔离，不采用。"
   },
   {
     "name": "腾讯新闻",
@@ -350,13 +368,14 @@
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "nc/gl整目录返回空格，尚无具体开屏路径/场景证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#网易新闻"
+    "screening_ref": "screening.json#网易新闻",
+    "reason": "nc/gl整目录返回空格，尚无具体开屏路径/场景证据。"
   },
   {
     "name": "起点",
@@ -377,78 +396,84 @@
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "通用广告联盟/视频/资源及日志匹配跨场景，不是仅开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#番茄小说"
+    "screening_ref": "screening.json#番茄小说",
+    "reason": "通用广告联盟/视频/资源及日志匹配跨场景，不是仅开屏。"
   },
   {
     "name": "七猫",
     "categories": [
       "基础影音阅读"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "广告联盟及adv/reward/operation混合，不能拦奖励或正常操作接口。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#七猫"
+    "screening_ref": "screening.json#七猫",
+    "reason": "广告联盟及adv/reward/operation混合，不能拦奖励或正常操作接口。"
   },
   {
     "name": "菜鸟",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "nbnetflow及homepage/消息等混合，脚本字段未隔离；不更改消息或物流页。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#菜鸟"
+    "screening_ref": "screening.json#菜鸟",
+    "reason": "nbnetflow及homepage/消息等混合，脚本字段未隔离；不更改消息或物流页。"
   },
   {
     "name": "顺丰",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到3个标题线索；身份/具体规则仍需核实",
+    "source_status": "实际快递模块是积分商城、视频、信息流和推荐；小程序及顺丰优选不当作顺丰App开屏证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#顺丰"
+    "screening_ref": "screening.json#顺丰",
+    "reason": "实际快递模块是积分商城、视频、信息流和推荐；小程序及顺丰优选不当作顺丰App开屏证据。"
   },
   {
     "name": "携程",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "上游明确旧版8.40.0及8.47.0以上图片问题，当前版本兼容未确认，暂不纳入。",
+    "source_status": "上游注明8.40.0旧版及8.47.0以上图片异常，当前兼容未知；先不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#携程"
+    "screening_ref": "screening.json#携程",
+    "reason": "上游注明8.40.0旧版及8.47.0以上图片异常，当前兼容未知；先不纳入。"
   },
   {
     "name": "同程",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "命中xcxhomeapi小程序且包含首页聚合/banner，不当作iOS App开屏证据。",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id475966832，观察版本11.5.1，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#同程"
+    "included": true,
+    "screening_ref": "screening.json#同程",
+    "app_store": "https://apps.apple.com/cn/app/%E5%90%8C%E7%A8%8B%E6%97%85%E8%A1%8C-%E8%AE%A2%E9%85%92%E5%BA%97%E6%9C%BA%E7%A5%A8%E7%81%AB%E8%BD%A6%E7%A5%A8-%E4%BD%8E%E4%BB%B7%E6%89%93%E8%BD%A6/id475966832?uo=4"
   },
   {
     "name": "去哪儿",
@@ -469,39 +494,41 @@
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到3个标题线索；身份/具体规则仍需核实",
+    "source_status": "activity mget/xpget共享活动配置，综合脚本还处理货运/个人中心/代驾；缺少广告字段fixture。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#滴滴"
+    "screening_ref": "screening.json#滴滴",
+    "reason": "activity mget/xpget共享活动配置，综合脚本还处理货运/个人中心/代驾；缺少广告字段fixture。"
   },
   {
     "name": "哈啰",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "完整模块只有元数据，没有实际规则，不能当成已支持。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#哈啰"
+    "screening_ref": "screening.json#哈啰",
+    "reason": "完整模块只有元数据，没有实际规则，不能当成已支持。"
   },
   {
     "name": "移动联通电信",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到4个标题线索；身份/具体规则仍需核实",
+    "source_status": "合称尚未拆分身份；startInit/getclientconfig共享配置，tiny-gif响应不能直接代空JSON；不因三者同组就宣称全覆盖。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "reason": "原候选合称，保留原始名称；运营商App身份未确认，不拆成假定精确App",
+    "reason": "合称尚未拆分身份；startInit/getclientconfig共享配置，tiny-gif响应不能直接代空JSON；不因三者同组就宣称全覆盖。",
     "screening_ref": "screening.json#移动联通电信"
   },
   {
@@ -509,117 +536,126 @@
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#墨迹天气"
+    "screening_ref": "screening.json#墨迹天气",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "彩云天气",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "activity为活动接口、外部caiyun.json未审，不把付费/活动混入开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#彩云天气"
+    "screening_ref": "screening.json#彩云天气",
+    "reason": "activity为活动接口、外部caiyun.json未审，不把付费/活动混入开屏。"
   },
   {
     "name": "什么值得买",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "util/loading由综合Smzdm.js处理，需仅开屏字段及未知结构回归fixture后再纳入。",
+    "source_status": "util/loading使用综合Smzdm.js，需单独隔离开屏字段fixture；vip/钱包/推荐不得引入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#什么值得买"
+    "screening_ref": "screening.json#什么值得买",
+    "reason": "util/loading使用综合Smzdm.js，需单独隔离开屏字段fixture；vip/钱包/推荐不得引入。"
   },
   {
     "name": "酷安",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "main/init及feed脚本混合、外部redirect脚本许可未核；无可直接纳入的纯开屏响应。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#酷安"
+    "screening_ref": "screening.json#酷安",
+    "reason": "main/init及feed脚本混合、外部redirect脚本许可未核；无可直接纳入的纯开屏响应。"
   },
   {
     "name": "懂车帝",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#懂车帝"
+    "screening_ref": "screening.json#懂车帝",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "汽车之家",
     "categories": [
       "基础出行工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "AdvertiseService和apppdfs为整目录，未证明仅开屏，保留不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#汽车之家"
+    "screening_ref": "screening.json#汽车之家",
+    "reason": "AdvertiseService和apppdfs为整目录，未证明仅开屏，保留不纳入。"
   },
   {
     "name": "天猫",
     "categories": [
       "购物商超"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#天猫"
+    "screening_ref": "screening.json#天猫",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "唯品会",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "activity/advertisement/get没有开屏位区分，另有商品事件/优惠券等非开屏，不能只凭advertisement名字纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#唯品会"
+    "screening_ref": "screening.json#唯品会",
+    "reason": "activity/advertisement/get没有开屏位区分，另有商品事件/优惠券等非开屏，不能只凭advertisement名字纳入。"
   },
   {
     "name": "苏宁",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getDmInfo/ad目录及首页policy未提供独立开屏语义，暂不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#苏宁"
+    "screening_ref": "screening.json#苏宁",
+    "reason": "getDmInfo/ad目录及首页policy未提供独立开屏语义，暂不纳入。"
   },
   {
     "name": "得物",
@@ -640,730 +676,786 @@
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id1002355194，观察版本12.19.0，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#转转"
+    "included": true,
+    "screening_ref": "screening.json#转转",
+    "app_store": "https://apps.apple.com/cn/app/%E8%BD%AC%E8%BD%AC-%E4%BA%8C%E6%89%8B%E5%AE%98%E6%96%B9%E9%AA%8C/id1002355194?uo=4"
   },
   {
     "name": "拍拍严选",
     "categories": [
       "购物商超"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中夺宝岛历史价格脚本，非开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#拍拍严选"
+    "screening_ref": "screening.json#拍拍严选",
+    "reason": "命中夺宝岛历史价格脚本，非开屏。"
   },
   {
     "name": "孔夫子旧书网",
     "categories": [
       "购物商超"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#孔夫子旧书网"
+    "screening_ref": "screening.json#孔夫子旧书网",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "多点",
     "categories": [
       "购物商超"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "App Store已核实；具体版本待手机",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "myBlockAds.js:37-48仅改welcomePage时间，不能等价拒绝整个配置；缺少结构fixture与当前iOS请求，暂不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
     "app_store": "https://apps.apple.com/cn/app/id1002314698",
-    "screening_ref": "screening.json#多点"
+    "screening_ref": "screening.json#多点",
+    "reason": "myBlockAds.js:37-48仅改welcomePage时间，不能等价拒绝整个配置；缺少结构fixture与当前iOS请求，暂不纳入。"
   },
   {
     "name": "盒马",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "场景/整页响应与推荐/购买后活动混杂，远程zirawell脚本未建立许可及仅开屏fixture，不能整包引用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#盒马"
+    "screening_ref": "screening.json#盒马",
+    "reason": "场景/整页响应与推荐/购买后活动混杂，远程zirawell脚本未建立许可及仅开屏fixture，不能整包引用。"
   },
   {
     "name": "叮咚",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "advert/虽注释开屏仍为未知子路径目录；脚本含homeFlow、getConfig、userportal及外部依赖，不可整体拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#叮咚"
+    "screening_ref": "screening.json#叮咚",
+    "reason": "advert/虽注释开屏仍为未知子路径目录；脚本含homeFlow、getConfig、userportal及外部依赖，不可整体拒绝。"
   },
   {
     "name": "朴朴",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "第41行pattern明显截断为中文，其他脚本匹配广告/搜索/结算/订单；不能直接导入或自动修复猜路径。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#朴朴"
+    "screening_ref": "screening.json#朴朴",
+    "reason": "第41行pattern明显截断为中文，其他脚本匹配广告/搜索/结算/订单；不能直接导入或自动修复猜路径。"
   },
   {
     "name": "山姆",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "screen_promotion/get可能促销弹窗而非冷启动开屏；其余包含订单常买/搜索推荐/升级，需场景证据，暂不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#山姆"
+    "screening_ref": "screening.json#山姆",
+    "reason": "screen_promotion/get可能促销弹窗而非冷启动开屏；其余包含订单常买/搜索推荐/升级，需场景证据，暂不纳入。"
   },
   {
     "name": "永辉",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getAd通用接口，未见开屏位过滤；不能只凭广告名字宣称仅开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#永辉"
+    "screening_ref": "screening.json#永辉",
+    "reason": "getAd通用接口，未见开屏位过滤；不能只凭广告名字宣称仅开屏。"
   },
   {
     "name": "慢慢买",
     "categories": [
       "购物商超"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#慢慢买"
+    "screening_ref": "screening.json#慢慢买",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "返利网",
     "categories": [
       "购物商超"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "历史2022及202x图片目录，主机为数字变量；无明确当前主机/广告素材样例，暂不扩大MITM。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#返利网"
+    "screening_ref": "screening.json#返利网",
+    "reason": "历史2022及202x图片目录，主机为数字变量；无明确当前主机/广告素材样例，暂不扩大MITM。"
   },
   {
     "name": "肯德基",
     "categories": [
       "餐饮"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "第10行含异常转义com.\\cn，apphome5/6可能启动也可能首页，未证明独立开屏，不猜测纠正。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#肯德基"
+    "screening_ref": "screening.json#肯德基",
+    "reason": "第10行含异常转义com.\\cn，apphome5/6可能启动也可能首页，未证明独立开屏，不猜测纠正。"
   },
   {
     "name": "麦当劳",
     "categories": [
       "餐饮"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "home/splash为独立候选，但上游动作为200空格而不是空JSON或断开。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#麦当劳"
+    "screening_ref": "screening.json#麦当劳",
+    "reason": "home/splash为独立候选，但上游动作为200空格而不是空JSON或断开。"
   },
   {
     "name": "必胜客",
     "categories": [
       "餐饮"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "apphome/member非专用开屏证据，会员分支禁止处理。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#必胜客"
+    "screening_ref": "screening.json#必胜客",
+    "reason": "apphome/member非专用开屏证据，会员分支禁止处理。"
   },
   {
     "name": "瑞幸",
     "categories": [
       "餐饮"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "adposNew可能多广告位，会员兑换/成长及商品订单推荐均超范围；CDN尺寸/路径不保证广告专用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#瑞幸"
+    "screening_ref": "screening.json#瑞幸",
+    "reason": "adposNew可能多广告位，会员兑换/成长及商品订单推荐均超范围；CDN尺寸/路径不保证广告专用。"
   },
   {
     "name": "星巴克",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#星巴克"
+    "screening_ref": "screening.json#星巴克",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "库迪",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#库迪"
+    "screening_ref": "screening.json#库迪",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "喜茶",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#喜茶"
+    "screening_ref": "screening.json#喜茶",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "奈雪",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#奈雪"
+    "screening_ref": "screening.json#奈雪",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "蜜雪冰城",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#蜜雪冰城"
+    "screening_ref": "screening.json#蜜雪冰城",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "海底捞",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#海底捞"
+    "screening_ref": "screening.json#海底捞",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "口碑",
     "categories": [
       "餐饮"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#口碑"
+    "screening_ref": "screening.json#口碑",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "京东快递",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#京东快递"
+    "screening_ref": "screening.json#京东快递",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "中通",
     "categories": [
       "快递"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "Apollo配置/track/getAdInfo/listJumperShow未区分开屏，拒绝全配置有风险。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#中通"
+    "screening_ref": "screening.json#中通",
+    "reason": "Apollo配置/track/getAdInfo/listJumperShow未区分开屏，拒绝全配置有风险。"
   },
   {
     "name": "圆通",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#圆通"
+    "screening_ref": "screening.json#圆通",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "韵达",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#韵达"
+    "screening_ref": "screening.json#韵达",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "申通",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#申通"
+    "screening_ref": "screening.json#申通",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "极兔",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#极兔"
+    "screening_ref": "screening.json#极兔",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "德邦",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#德邦"
+    "screening_ref": "screening.json#德邦",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "中国邮政",
     "categories": [
       "快递"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#中国邮政"
+    "screening_ref": "screening.json#中国邮政",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "丰巢",
     "categories": [
       "快递"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "adSearch/queryAd/vN/ad为通用广告或目录，另有建议查询，无专用开屏筛选。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#丰巢"
+    "screening_ref": "screening.json#丰巢",
+    "reason": "adSearch/queryAd/vN/ad为通用广告或目录，另有建议查询，无专用开屏筛选。"
   },
   {
     "name": "T3",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#T3"
+    "screening_ref": "screening.json#T3",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "曹操",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "advert-bss整服务路径，未区分开屏/车程内广告，暂不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#曹操"
+    "screening_ref": "screening.json#曹操",
+    "reason": "advert-bss整服务路径，未区分开屏/车程内广告，暂不纳入。"
   },
   {
     "name": "花小猪",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "注释开屏，但activity/mget是批量活动读取且要求_t开头查询，未证明全响应只广告，需字段fixture。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#花小猪"
+    "screening_ref": "screening.json#花小猪",
+    "reason": "注释开屏，但activity/mget是批量活动读取且要求_t开头查询，未证明全响应只广告，需字段fixture。"
   },
   {
     "name": "嘀嗒",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "App Store已核实；具体版本待手机",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "通用adbase/ad目录、第三方竞价、升级及统计混合，没有开屏位证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
     "app_store": "https://apps.apple.com/cn/app/id921478733",
-    "screening_ref": "screening.json#嘀嗒"
+    "screening_ref": "screening.json#嘀嗒",
+    "reason": "通用adbase/ad目录、第三方竞价、升级及统计混合，没有开屏位证据。"
   },
   {
     "name": "车来了",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "通用adpub/advert目录及展示查询；主机变量/全目录不可直接变成开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#车来了"
+    "screening_ref": "screening.json#车来了",
+    "reason": "通用adpub/advert目录及展示查询；主机变量/全目录不可直接变成开屏合集。"
   },
   {
     "name": "掌上公交",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "HttpHandlerServlet为共享处理入口，不应整响应拒绝；另一个来源是小程序脚本，不能当iOS原生证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#掌上公交"
+    "screening_ref": "screening.json#掌上公交",
+    "reason": "HttpHandlerServlet为共享处理入口，不应整响应拒绝；另一个来源是小程序脚本，不能当iOS原生证据。"
   },
   {
     "name": "Metro大都会",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#Metro大都会"
+    "screening_ref": "screening.json#Metro大都会",
+    "reason": "命中仅微信小程序插件，不能当作对应iOS App开屏规则；不复制外部脚本。"
   },
   {
     "name": "亿通行",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#亿通行"
+    "screening_ref": "screening.json#亿通行",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "12306",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "外部kokoryh请求脚本且requires-body，需核实独立许可和字段语义；不触碰出行凭据请求，不直接引入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#12306"
+    "screening_ref": "screening.json#12306",
+    "reason": "外部kokoryh请求脚本且requires-body，需核实独立许可和字段语义；不触碰出行凭据请求，不直接引入。"
   },
   {
     "name": "铁路畅行",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#铁路畅行"
+    "screening_ref": "screening.json#铁路畅行",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "航旅纵横",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "http?写法不覆盖HTTPS，共享native网关与正则分组问题；不能猜修协议后整网关拦截。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#航旅纵横"
+    "screening_ref": "screening.json#航旅纵横",
+    "reason": "http?写法不覆盖HTTPS，共享native网关与正则分组问题；不能猜修协议后整网关拦截。"
   },
   {
     "name": "飞常准",
     "categories": [
       "交通航空"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ad/advert整目录无开屏位限定，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#飞常准"
+    "screening_ref": "screening.json#飞常准",
+    "reason": "ad/advert整目录无开屏位限定，不纳入。"
   },
   {
     "name": "航班管家",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#航班管家"
+    "screening_ref": "screening.json#航班管家",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "国航",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#国航"
+    "screening_ref": "screening.json#国航",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "东航",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#东航"
+    "screening_ref": "screening.json#东航",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "南航",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#南航"
+    "screening_ref": "screening.json#南航",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "春秋",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#春秋"
+    "screening_ref": "screening.json#春秋",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "吉祥",
     "categories": [
       "交通航空"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#吉祥"
+    "screening_ref": "screening.json#吉祥",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "飞猪",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "screen.allresource/predict可能多个场景，图片尺寸规则可能误伤，需实际字段语义及版本证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#飞猪"
+    "screening_ref": "screening.json#飞猪",
+    "reason": "screen.allresource/predict可能多个场景，图片尺寸规则可能误伤，需实际字段语义及版本证据。"
   },
   {
     "name": "途牛",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "splash/目录是候选，但未知子路径和200空格动作；富途牛牛同名字串误匹配排除。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#途牛"
+    "screening_ref": "screening.json#途牛",
+    "reason": "splash/目录是候选，但未知子路径和200空格动作；富途牛牛同名字串误匹配排除。"
   },
   {
     "name": "马蜂窝",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ad前缀/笔记/推送/升级/用户页混杂；不能认定独立开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#马蜂窝"
+    "screening_ref": "screening.json#马蜂窝",
+    "reason": "ad前缀/笔记/推送/升级/用户页混杂；不能认定独立开屏。"
   },
   {
     "name": "穷游",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "整配置/广告目录和startpage目录，启动页未证明只广告，且空格响应不可随意改为断开。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#穷游"
+    "screening_ref": "screening.json#穷游",
+    "reason": "整配置/广告目录和startpage目录，启动页未证明只广告，且空格响应不可随意改为断开。"
   },
   {
     "name": "华住",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "上游getAppStartPage注释开屏，但端口变量和子路径未知；其余公共通知/酒店推荐全部排除。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#华住"
+    "screening_ref": "screening.json#华住",
+    "reason": "上游getAppStartPage注释开屏，但端口变量和子路径未知；其余公共通知/酒店推荐全部排除。"
   },
   {
     "name": "锦江",
     "categories": [
       "旅游住宿"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "仅README索引及微信小程序，未取得可验证App规则内容与适配证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#锦江"
+    "screening_ref": "screening.json#锦江",
+    "reason": "仅README索引及微信小程序，未取得可验证App规则内容与适配证据。"
   },
   {
     "name": "如家",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "landing没有广告字段或注释证据，可能正常着陆配置，暂不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#如家"
+    "screening_ref": "screening.json#如家",
+    "reason": "landing没有广告字段或注释证据，可能正常着陆配置，暂不纳入。"
   },
   {
     "name": "亚朵",
@@ -1384,520 +1476,560 @@
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id582934943，观察版本9.29.1，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#途家"
+    "included": true,
+    "screening_ref": "screening.json#途家",
+    "app_store": "https://apps.apple.com/cn/app/%E9%80%94%E5%AE%B6%E6%B0%91%E5%AE%BF-%E6%B0%91%E5%AE%BF%E5%AE%A2%E6%A0%88%E5%92%8C%E7%9F%AD%E7%A7%9F%E9%A2%84%E8%AE%A2%E5%B9%B3%E5%8F%B0/id582934943?uo=4"
   },
   {
     "name": "小猪",
     "categories": [
       "旅游住宿"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#小猪"
+    "screening_ref": "screening.json#小猪",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "58",
     "categories": [
       "旅游住宿"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "home广告目录、log和邀请弹窗，不限定开屏；58汽车不同App需排除误匹配。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#58"
+    "screening_ref": "screening.json#58",
+    "reason": "home广告目录、log和邀请弹窗，不限定开屏；58汽车不同App需排除误匹配。"
   },
   {
     "name": "赶集直招",
     "categories": [
       "旅游住宿"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#赶集直招"
+    "screening_ref": "screening.json#赶集直招",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "腾讯地图",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "mwaSplash资源目录候选但200空格动作、未知具体文件与广告身份，未直接纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#腾讯地图"
+    "screening_ref": "screening.json#腾讯地图",
+    "reason": "mwaSplash资源目录候选但200空格动作、未知具体文件与广告身份，未直接纳入。"
   },
   {
     "name": "易车",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getadlist及用户消息数返回图片，可能影响非广告功能；无开屏位证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#易车"
+    "screening_ref": "screening.json#易车",
+    "reason": "getadlist及用户消息数返回图片，可能影响非广告功能；无开屏位证据。"
   },
   {
     "name": "汽车报价大全",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#汽车报价大全"
+    "screening_ref": "screening.json#汽车报价大全",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "瓜子",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#瓜子"
+    "screening_ref": "screening.json#瓜子",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "汽车之家极速版",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中Cookie采集/签到插件，不是开屏，禁止纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#汽车之家极速版"
+    "screening_ref": "screening.json#汽车之家极速版",
+    "reason": "命中Cookie采集/签到插件，不是开屏，禁止纳入。"
   },
   {
     "name": "特来电",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#特来电"
+    "screening_ref": "screening.json#特来电",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "星星充电",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#星星充电"
+    "screening_ref": "screening.json#星星充电",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "网上国网",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "强制升级/缓存/信息查询和bootpage混杂，涉及公共服务公告，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#网上国网"
+    "screening_ref": "screening.json#网上国网",
+    "reason": "强制升级/缓存/信息查询和bootpage混杂，涉及公共服务公告，不纳入。"
   },
   {
     "name": "南网在线",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#南网在线"
+    "screening_ref": "screening.json#南网在线",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "团油",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#团油"
+    "screening_ref": "screening.json#团油",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "车轮",
     "categories": [
       "汽车能源"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#车轮"
+    "screening_ref": "screening.json#车轮",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "驾考宝典",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "任意子域advert-sdk/广告目录，未区分开屏及练习场景，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#驾考宝典"
+    "screening_ref": "screening.json#驾考宝典",
+    "reason": "任意子域advert-sdk/广告目录，未区分开屏及练习场景，不纳入。"
   },
   {
     "name": "驾校一点通",
     "categories": [
       "汽车能源"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "开屏注释下intellectWaterfall竞价可能多广告位；其余ad目录、跳转和fallback泛化，尚需字段/场景确认。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#驾校一点通"
+    "screening_ref": "screening.json#驾校一点通",
+    "reason": "开屏注释下intellectWaterfall竞价可能多广告位；其余ad目录、跳转和fallback泛化，尚需字段/场景确认。"
   },
   {
     "name": "抖音",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#抖音"
+    "screening_ref": "screening.json#抖音",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "快手",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "startup改皮肤/侧栏非开屏广告；联盟竞价跨广告位，不整包采用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#快手"
+    "screening_ref": "screening.json#快手",
+    "reason": "startup改皮肤/侧栏非开屏广告；联盟竞价跨广告位，不整包采用。"
   },
   {
     "name": "西瓜",
     "categories": [
       "视频娱乐"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#西瓜"
+    "screening_ref": "screening.json#西瓜",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "好看",
     "categories": [
       "视频娱乐"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#好看"
+    "screening_ref": "screening.json#好看",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "搜狐视频",
     "categories": [
       "视频娱乐"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#搜狐视频"
+    "screening_ref": "screening.json#搜狐视频",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "咪咕视频",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "合并广告位、推荐/活动/个人中心脚本混杂，未证开屏专用URL。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#咪咕视频"
+    "screening_ref": "screening.json#咪咕视频",
+    "reason": "合并广告位、推荐/活动/个人中心脚本混杂，未证开屏专用URL。"
   },
   {
     "name": "央视频",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "sdk/pool任意json为共享广告池，固定素材ID未证明当前开屏；不据名称拦公告。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#央视频"
+    "screening_ref": "screening.json#央视频",
+    "reason": "sdk/pool任意json为共享广告池，固定素材ID未证明当前开屏；不据名称拦公告。"
   },
   {
     "name": "央视影音",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#央视影音"
+    "screening_ref": "screening.json#央视影音",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "埋堆堆",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "第一方/第三方广告列表、弹窗和公共广告SDK跨场景，不是独立开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#埋堆堆"
+    "screening_ref": "screening.json#埋堆堆",
+    "reason": "第一方/第三方广告列表、弹窗和公共广告SDK跨场景，不是独立开屏。"
   },
   {
     "name": "AcFun",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "flash/screen目录是候选但实际子路径未知，暂不以整目录代替精确请求。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#AcFun"
+    "screening_ref": "screening.json#AcFun",
+    "reason": "flash/screen目录是候选但实际子路径未知，暂不以整目录代替精确请求。"
   },
   {
     "name": "虎牙",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "queryHttpDns为DNS并非广告；advertiser/material及appad目录跨素材，不拦正常功能。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#虎牙"
+    "screening_ref": "screening.json#虎牙",
+    "reason": "queryHttpDns为DNS并非广告；advertiser/material及appad目录跨素材，不拦正常功能。"
   },
   {
     "name": "斗鱼",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "daoyu.sdo.com实际叨鱼非斗鱼，不能沿袭上游归类错误；getStartSend还含不规范查询正则/不同响应，需原始路径证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#斗鱼"
+    "screening_ref": "screening.json#斗鱼",
+    "reason": "daoyu.sdo.com实际叨鱼非斗鱼，不能沿袭上游归类错误；getStartSend还含不规范查询正则/不同响应，需原始路径证据。"
   },
   {
     "name": "B站直播姬",
     "categories": [
       "视频娱乐"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#B站直播姬"
+    "screening_ref": "screening.json#B站直播姬",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "豆瓣",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "app_ads/common_ads目录及电影banner跨广告位，不限定冷启动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#豆瓣"
+    "screening_ref": "screening.json#豆瓣",
+    "reason": "app_ads/common_ads目录及电影banner跨广告位，不限定冷启动。"
   },
   {
     "name": "猫眼",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "图片目录与尺寸过滤，尚未区分开屏和正常图片。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#猫眼"
+    "screening_ref": "screening.json#猫眼",
+    "reason": "图片目录与尺寸过滤，尚未区分开屏和正常图片。"
   },
   {
     "name": "大麦",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "home.welcome可能启动配置且版本尾界未知；不能仅凭welcome拒绝；DNS调度不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#大麦"
+    "screening_ref": "screening.json#大麦",
+    "reason": "home.welcome可能启动配置且版本尾界未知；不能仅凭welcome拒绝；DNS调度不动。"
   },
   {
     "name": "淘票票",
     "categories": [
       "视频娱乐"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "queryadvertise含通用广告，queryloadingbanner版本路径待确认，避免泛化整个网关。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#淘票票"
+    "screening_ref": "screening.json#淘票票",
+    "reason": "queryadvertise含通用广告，queryloadingbanner版本路径待确认，避免泛化整个网关。"
   },
   {
     "name": "汽水",
     "categories": [
       "音频"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "公共广告SDK、卡片和commerce字段均跨场景，没有开屏独立规则。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#汽水"
+    "screening_ref": "screening.json#汽水",
+    "reason": "公共广告SDK、卡片和commerce字段均跨场景，没有开屏独立规则。"
   },
   {
     "name": "咪咕音乐",
     "categories": [
       "音频"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#咪咕音乐"
+    "screening_ref": "screening.json#咪咕音乐",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "千千",
     "categories": [
       "音频"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#千千"
+    "screening_ref": "screening.json#千千",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "荔枝",
     "categories": [
       "音频"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#荔枝"
+    "screening_ref": "screening.json#荔枝",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "蜻蜓FM",
     "categories": [
       "音频"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#蜻蜓FM"
+    "screening_ref": "screening.json#蜻蜓FM",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "懒人听书",
     "categories": [
       "音频"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ClientAdvertList共享列表，任意host与图片模式误伤大；不引入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#懒人听书"
+    "screening_ref": "screening.json#懒人听书",
+    "reason": "ClientAdvertList共享列表，任意host与图片模式误伤大；不引入。"
   },
   {
     "name": "小宇宙",
@@ -1918,1456 +2050,1568 @@
     "categories": [
       "音频"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#云听"
+    "screening_ref": "screening.json#云听",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "得到",
     "categories": [
       "音频"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#得到"
+    "screening_ref": "screening.json#得到",
+    "reason": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
   },
   {
     "name": "凤凰",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "凤凰秀launchAD不是凤凰新闻；原候选名称歧义，未确认具体iOS App，保留身份不确定。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#凤凰"
+    "screening_ref": "screening.json#凤凰",
+    "reason": "凤凰秀launchAD不是凤凰新闻；原候选名称歧义，未确认具体iOS App，保留身份不确定。"
   },
   {
     "name": "搜狐新闻",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#搜狐新闻"
+    "screening_ref": "screening.json#搜狐新闻",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "新浪新闻",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ua?t=adv通用广告入口，不确定开屏专用。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#新浪新闻"
+    "screening_ref": "screening.json#新浪新闻",
+    "reason": "ua?t=adv通用广告入口，不确定开屏专用。"
   },
   {
     "name": "澎湃",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "adpai通用含ad查询，无固定开屏位；不拦新闻公共内容。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#澎湃"
+    "screening_ref": "screening.json#澎湃",
+    "reason": "adpai通用含ad查询，无固定开屏位；不拦新闻公共内容。"
   },
   {
     "name": "界面",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ads整素材目录，非专用开屏路径。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#界面"
+    "screening_ref": "screening.json#界面",
+    "reason": "ads整素材目录，非专用开屏路径。"
   },
   {
     "name": "财联社",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id958017075，观察版本8.8.5，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#财联社"
+    "included": true,
+    "screening_ref": "screening.json#财联社",
+    "app_store": "https://apps.apple.com/cn/app/%E8%B4%A2%E8%81%94%E7%A4%BE-%E4%B8%8A%E6%B5%B7%E6%8A%A5%E4%B8%9A%E9%9B%86%E5%9B%A2%E4%B8%BB%E7%AE%A1%E4%B8%BB%E5%8A%9E/id958017075?uo=4"
   },
   {
     "name": "人民日报",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "HomeApi adv/AppLoad图片目录可能启动，但无广告专用场景保证，公共公告保守不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#人民日报"
+    "screening_ref": "screening.json#人民日报",
+    "reason": "HomeApi adv/AppLoad图片目录可能启动，但无广告专用场景保证，公共公告保守不动。"
   },
   {
     "name": "新华社",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#新华社"
+    "screening_ref": "screening.json#新华社",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "央视新闻",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#央视新闻"
+    "screening_ref": "screening.json#央视新闻",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "贴吧",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getSplashAd是线索，但依赖app2smile JSON/protobuf脚本，需明确许可及单独fixture；不引入整个信息流处理。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#贴吧"
+    "screening_ref": "screening.json#贴吧",
+    "reason": "getSplashAd是线索，但依赖app2smile JSON/protobuf脚本，需明确许可及单独fixture；不引入整个信息流处理。"
   },
   {
     "name": "虎扑",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "status/init共享初始化，图片尺寸/宽路径，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#虎扑"
+    "screening_ref": "screening.json#虎扑",
+    "reason": "status/init共享初始化，图片尺寸/宽路径，不纳入。"
   },
   {
     "name": "懂球帝",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "plat/v4缺广告位信息，不能整平台接口拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#懂球帝"
+    "screening_ref": "screening.json#懂球帝",
+    "reason": "plat/v4缺广告位信息，不能整平台接口拒绝。"
   },
   {
     "name": "直播吧",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#直播吧"
+    "screening_ref": "screening.json#直播吧",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "雷速",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#雷速"
+    "screening_ref": "screening.json#雷速",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "球探",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#球探"
+    "screening_ref": "screening.json#球探",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "新浪体育",
     "categories": [
       "资讯体育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#新浪体育"
+    "screening_ref": "screening.json#新浪体育",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "腾讯体育",
     "categories": [
       "资讯体育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "news.ssp.qq.com/app泛广告服务及固定历史图片，不保证开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#腾讯体育"
+    "screening_ref": "screening.json#腾讯体育",
+    "reason": "news.ssp.qq.com/app泛广告服务及固定历史图片，不保证开屏。"
   },
   {
     "name": "微信读书",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#微信读书"
+    "screening_ref": "screening.json#微信读书",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "QQ阅读",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#QQ阅读"
+    "screening_ref": "screening.json#QQ阅读",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "掌阅",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "self/screen/ad是线索但空格动作及当前广告位未确认；其他书城目录不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#掌阅"
+    "screening_ref": "screening.json#掌阅",
+    "reason": "self/screen/ad是线索但空格动作及当前广告位未确认；其他书城目录不纳入。"
   },
   {
     "name": "书旗",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "广告SDK、阅读页、消息及反馈混合，跨场景严重，不导入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#书旗"
+    "screening_ref": "screening.json#书旗",
+    "reason": "广告SDK、阅读页、消息及反馈混合，跨场景严重，不导入。"
   },
   {
     "name": "晋江",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#晋江"
+    "screening_ref": "screening.json#晋江",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "刺猬猫",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "get_startpage_url_list可能启动页面而非纯广告，缺少广告语义证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#刺猬猫"
+    "screening_ref": "screening.json#刺猬猫",
+    "reason": "get_startpage_url_list可能启动页面而非纯广告，缺少广告语义证据。"
   },
   {
     "name": "菠萝包",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ioscfg整应用配置，不直接拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#菠萝包"
+    "screening_ref": "screening.json#菠萝包",
+    "reason": "ioscfg整应用配置，不直接拒绝。"
   },
   {
     "name": "番茄畅听",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#番茄畅听"
+    "screening_ref": "screening.json#番茄畅听",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "快看漫画",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "命中Cookie采集/签到插件，不是开屏，禁止纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#快看漫画"
+    "screening_ref": "screening.json#快看漫画",
+    "reason": "命中Cookie采集/签到插件，不是开屏，禁止纳入。"
   },
   {
     "name": "B站漫画",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "Flash/ListFlash线索但原空格响应及场景未证，其余AppInit/商品/会员/推荐不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#B站漫画"
+    "screening_ref": "screening.json#B站漫画",
+    "reason": "Flash/ListFlash线索但原空格响应及场景未证，其余AppInit/商品/会员/推荐不动。"
   },
   {
     "name": "腾讯动漫",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#腾讯动漫"
+    "screening_ref": "screening.json#腾讯动漫",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "百度文库",
     "categories": [
       "阅读漫画"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "wknaad通用广告接口，未见开屏位说明。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百度文库"
+    "screening_ref": "screening.json#百度文库",
+    "reason": "wknaad通用广告接口，未见开屏位说明。"
   },
   {
     "name": "百科",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百科"
+    "screening_ref": "screening.json#百科",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "知乎日报",
     "categories": [
       "阅读漫画"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#知乎日报"
+    "screening_ref": "screening.json#知乎日报",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "有道词典",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "startup注释实际首页弹窗，不等于开屏；CommonConfig及任务会员相关均不引入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#有道词典"
+    "screening_ref": "screening.json#有道词典",
+    "reason": "startup注释实际首页弹窗，不等于开屏；CommonConfig及任务会员相关均不引入。"
   },
   {
     "name": "金山词霸",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "open/screens?adjson有线索，但版本/空格动作及其他广告位未核；外部整域禁止。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#金山词霸"
+    "screening_ref": "screening.json#金山词霸",
+    "reason": "open/screens?adjson有线索，但版本/空格动作及其他广告位未核；外部整域禁止。"
   },
   {
     "name": "欧路",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#欧路"
+    "screening_ref": "screening.json#欧路",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "百度翻译",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "IosStart/getStartInfo可能包含启动配置，广告专用字段未知；不整响应拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百度翻译"
+    "screening_ref": "screening.json#百度翻译",
+    "reason": "IosStart/getStartInfo可能包含启动配置，广告专用字段未知；不整响应拒绝。"
   },
   {
     "name": "百词斩",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百词斩"
+    "screening_ref": "screening.json#百词斩",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "墨墨",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#墨墨"
+    "screening_ref": "screening.json#墨墨",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "不背单词",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#不背单词"
+    "screening_ref": "screening.json#不背单词",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "扇贝",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#扇贝"
+    "screening_ref": "screening.json#扇贝",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "沪江开心词场",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#沪江开心词场"
+    "screening_ref": "screening.json#沪江开心词场",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "每日英语听力",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#每日英语听力"
+    "screening_ref": "screening.json#每日英语听力",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "学习通",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "appConfig整配置，可能影响登录课程，拒绝纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#学习通"
+    "screening_ref": "screening.json#学习通",
+    "reason": "appConfig整配置，可能影响登录课程，拒绝纳入。"
   },
   {
     "name": "智慧树",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#智慧树"
+    "screening_ref": "screening.json#智慧树",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "中国大学MOOC",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#中国大学MOOC"
+    "screening_ref": "screening.json#中国大学MOOC",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "作业帮",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "adx整广告服务路径，缺开屏位区分。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#作业帮"
+    "screening_ref": "screening.json#作业帮",
+    "reason": "adx整广告服务路径，缺开屏位区分。"
   },
   {
     "name": "小猿搜题",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#小猿搜题"
+    "screening_ref": "screening.json#小猿搜题",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "猿题库",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#猿题库"
+    "screening_ref": "screening.json#猿题库",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "学小易",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#学小易"
+    "screening_ref": "screening.json#学小易",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "粉笔",
     "categories": [
       "教育"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "launcher依赖fenbi.js字段处理，需要隔离fixture，不整响应拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#粉笔"
+    "screening_ref": "screening.json#粉笔",
+    "reason": "launcher依赖fenbi.js字段处理，需要隔离fixture，不整响应拒绝。"
   },
   {
     "name": "华图",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#华图"
+    "screening_ref": "screening.json#华图",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "中公",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#中公"
+    "screening_ref": "screening.json#中公",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "考虫",
     "categories": [
       "教育"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#考虫"
+    "screening_ref": "screening.json#考虫",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "WPS",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "仅ad-statistics-service统计，不是开屏广告返回，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#WPS"
+    "screening_ref": "screening.json#WPS",
+    "reason": "仅ad-statistics-service统计，不是开屏广告返回，不纳入。"
   },
   {
     "name": "扫描全能王",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#扫描全能王"
+    "screening_ref": "screening.json#扫描全能王",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "夸克",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "open-cms共享内容接口，综合脚本需独立广告字段证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#夸克"
+    "screening_ref": "screening.json#夸克",
+    "reason": "open-cms共享内容接口，综合脚本需独立广告字段证据。"
   },
   {
     "name": "QQ浏览器",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "exapp?spsa数字未给开屏位映射，不猜值。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#QQ浏览器"
+    "screening_ref": "screening.json#QQ浏览器",
+    "reason": "exapp?spsa数字未给开屏位映射，不猜值。"
   },
   {
     "name": "UC",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#UC"
+    "screening_ref": "screening.json#UC",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "搜狗浏览器",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#搜狗浏览器"
+    "screening_ref": "screening.json#搜狗浏览器",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "百度网盘",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "广告目录、福利、会员订单等混合，禁止订单/权限处理；无独立开屏位。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#百度网盘"
+    "screening_ref": "screening.json#百度网盘",
+    "reason": "广告目录、福利、会员订单等混合，禁止订单/权限处理；无独立开屏位。"
   },
   {
     "name": "迅雷",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "slots:batchGet批量广告位，无法只按URL判断开屏。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#迅雷"
+    "screening_ref": "screening.json#迅雷",
+    "reason": "slots:batchGet批量广告位，无法只按URL判断开屏。"
   },
   {
     "name": "阿里云盘",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "顶层目录、签到、用户首页等不属于专用开屏，禁止改文件/签到。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#阿里云盘"
+    "screening_ref": "screening.json#阿里云盘",
+    "reason": "顶层目录、签到、用户首页等不属于专用开屏，禁止改文件/签到。"
   },
   {
     "name": "天翼云盘",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id507944293，观察版本11.1.1，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#天翼云盘"
+    "included": true,
+    "screening_ref": "screening.json#天翼云盘",
+    "app_store": "https://apps.apple.com/cn/app/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98-%E5%AE%B6%E5%BA%AD%E4%BA%91-%E7%9B%B8%E5%86%8C%E5%85%B1%E4%BA%AB-%E4%BA%91%E5%9B%9E%E7%9C%8B/id507944293?uo=4"
   },
   {
     "name": "移动云盘",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "通用广告列表/卡片/站内信，未区分开屏，会员/消息不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#移动云盘"
+    "screening_ref": "screening.json#移动云盘",
+    "reason": "通用广告列表/卡片/站内信，未区分开屏，会员/消息不动。"
   },
   {
     "name": "115",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#115"
+    "screening_ref": "screening.json#115",
+    "reason": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
   },
   {
     "name": "123云盘",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#123云盘"
+    "screening_ref": "screening.json#123云盘",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "QQ邮箱",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#QQ邮箱"
+    "screening_ref": "screening.json#QQ邮箱",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "网易邮箱大师",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#网易邮箱大师"
+    "screening_ref": "screening.json#网易邮箱大师",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "印象笔记",
     "categories": [
       "办公工具"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ads整目录，需具体开屏路径，不能泛化。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#印象笔记"
+    "screening_ref": "screening.json#印象笔记",
+    "reason": "ads整目录，需具体开屏路径，不能泛化。"
   },
   {
     "name": "有道云笔记",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#有道云笔记"
+    "screening_ref": "screening.json#有道云笔记",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "幕布",
     "categories": [
       "办公工具"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#幕布"
+    "screening_ref": "screening.json#幕布",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "Keep",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "kad/op-engine广告入口虽标开屏仍通用ad，主域还含课程/成长/训练配置，不整包纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#Keep"
+    "screening_ref": "screening.json#Keep",
+    "reason": "kad/op-engine广告入口虽标开屏仍通用ad，主域还含课程/成长/训练配置，不整包纳入。"
   },
   {
     "name": "咕咚",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#咕咚"
+    "screening_ref": "screening.json#咕咚",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "悦跑圈",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#悦跑圈"
+    "screening_ref": "screening.json#悦跑圈",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "薄荷",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "搜索/代谢/首页/提醒均混合健康数据，缺少专用开屏；不扩大敏感解密。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#薄荷"
+    "screening_ref": "screening.json#薄荷",
+    "reason": "搜索/代谢/首页/提醒均混合健康数据，缺少专用开屏；不扩大敏感解密。"
   },
   {
     "name": "美柚",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "批量配置和通用getad，涉及敏感健康数据，不默认解密配置。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#美柚"
+    "screening_ref": "screening.json#美柚",
+    "reason": "批量配置和通用getad，涉及敏感健康数据，不默认解密配置。"
   },
   {
     "name": "大姨妈",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#大姨妈"
+    "screening_ref": "screening.json#大姨妈",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "平安健康",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#平安健康"
+    "screening_ref": "screening.json#平安健康",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "京东健康",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "共享CDN尺寸图片过滤，非开屏专用且医疗边界保守。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#京东健康"
+    "screening_ref": "screening.json#京东健康",
+    "reason": "共享CDN尺寸图片过滤，非开屏专用且医疗边界保守。"
   },
   {
     "name": "阿里健康",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#阿里健康"
+    "screening_ref": "screening.json#阿里健康",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "好大夫",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#好大夫"
+    "screening_ref": "screening.json#好大夫",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "微医",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getpopad为弹窗不等开屏，图片尺寸误伤，医疗域不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#微医"
+    "screening_ref": "screening.json#微医",
+    "reason": "getpopad为弹窗不等开屏，图片尺寸误伤，医疗域不动。"
   },
   {
     "name": "丁香",
     "categories": [
       "运动健康"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "医疗敏感域，开屏路径亦不默认引入主机级解密。",
+    "source_status": "feed/launch可能医疗内容或开屏，敏感域和公共医学信息不默认解密。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#丁香"
+    "screening_ref": "screening.json#丁香",
+    "reason": "feed/launch可能医疗内容或开屏，敏感域和公共医学信息不默认解密。"
   },
   {
     "name": "春雨",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#春雨"
+    "screening_ref": "screening.json#春雨",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "叮当",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#叮当"
+    "screening_ref": "screening.json#叮当",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "健客",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#健客"
+    "screening_ref": "screening.json#健客",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "用药助手",
     "categories": [
       "运动健康"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#用药助手"
+    "screening_ref": "screening.json#用药助手",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "贝壳",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "bootpage与activityconfig并列，启动页面不必然广告，需内容证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#贝壳"
+    "screening_ref": "screening.json#贝壳",
+    "reason": "bootpage与activityconfig并列，启动页面不必然广告，需内容证据。"
   },
   {
     "name": "链家",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#链家"
+    "screening_ref": "screening.json#链家",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "安居客",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#安居客"
+    "screening_ref": "screening.json#安居客",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "房天下",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#房天下"
+    "screening_ref": "screening.json#房天下",
+    "reason": "已读对应完整模块：只有DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD封禁，未提供精确开屏URL；不把整域规则并入仅开屏合集。"
   },
   {
     "name": "自如",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "popup及index/open并非明确广告，不能整首页拒绝。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#自如"
+    "screening_ref": "screening.json#自如",
+    "reason": "popup及index/open并非明确广告，不能整首页拒绝。"
   },
   {
     "name": "巴乐兔",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#巴乐兔"
+    "screening_ref": "screening.json#巴乐兔",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "土巴兔",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#土巴兔"
+    "screening_ref": "screening.json#土巴兔",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "齐家",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#齐家"
+    "screening_ref": "screening.json#齐家",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "好好住",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getStartPhoto启动图片未明确广告类型，需真实广告语义证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#好好住"
+    "screening_ref": "screening.json#好好住",
+    "reason": "getStartPhoto启动图片未明确广告类型，需真实广告语义证据。"
   },
   {
     "name": "住小帮",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#住小帮"
+    "screening_ref": "screening.json#住小帮",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "米家",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
-    "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
-    "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
+    "status": "静态验证待实机",
+    "ios_status": "App Store id957323480，观察版本11.9.201，非适配保证",
+    "source_status": "完整模块复审选中独立开屏分支；见sources.json",
+    "license_status": "GPL-3.0-only",
     "device_status": "未实机",
-    "included": false,
-    "screening_ref": "screening.json#米家"
+    "included": true,
+    "screening_ref": "screening.json#米家",
+    "app_store": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480?uo=4"
   },
   {
     "name": "海尔",
     "categories": [
       "住房家居"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "来源明确海尔服务小程序，不是iOS海尔App；不继承。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#海尔"
+    "screening_ref": "screening.json#海尔",
+    "reason": "来源明确海尔服务小程序，不是iOS海尔App；不继承。"
   },
   {
     "name": "美的",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#美的"
+    "screening_ref": "screening.json#美的",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "海信",
     "categories": [
       "住房家居"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#海信"
+    "screening_ref": "screening.json#海信",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "宝宝树",
     "categories": [
       "母婴宠物"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "plough.do通用广告/统计、喂养及首页活动混合；孕育敏感数据不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#宝宝树"
+    "screening_ref": "screening.json#宝宝树",
+    "reason": "plough.do通用广告/统计、喂养及首页活动混合；孕育敏感数据不动。"
   },
   {
     "name": "妈妈网",
     "categories": [
       "母婴宠物"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到2个标题线索；身份/具体规则仍需核实",
+    "source_status": "rd素材端点上下文不足，名称又含孕育与妈妈网，身份和敏感边界保守。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#妈妈网"
+    "screening_ref": "screening.json#妈妈网",
+    "reason": "rd素材端点上下文不足，名称又含孕育与妈妈网，身份和敏感边界保守。"
   },
   {
     "name": "亲宝宝",
     "categories": [
       "母婴宠物"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "ad整目录，敏感家庭数据主域，暂不泛化。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#亲宝宝"
+    "screening_ref": "screening.json#亲宝宝",
+    "reason": "ad整目录，敏感家庭数据主域，暂不泛化。"
   },
   {
     "name": "育学园",
     "categories": [
       "母婴宠物"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getsAdStartScreen有线索但host为任意子域、动作200空格，未得到具体安全host；敏感域不扩大。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#育学园"
+    "screening_ref": "screening.json#育学园",
+    "reason": "getsAdStartScreen有线索但host为任意子域、动作200空格，未得到具体安全host；敏感域不扩大。"
   },
   {
     "name": "宝宝巴士",
     "categories": [
       "母婴宠物"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#宝宝巴士"
+    "screening_ref": "screening.json#宝宝巴士",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "波奇",
     "categories": [
       "母婴宠物"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#波奇"
+    "screening_ref": "screening.json#波奇",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "E宠",
     "categories": [
       "母婴宠物"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#E宠"
+    "screening_ref": "screening.json#E宠",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "小佩",
     "categories": [
       "母婴宠物"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "device/relatedProductsInfo是设备关联商品不是开屏，不纳入。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#小佩"
+    "screening_ref": "screening.json#小佩",
+    "reason": "device/relatedProductsInfo是设备关联商品不是开屏，不纳入。"
   },
   {
     "name": "BOSS",
     "categories": [
       "招聘企业"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#BOSS"
+    "screening_ref": "screening.json#BOSS",
+    "reason": "数字/普通词/其他域名子串误匹配，无对应App开屏证据。"
   },
   {
     "name": "智联",
     "categories": [
       "招聘企业"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#智联"
+    "screening_ref": "screening.json#智联",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "51Job",
@@ -3388,78 +3632,84 @@
     "categories": [
       "招聘企业"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "live.get-ad-cards和通用广告位接口不确定开屏，不能误伤求职信息。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#猎聘"
+    "screening_ref": "screening.json#猎聘",
+    "reason": "live.get-ad-cards和通用广告位接口不确定开屏，不能误伤求职信息。"
   },
   {
     "name": "脉脉",
     "categories": [
       "招聘企业"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "adshow同时覆盖开屏和职位横幅，不纳入。",
+    "source_status": "adshow同时开屏和职位横幅；pay/check_gift禁止处理，推荐流不动。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#脉脉"
+    "screening_ref": "screening.json#脉脉",
+    "reason": "adshow同时开屏和职位横幅；pay/check_gift禁止处理，推荐流不动。"
   },
   {
     "name": "实习僧",
     "categories": [
       "招聘企业"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#实习僧"
+    "screening_ref": "screening.json#实习僧",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "天眼查",
     "categories": [
       "招聘企业"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#天眼查"
+    "screening_ref": "screening.json#天眼查",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "企查查",
     "categories": [
       "招聘企业"
     ],
-    "status": "限定来源未命中待扩查",
+    "status": "已扩查证据不足未纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "固定fmz模块标题/别名未命中，非确定无规则",
+    "source_status": "固定来源1685文本全文扩查：0文件命中；两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#企查查"
+    "screening_ref": "screening.json#企查查",
+    "reason": "两次限定搜索尚无对应模块证据；未知，不宣称不存在广告或无可用规则"
   },
   {
     "name": "爱企查",
     "categories": [
       "招聘企业"
     ],
-    "status": "来源筛查完成待深审",
+    "status": "已审当前来源不纳入",
     "ios_status": "待确认具体iOS App及当前上架状态",
-    "source_status": "已找到1个标题线索；身份/具体规则仍需核实",
+    "source_status": "getConfigByDeviceNum共享配置，非开屏证据。",
     "license_status": "索引来源GPL-3.0；外部依赖及第三方署名许可逐项待核",
     "device_status": "未实机",
     "included": false,
-    "screening_ref": "screening.json#爱企查"
+    "screening_ref": "screening.json#爱企查",
+    "reason": "getConfigByDeviceNum共享配置，非开屏证据。"
   },
   {
     "name": "云闪付",

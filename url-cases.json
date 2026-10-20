@@ -446,5 +446,231 @@
       "https://mapi.dianping.com/api/user/login",
       "https://mapi.dianping.com/api/payment/create"
     ]
+  },
+  {
+    "rule": "fmz-v021-1",
+    "positive": [
+      "https://wmapi.meituan.com/api/v7/openscreen?",
+      "https://wmapi.meituan.com/api/v7/openscreen?test=1&x=2"
+    ],
+    "negative": [
+      "https://wmapi.meituan.com/api/v7/openscreenevil",
+      "https://wmapi.meituan.com/api/v7/openscreen/extra",
+      "https://wmapi.meituan.com/api/v7/openscreen/",
+      "https://wmapi.meituan.com/api/v7/openscreen#frag",
+      "https://wmapi.meituan.com/api/v7/openscreen?x=1\nnext",
+      "https://wmapi.meituan.com/api/v7/openscreen?x=1#frag",
+      "https://wmapi.meituan.com.evil.invalid/api/v7/openscreen",
+      "https://wmapi.meituan.com@evil.invalid/api/v7/openscreen",
+      "http://wmapi.meituan.com/api/v7/openscreen",
+      "https://example.invalid/?next=https://wmapi.meituan.com/api/v7/openscreen",
+      "https://wmapiXmeituanXcom/api/v7/openscreen",
+      "https://wmapi.meituan.com/login",
+      "https://wmapi.meituan.com/pay",
+      "https://wmapi.meituan.com/order",
+      "https://wmapi.meituan.com/signin",
+      "https://wmapi.meituan.com/feed",
+      "https://wmapi.meituan.com/api/user/login",
+      "https://wmapi.meituan.com/api/payment/create",
+      "https://wmapi.meituan.com/api/v7/openscreen",
+      "https://wmapi.meituan.com/api/v7/loadInfo?x=1"
+    ]
+  },
+  {
+    "rule": "fmz-v021-2",
+    "positive": [
+      "https://wmapi.meituan.com/api/v7/startpicture?",
+      "https://wmapi.meituan.com/api/v7/startpicture?test=1&x=2"
+    ],
+    "negative": [
+      "https://wmapi.meituan.com/api/v7/startpictureevil",
+      "https://wmapi.meituan.com/api/v7/startpicture/extra",
+      "https://wmapi.meituan.com/api/v7/startpicture/",
+      "https://wmapi.meituan.com/api/v7/startpicture#frag",
+      "https://wmapi.meituan.com/api/v7/startpicture?x=1\nnext",
+      "https://wmapi.meituan.com/api/v7/startpicture?x=1#frag",
+      "https://wmapi.meituan.com.evil.invalid/api/v7/startpicture",
+      "https://wmapi.meituan.com@evil.invalid/api/v7/startpicture",
+      "http://wmapi.meituan.com/api/v7/startpicture",
+      "https://example.invalid/?next=https://wmapi.meituan.com/api/v7/startpicture",
+      "https://wmapiXmeituanXcom/api/v7/startpicture",
+      "https://wmapi.meituan.com/login",
+      "https://wmapi.meituan.com/pay",
+      "https://wmapi.meituan.com/order",
+      "https://wmapi.meituan.com/signin",
+      "https://wmapi.meituan.com/feed",
+      "https://wmapi.meituan.com/api/user/login",
+      "https://wmapi.meituan.com/api/payment/create",
+      "https://wmapi.meituan.com/api/v7/startpicture",
+      "https://wmapi.meituan.com/api/v7/loadInfo?x=1"
+    ]
+  },
+  {
+    "rule": "fmz-v021-3",
+    "positive": [
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen?",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen?test=1&x=2"
+    ],
+    "negative": [
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreenevil",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen/extra",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen/",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen#frag",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen?x=1\nnext",
+      "https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen?x=1#frag",
+      "https://app.zhuanzhuan.com.evil.invalid/zz/v2/zzlogic/getOpenScreen",
+      "https://app.zhuanzhuan.com@evil.invalid/zz/v2/zzlogic/getOpenScreen",
+      "http://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen",
+      "https://example.invalid/?next=https://app.zhuanzhuan.com/zz/v2/zzlogic/getOpenScreen",
+      "https://appXzhuanzhuanXcom/zz/v2/zzlogic/getOpenScreen",
+      "https://app.zhuanzhuan.com/login",
+      "https://app.zhuanzhuan.com/pay",
+      "https://app.zhuanzhuan.com/order",
+      "https://app.zhuanzhuan.com/signin",
+      "https://app.zhuanzhuan.com/feed",
+      "https://app.zhuanzhuan.com/api/user/login",
+      "https://app.zhuanzhuan.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v021-4",
+    "positive": [
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen?",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen?test=1&x=2"
+    ],
+    "negative": [
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreenevil",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen/extra",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen/",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen#frag",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen?x=1\nnext",
+      "https://tcmobileapi.17usoft.com/appindexnew/index/openscreen?x=1#frag",
+      "https://tcmobileapi.17usoft.com.evil.invalid/appindexnew/index/openscreen",
+      "https://tcmobileapi.17usoft.com@evil.invalid/appindexnew/index/openscreen",
+      "http://tcmobileapi.17usoft.com/appindexnew/index/openscreen",
+      "https://example.invalid/?next=https://tcmobileapi.17usoft.com/appindexnew/index/openscreen",
+      "https://tcmobileapiX17usoftXcom/appindexnew/index/openscreen",
+      "https://tcmobileapi.17usoft.com/login",
+      "https://tcmobileapi.17usoft.com/pay",
+      "https://tcmobileapi.17usoft.com/order",
+      "https://tcmobileapi.17usoft.com/signin",
+      "https://tcmobileapi.17usoft.com/feed",
+      "https://tcmobileapi.17usoft.com/api/user/login",
+      "https://tcmobileapi.17usoft.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v021-5",
+    "positive": [
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising?",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising?test=1&x=2"
+    ],
+    "negative": [
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertisingevil",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising/extra",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising/",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising#frag",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising?x=1\nnext",
+      "https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising?x=1#frag",
+      "https://client.tujia.com.evil.invalid/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "https://client.tujia.com@evil.invalid/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "http://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "https://example.invalid/?next=https://client.tujia.com/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "https://clientXtujiaXcom/bnbapp-node/app/portal/getStartPictureAdvertising",
+      "https://client.tujia.com/login",
+      "https://client.tujia.com/pay",
+      "https://client.tujia.com/order",
+      "https://client.tujia.com/signin",
+      "https://client.tujia.com/feed",
+      "https://client.tujia.com/api/user/login",
+      "https://client.tujia.com/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v021-6",
+    "positive": [
+      "https://api3.cls.cn/v1/boot/ad",
+      "https://api3.cls.cn/v1/boot/ad?",
+      "https://api3.cls.cn/v1/boot/ad?test=1&x=2"
+    ],
+    "negative": [
+      "https://api3.cls.cn/v1/boot/adevil",
+      "https://api3.cls.cn/v1/boot/ad/extra",
+      "https://api3.cls.cn/v1/boot/ad/",
+      "https://api3.cls.cn/v1/boot/ad#frag",
+      "https://api3.cls.cn/v1/boot/ad?x=1\nnext",
+      "https://api3.cls.cn/v1/boot/ad?x=1#frag",
+      "https://api3.cls.cn.evil.invalid/v1/boot/ad",
+      "https://api3.cls.cn@evil.invalid/v1/boot/ad",
+      "http://api3.cls.cn/v1/boot/ad",
+      "https://example.invalid/?next=https://api3.cls.cn/v1/boot/ad",
+      "https://api3XclsXcn/v1/boot/ad",
+      "https://api3.cls.cn/login",
+      "https://api3.cls.cn/pay",
+      "https://api3.cls.cn/order",
+      "https://api3.cls.cn/signin",
+      "https://api3.cls.cn/feed",
+      "https://api3.cls.cn/api/user/login",
+      "https://api3.cls.cn/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v021-7",
+    "positive": [
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners?",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners?test=1&x=2"
+    ],
+    "negative": [
+      "https://api.cloud.189.cn/guns/getOpenscreenBannersevil",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners/extra",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners/",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners#frag",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners?x=1\nnext",
+      "https://api.cloud.189.cn/guns/getOpenscreenBanners?x=1#frag",
+      "https://api.cloud.189.cn.evil.invalid/guns/getOpenscreenBanners",
+      "https://api.cloud.189.cn@evil.invalid/guns/getOpenscreenBanners",
+      "http://api.cloud.189.cn/guns/getOpenscreenBanners",
+      "https://example.invalid/?next=https://api.cloud.189.cn/guns/getOpenscreenBanners",
+      "https://apiXcloudX189Xcn/guns/getOpenscreenBanners",
+      "https://api.cloud.189.cn/login",
+      "https://api.cloud.189.cn/pay",
+      "https://api.cloud.189.cn/order",
+      "https://api.cloud.189.cn/signin",
+      "https://api.cloud.189.cn/feed",
+      "https://api.cloud.189.cn/api/user/login",
+      "https://api.cloud.189.cn/api/payment/create"
+    ]
+  },
+  {
+    "rule": "fmz-v021-8",
+    "positive": [
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner?",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner?test=1&x=2"
+    ],
+    "negative": [
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBannerevil",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner/extra",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner/",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner#frag",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner?x=1\nnext",
+      "https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner?x=1#frag",
+      "https://home.mi.com.evil.invalid/cgi-op/api/v1/resource/realtime/openingBanner",
+      "https://home.mi.com@evil.invalid/cgi-op/api/v1/resource/realtime/openingBanner",
+      "http://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner",
+      "https://example.invalid/?next=https://home.mi.com/cgi-op/api/v1/resource/realtime/openingBanner",
+      "https://homeXmiXcom/cgi-op/api/v1/resource/realtime/openingBanner",
+      "https://home.mi.com/login",
+      "https://home.mi.com/pay",
+      "https://home.mi.com/order",
+      "https://home.mi.com/signin",
+      "https://home.mi.com/feed",
+      "https://home.mi.com/api/user/login",
+      "https://home.mi.com/api/payment/create"
+    ]
   }
 ]

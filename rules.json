@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "rules": [
     {
       "id": "goofish-splash",
@@ -170,6 +170,86 @@
       "source": "fmz-v02-14",
       "status": "离线URL测试；手机待验收",
       "note": "严格保留上游已知路径；不扩展额外尾斜杠/子路径；可能漏拦新版"
+    },
+    {
+      "id": "fmz-v021-1",
+      "app": "美团",
+      "pattern": "^https://wmapi\\.meituan\\.com/api/v7/openscreen\\?[^#\\r\\n]*$",
+      "action": "reject-dict",
+      "hostname": "wmapi.meituan.com",
+      "source": "fmz-v021-1",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-2",
+      "app": "美团",
+      "pattern": "^https://wmapi\\.meituan\\.com/api/v7/startpicture\\?[^#\\r\\n]*$",
+      "action": "reject-dict",
+      "hostname": "wmapi.meituan.com",
+      "source": "fmz-v021-2",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-3",
+      "app": "转转",
+      "pattern": "^https://app\\.zhuanzhuan\\.com/zz/v2/zzlogic/getOpenScreen(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "app.zhuanzhuan.com",
+      "source": "fmz-v021-3",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-4",
+      "app": "同程",
+      "pattern": "^https://tcmobileapi\\.17usoft\\.com/appindexnew/index/openscreen(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "tcmobileapi.17usoft.com",
+      "source": "fmz-v021-4",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-5",
+      "app": "途家",
+      "pattern": "^https://client\\.tujia\\.com/bnbapp\\-node/app/portal/getStartPictureAdvertising(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "client.tujia.com",
+      "source": "fmz-v021-5",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-6",
+      "app": "财联社",
+      "pattern": "^https://api3\\.cls\\.cn/v1/boot/ad(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject",
+      "hostname": "api3.cls.cn",
+      "source": "fmz-v021-6",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-7",
+      "app": "天翼云盘",
+      "pattern": "^https://api\\.cloud\\.189\\.cn/guns/getOpenscreenBanners(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "api.cloud.189.cn",
+      "source": "fmz-v021-7",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
+    },
+    {
+      "id": "fmz-v021-8",
+      "app": "米家",
+      "pattern": "^https://home\\.mi\\.com/cgi\\-op/api/v1/resource/realtime/openingBanner(?:\\?[^#\\r\\n]*)?$",
+      "action": "reject-dict",
+      "hostname": "home.mi.com",
+      "source": "fmz-v021-8",
+      "status": "离线URL验证；未实机",
+      "note": "仅选中专用开屏分支，保留主机级MITM风险；不保证当前版本适配"
     }
   ]
 }

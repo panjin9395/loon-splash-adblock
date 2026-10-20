@@ -8,7 +8,7 @@ NEG=[BASE,BASE+'2.0',BASE+'2.0/extra',BASE+'2.0/#fragment',BASE+'2.0/?a=1\nnext'
 for api in ['mtop.taobao.idle.trade.full.info','mtop.taobao.idlehome.home.nextfresh','mtop.taobao.idle.item.recommend.list','mtop.taobao.idle.login','mtop.taobao.idle.pay','mtop.taobao.idle.signin']:
     NEG.append('https://acs.m.goofish.com/gw/'+api+'/1.0/')
 NEG+=['https://example.invalid/?redirect='+BASE+'2.0/','https://acsXmXgoofishXcom/gw/mtop.taobao.idlecommerce.splash.ads/2.0/']
-ALLOWED={'LICENSE','NOTICE.md','README.md','CHANGELOG.md','rules.json','candidates.json','candidate-groups.json','sources.json','build.py','test_release.py','splash-adblock.lpx','coverage.md','tests-report.json','.gitignore','screening.json','ios-evidence.json','url-cases.json','AUDIT.md'}
+ALLOWED={'LICENSE','NOTICE.md','README.md','CHANGELOG.md','rules.json','candidates.json','candidate-groups.json','sources.json','build.py','test_release.py','splash-adblock.lpx','coverage.md','tests-report.json','.gitignore','screening.json','ios-evidence.json','url-cases.json','AUDIT.md','deep-review.json'}
 class ReleaseTests(unittest.TestCase):
     def test_build_deterministic(self):
         self.assertEqual(render(),render())

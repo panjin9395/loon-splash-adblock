@@ -330,6 +330,142 @@
       "original_rule": "^https?:\\/\\/mapi\\.dianping\\.com\\/mapi\\/operating\\/(?>indexopsmodules|loadsplashconfig) - reject",
       "changes": "仅选专用开屏分支；HTTPS、精确host与路径尾界；原reject/空JSON动作不变；不含脚本或综合规则",
       "app_version_limit": "上游未声明适用App版本；商店存在不代表此规则适用于当前版本"
+    },
+    {
+      "id": "fmz-v021-1",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partM/Meituan-MeituanWaimai.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "dafef6d577651c2e9639cdf2f863bada9572b41a0bd30f0b892c26c84fa20857",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/wmapi\\.meituan\\.com\\/api\\/v7\\/(loadInfo|openscreen|startpicture)\\? data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partM/Meituan-MeituanWaimai.sgmodule#L10",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-2",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partM/Meituan-MeituanWaimai.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "dafef6d577651c2e9639cdf2f863bada9572b41a0bd30f0b892c26c84fa20857",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/wmapi\\.meituan\\.com\\/api\\/v7\\/(loadInfo|openscreen|startpicture)\\? data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partM/Meituan-MeituanWaimai.sgmodule#L10",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-3",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partZ/ZhuanZhuan.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "f766442f844a0c231475f53579ad5c37b6c4bbc77cb2d547b5ef2975eb844134",
+      "selected_lines": [
+        19
+      ],
+      "original_rule": "^https?:\\/\\/app\\.zhuanzhuan\\.com\\/zz\\/v2\\/zzlogic\\/getOpenScreen data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partZ/ZhuanZhuan.sgmodule#L19",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-4",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partT/TongChengTravel.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "0be89e7cbbe11e0bcb3740810cf9cb4728aa61ec9d9ffa00f94a94fd2bbf7fe0",
+      "selected_lines": [
+        16
+      ],
+      "original_rule": "^https:\\/\\/tcmobileapi\\.17usoft\\.com\\/appindexnew\\/index\\/openscreen data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partT/TongChengTravel.sgmodule#L16",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-5",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partT/TujiaHomestay.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "e3d5dd672f7aa8a9341acd348b4b353baa29d02be2c234f008d0cab59a1b2b0b",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/client\\.tujia\\.com\\/bnbapp-node\\/app\\/(promotion\\/popup\\/getpopupups\\/bnb|portal\\/getStartPictureAdvertising) - reject",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partT/TujiaHomestay.sgmodule#L10",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-6",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partC/CaiLianShe.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "a70e45941e677819100600c5bc59e0dce364b3c637202977ffe7669b606ab5de",
+      "selected_lines": [
+        10
+      ],
+      "original_rule": "^https?:\\/\\/api3\\.cls\\.cn\\/v1\\/boot\\/ad - reject",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partC/CaiLianShe.sgmodule#L10",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-7",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partT/TianYiCloudDrive.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "9de631f80e09785d92d1562467f6711eaffd5742b104ce4134f32b06a33a39a9",
+      "selected_lines": [
+        11
+      ],
+      "original_rule": "^https?:\\/\\/api\\.cloud\\.189\\.cn\\/guns\\/(img\\/recommendedPosition|getOpenscreenBanners) data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partT/TianYiCloudDrive.sgmodule#L11",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
+    },
+    {
+      "id": "fmz-v021-8",
+      "author": "奶思 / fmz200",
+      "revision": "5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97",
+      "repository": "https://github.com/fmz200/wool_scripts",
+      "path": "Surge/module/split/partM/Mijia.sgmodule",
+      "license": "GPL-3.0-only",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_sha256": "a84c5036b1089007377ceed27b4a95a9d24e486bffa423f3312acc71c9b1ee5f",
+      "selected_lines": [
+        15
+      ],
+      "original_rule": "^https?:\\/\\/home\\.mi\\.com\\/cgi-op\\/api\\/v1\\/resource\\/realtime\\/openingBanner data-type=text data=\"{}\" status-code=200 header=\"Content-Type:application/json\"",
+      "url": "https://github.com/fmz200/wool_scripts/blob/5d5f63fcf98bc69d5f8f1b1bae6f86a01ee4bb97/Surge/module/split/partM/Mijia.sgmodule#L15",
+      "changes": "完整模块复核后仅抽取开屏分支；保留原动作和必要问号条件；不改初始化/推荐/订单/设备接口",
+      "app_version_limit": "未知；商店存在不证明当前版本兼容"
     }
   ]
 }
