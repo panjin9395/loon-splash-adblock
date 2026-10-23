@@ -1,12 +1,12 @@
 # Loon 开屏广告精简合集
 
-v0.2.1 为阶段性多 App 预发布：20 个候选 App、25 条精确 URL 规则、23 个明确 MITM 主机。不是全覆盖，也不是已验证这 20 款当前版本都有效。无 JavaScript、远程 jq、远程替换文件、上传或持久化。
+v0.2.2 为验收证据修订预发布（插件仍标 v0.2.1，运行内容逐字不变）：20 个候选 App、25 条精确 URL 规则、23 个明确 MITM 主机。不是全覆盖，也不是已验证这 20 款当前版本都有效。无 JavaScript、远程 jq、远程替换文件、上传或持久化。
 
 ## 单订阅入口
 
 https://raw.githubusercontent.com/panjin9395/loon-splash-adblock/main/splash-adblock.lpx
 
-固定版本：https://raw.githubusercontent.com/panjin9395/loon-splash-adblock/v0.2.1/splash-adblock.lpx
+固定版本：https://raw.githubusercontent.com/panjin9395/loon-splash-adblock/v0.2.2/splash-adblock.lpx
 
 已有订阅只需更新该插件，不重复导入全配置。使用已有可信 MITM 证书和 Rewrite 功能，不上传证书、不改 DNS、节点或系统服务。
 
@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/panjin9395/loon-splash-adblock/main/splash-adb
 
 仅保留固定上游记录的开屏接口分支，收窄到 HTTPS、精确 host、完整路径及可选查询串；reject 为断开连接，reject-dict 为 200 空 JSON，保持上游原动作。未加入同模块的首页推荐、签到、会员、播放广告、订单、支付等行为。严格路径可能漏拦新版或带额外斜杠的请求，不凭猜测放宽。
 
-2026-10-20 用户报告 v0.1.0 闲鱼开屏已拦截，Loon 详情截图显示原规则成功解析。未提供闲鱼版本、命中日志或正常功能全面回归。除闲鱼外的 19 款均尚未手机验证；App Store 身份/商店版本核验不等于规则适配。上游未声明这些规则适用的 App 版本，不能保证当前版本有效。
+闲鱼当前状态：曾一次有效，后复发，原因待定位。2026-10-20 用户报告 v0.1.0 开屏已拦截，Loon 详情截图显示原规则成功解析；2026-10-21 用户再次提供商业开屏截图，不能继续计为当前实机有效。未提供闲鱼版本、命中日志或正常功能全面回归，不猜测复发原因。除闲鱼外的 19 款均尚未手机验证；当前实机有效计数为0。App Store 身份/商店版本核验不等于规则适配。上游未声明这些规则适用的 App 版本，不能保证当前版本有效。
 
 MITM 解密范围是整个 hostname，不是开屏 URL。虽然只修改选中开屏请求，同主机的登录等其他 HTTPS 请求仍可能经过本地 TLS 解密。插件不读取或上传这些请求；若不接受主机级解密，请不要启用。遇到证书固定、连接失败或业务异常，关闭插件，不关闭 TLS 校验。完整主机清单见 splash-adblock.lpx 的 Mitm 段。
 

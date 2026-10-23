@@ -4,11 +4,11 @@
     "categories": [
       "基础购物生活"
     ],
-    "status": "用户反馈开屏有效",
+    "status": "已纳入但实机复发待定位",
     "ios_status": "App Store已核实 id510909506；iOS13+",
     "source_status": "已审选中开屏分支，固定来源见sources.json",
     "license_status": "GPL-3.0-only，保留上游署名",
-    "device_status": "用户报告v0.1.0开屏已拦截；App版本/正常功能回归未知",
+    "device_status": "曾一次有效，后复发，原因待定位；2026-10-20用户报告v0.1.0有效，2026-10-21复发；App版本/正常功能回归未知",
     "included": true,
     "app_store": "https://apps.apple.com/cn/app/id510909506",
     "screening_ref": "screening.json#闲鱼"

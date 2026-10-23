@@ -24,6 +24,35 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual({x['name'] for x in items if x['included']},{r['app'] for r in json.loads((ROOT/'rules.json').read_text())['rules']})
         for x in items:
             self.assertTrue(all(x[k] for k in ['status','ios_status','source_status','license_status','device_status']))
+    def test_device_evidence_consistency(self):
+        items=json.loads((ROOT/'candidates.json').read_text())
+        x=next(x for x in items if x['name']=='闲鱼')
+        self.assertEqual(x['status'],'已纳入但实机复发待定位')
+        phrase='曾一次有效，后复发，原因待定位'
+        for value in [x['device_status'],device_summary(items)]:
+            self.assertIn(phrase,value)
+            self.assertIn('2026-10-20',value)
+            self.assertIn('2026-10-21',value)
+        for name in ['README.md','AUDIT.md','CHANGELOG.md','coverage.md']:
+            text=(ROOT/name).read_text()
+            self.assertIn(phrase,text,name)
+            self.assertIn('2026-10-20',text,name)
+            self.assertIn('2026-10-21',text,name)
+        scan=json.loads((ROOT/'screening.json').read_text())
+        self.assertNotIn('用户反馈开屏有效',scan['counts'])
+        self.assertEqual(scan['counts'][x['status']],1)
+        self.assertEqual(sum(i['status']=='静态验证待实机' for i in items if i['included']),19)
+        report=json.loads((ROOT/'tests-report.json').read_text())
+        self.assertEqual(report['real_device'],device_summary(items))
+        self.assertEqual(report['status_counts'],scan['counts'])
+
+    def test_runtime_bytes_unchanged(self):
+        self.assertEqual(hashlib.sha256((ROOT/'rules.json').read_bytes()).hexdigest(),
+                         '27c0b578ed9c52723185d23a012ce63c9a6fac5316bfe4ce9b964f7ce5afbfe5')
+        self.assertEqual(hashlib.sha256((ROOT/'splash-adblock.lpx').read_bytes()).hexdigest(),
+                         '46fdf6c1499b41700ee51204ddec2fe95fa358222c3ae34459d728af74444c00')
+        self.assertEqual(len(json.loads((ROOT/'rules.json').read_text())['rules']),25)
+
     def test_regex_cases(self):
         pat=json.loads((ROOT/'rules.json').read_text())['rules'][0]['pattern']
         compiled=re.compile(pat)
@@ -88,11 +117,16 @@ class ReleaseTests(unittest.TestCase):
             for pattern in [r'-----BEGIN [A-Z ]*PRIVATE KEY',r'(?i)ca-p12\s*=',r'(?i)ca-passphrase\s*=',r'gh[pousr]_[A-Za-z0-9]{30,}',r'(?i)(?:password|token|secret|authorization)\s*[=:]\s*["\x27]?[A-Za-z0-9_+/=-]{20,}',r'https?://[^\s/]+:[^\s/]+@',r'012357\.top',r'192\.168\.',r'CCZX_WiFi']:
                 self.assertIsNone(re.search(pattern,text),p.name+' potential secret')
 
+def device_summary(items):
+    x=next(x for x in items if x['name']=='闲鱼')
+    pending=sum(i['status']=='静态验证待实机' for i in items if i['included'])
+    return '闲鱼：'+x['device_status']+'；其余'+str(pending)+'款未实机；当前实机有效计数为0'
+
 if __name__=='__main__':
     suite=unittest.defaultTestLoader.loadTestsFromTestCase(ReleaseTests)
     result=unittest.TextTestRunner(verbosity=2).run(suite)
     candidates=json.loads((ROOT/'candidates.json').read_text())
-    report={'success':result.wasSuccessful(),'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'positive_url_cases':len(POS)+sum(len(c['positive']) for c in json.loads((ROOT/'url-cases.json').read_text())),'negative_url_cases':len(NEG)+sum(len(c['negative']) for c in json.loads((ROOT/'url-cases.json').read_text())),'candidate_count':len(candidates),'included_count':sum(x['included'] for x in candidates),'status_counts':dict(collections.Counter(x['status'] for x in candidates)),'plugin_sha256':hashlib.sha256((ROOT/'splash-adblock.lpx').read_bytes()).hexdigest(),'script_fixture':'不适用：无脚本；URL为人工边界测试样例，非抓包','native_loon_parser':'未验证','real_device':'仅闲鱼v0.1.0用户反馈开屏有效；新增全部未验证','privacy':'发布白名单和敏感模式扫描；私密原配置未包含在仓库'}
+    report={'success':result.wasSuccessful(),'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'positive_url_cases':len(POS)+sum(len(c['positive']) for c in json.loads((ROOT/'url-cases.json').read_text())),'negative_url_cases':len(NEG)+sum(len(c['negative']) for c in json.loads((ROOT/'url-cases.json').read_text())),'candidate_count':len(candidates),'included_count':sum(x['included'] for x in candidates),'status_counts':dict(collections.Counter(x['status'] for x in candidates)),'plugin_sha256':hashlib.sha256((ROOT/'splash-adblock.lpx').read_bytes()).hexdigest(),'script_fixture':'不适用：无脚本；URL为人工边界测试样例，非抓包','native_loon_parser':'未验证','real_device':device_summary(candidates),'privacy':'发布白名单和敏感模式扫描；私密原配置未包含在仓库'}
     (ROOT/'tests-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report,ensure_ascii=False))
     raise SystemExit(not result.wasSuccessful())
